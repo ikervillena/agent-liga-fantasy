@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Raw API dumps: 280 KB every quarter of an hour would bury the history.
+state/raw/
+
+# Never, under any circumstances.
+.env
+secrets.env
+tokens.json
+
+# macOS
+.DS_Store

@@ -1,0 +1,321 @@
+# How much each player actually plays for his club.
+#
+# Curated by hand rather than scraped: the data moves a couple of times a week,
+# a bad parse would silently approve a bench player, and version control gives
+# us the history of who counted as a starter when.
+#
+# Anyone missing resolves to `unknown`, which fails the starter filter. Silence
+# means "do not buy", never "probably fine".
+#
+# Source: futbolfantasy.com squad hierarchies · last reviewed 2026-09-07
+
+key:
+  - Sivera
+  - Tenaglia
+  - Angel Perez
+  - Lucas Boye
+  - T. Martinez
+  - Blanco
+  - Ryan
+  - Mandi
+  - Dela
+  - Olasagasti
+  - Sergio Herrera
+  - Catena
+  - Moncayola
+  - Budimir
+  - Dmitrovic
+  - Cabrera
+  - Nunez
+  - El Hilali
+  - Edu Exposito
+  - Roberto
+  - Ionut Radu
+  - Marcos Alonso
+  - Leo Roman
+  - Noubi
+  - Mario Soriano
+  - Amatucci
+  - Aubameyang
+  - Yeremay
+  - David Soria
+  - Zaid Romero
+  - Djene
+  - Mojica
+  - Mangala
+  - Enes Unal
+  - Satriano
+  - Remiro
+  - Jon Martin
+  - C. Soler
+  - Oyarzabal
+  - Unai Simon
+  - Laporte
+  - Yuri
+  - O. Sancet
+  - Vlachodimos
+  - Kike Salas
+  - Juan Iglesias
+  - Agoume
+  - Renato Veiga
+  - Gueye
+  - Mikautadze
+  - Natan
+  - Fornals
+  - Antony
+  - Ez Abde
+  - Jorge Salinas
+  - Canales
+  - Inigo Vicente
+  - A. Herrero
+  - Einar
+  - Larrubia
+  - Dani Lorenzo
+  - Izan M.
+  - Chupe
+  - A. Batalla
+  - Lejeune
+  - Ratiu
+  - De Frutos
+  - Joan Garcia
+  - Pau Cubarsi
+  - Eric
+  - Pedri
+
+important:
+  - Jonny Otto
+  - Koski
+  - Ibanez
+  - A. Rebbach
+  - Manu Sanchez
+  - O. Rey
+  - I. Romero
+  - Etta Eyong
+  - Abel Bretones
+  - Ruben Garcia
+  - Moi Gomez
+  - Iker Munoz
+  - Aimar
+  - Hinojo
+  - Javi Hernandez
+  - Urko
+  - Dolan
+  - Ximo Navarro
+  - Quagliata
+  - Luismi Cruz
+  - Gudelj
+  - Kiko F.
+  - R. Terrats
+  - Mario Martin
+  - Aramburu
+  - Sergio Gomez
+  - Zubeldia
+  - Kubo
+  - Herrera
+  - Sucic
+  - Guedes
+  - Areso
+  - Nico Williams
+  - Inaki Williams
+  - Suazo
+  - A. Castrin
+  - Guridi
+  - Kochorashvili
+  - Miguel Sierra
+  - Robbie Ure
+  - Junior R.
+  - C. Romero
+  - Foyth
+  - Mouriño
+  - Moleiro
+  - Comesaña
+  - Gerard
+  - Pepe
+  - A. Valles
+  - Fran Garcia
+  - Marc Roca
+  - Isco
+  - Cucho
+  - Agirrezabala
+  - Pablo Ramon
+  - Pedro Felipe
+  - Mantilla
+  - Ivan Martin
+  - Y. Zabiri
+  - C. Puga
+  - Rafita
+  - Joaquin
+  - Dotor
+  - Kumbulla
+  - Isi
+  - Alvaro Garcia
+  - Gerard Martin
+  - Gordon
+
+rotation:
+  - Denis Suarez
+  - Victor G.
+  - Bardeli
+  - Hugo Sotelo
+  - Axel Tape
+  - Thiago
+  - Paco Cortes
+  - R. Brugue
+  - Herrando
+  - Boyomo
+  - Arguibide
+  - Torro
+  - Riedel
+  - Vanja Drkusic
+  - M. Loureiro
+  - A. Alti
+  - Bright Ede
+  - M. Casado
+  - Asp Jensen
+  - Riki
+  - Bil Nsongo
+  - Davinchi
+  - Andres Garcia
+  - Francho
+  - Hector Fort
+  - M. Sarr
+  - Barrenetxea
+  - Gorrotxa
+  - Turrientes
+  - Oskarsson
+  - Paredes
+  - Yeray
+  - De Galarreta
+  - Jauregizar
+  - Gerenabarrena
+  - Navarro
+  - Berenguer
+  - Guruzeta
+  - Sangante
+  - Julio Diaz
+  - Fofana
+  - Isaac
+  - Peque
+  - Buchanan
+  - Ayoze
+  - Llorente
+  - Bartra
+  - A. Ortiz
+  - Bellerin
+  - F. Bernal
+  - Aitor Ruibal
+  - Riquelme
+  - Parrott
+  - Almeida
+  - Pablo Garcia
+  - Villalibre
+  - Recio
+  - Juan Berrocal
+  - Juan Cruz
+  - Rafa Rodriguez
+  - Xavi Espart
+  - Kounde
+  - Cancelo
+  - Christensen
+  - Pedrosa
+  - Balliu
+  - Oscar Valentin
+  - Pedro Diaz
+  - Alemao
+  - Camello
+  - Javi Galan
+  - Javi Rueda
+  - Ilaix Moriba
+  - Febas
+  - Williot
+  - Hugo Alvarez
+  - Iago Aspas
+  - Pablo Duran
+
+impact_sub:
+  - Youssef
+  - Alena
+  - Manas
+  - Mariano
+  - Raul Moro
+  - Dubasin
+  - Kike Barja
+  - Raul
+  - Del Castillo
+  - Pol Lozano
+  - Bauza
+  - Pere Milla
+  - Bryan
+  - Jofre
+  - Marcos
+  - D. Villares
+  - Eddahchouri
+  - Mella
+  - Boselli
+  - B. Mayoral
+  - Ivan Azon
+  - Ceballos
+  - Deossa
+  - Maguette
+  - Matteo Prati
+  - Iker Luque
+  - Guliashvili
+  - Adeyemi
+  - Gabriel Jesus
+  - Freeman
+  - I. Akhomach
+  - Carlos Macia
+  - Oluwaseyi
+  - Driouech
+  - El Abdellaoui
+  - B. Iglesias
+
+bench:
+  - Adrian Rodriguez
+  - Valentini
+  - Novoa
+  - Marc Santos
+  - Cabello
+  - Yanis Musuayi
+  - Aitor Fdez
+  - Diego Rico
+  - Rockson
+  - A. Osambela
+  - A. Fortuno
+  - Q. Hartman
+  - Gorosabel
+  - German
+  - A. Ferllo
+  - Gimenez
+  - Angelino
+  - Dani Barcia
+  - Comas
+  - Gijselhart
+  - Adama Traore
+  - Kevin
+  - Letacek
+  - J. Ives Valou
+  - Saba Sazonov
+  - Marrero
+  - Aihen
+  - Padilla
+  - Rego
+  - Livakovic
+  - Szczesny
+  - Alex Balde
+  - F. De Jong
+  - Diego Conde
+  - Valentin Gomez
+  - Junior
+  - Lo Celso
+  - Gulacsi
+  - Costa
+  - Cardona
+  - Pau Navarro
+  - Eriksson
+  - Laro
+  - Salinas
+  - P. Martinez
+  - Ramon
+  - Haitam
+  - D. Cardenas

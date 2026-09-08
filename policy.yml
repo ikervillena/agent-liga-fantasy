@@ -1,0 +1,91 @@
+# The agent's constitution. Nothing outside this file grants it permission.
+# Editing this file and pushing is the whole change-management procedure.
+version: 1
+
+league_id: "018110971"   # Daguten
+team_id: "38611081"      # iker_villena
+
+# ---------------------------------------------------------------------------
+# Autonomy
+#
+#   supervised  every operation waits for a yes. Week one runs here.
+#   mixed       acts alone below `auto_below`, asks above it.
+#   autonomous  acts alone within the limits below.
+#
+# The agent is fully built in all three modes; this is what holds it back.
+# ---------------------------------------------------------------------------
+autonomy: supervised
+auto_below: 0            # ignored while autonomy is `supervised`
+
+# ---------------------------------------------------------------------------
+# Hard limits, checked on every single operation regardless of approval.
+# ---------------------------------------------------------------------------
+limits:
+  max_per_operation: 45000000
+  max_per_run: 80000000
+  max_operations_per_day: 4
+  min_cash_reserve: 0
+
+# ---------------------------------------------------------------------------
+# What the agent will even consider signing.
+#
+# `starters_only` is the rule that has saved the most money. A high average
+# earned off the bench regresses; unknown roles fail closed.
+# ---------------------------------------------------------------------------
+filters:
+  min_average: 5.5
+  max_clause_premium: 1.15
+  starters_only: true
+  exclude_status: [injured, suspended, out_of_league, doubtful]
+
+# ---------------------------------------------------------------------------
+# What winning means, and how to break the tie when the two aims disagree.
+# ---------------------------------------------------------------------------
+objective:
+  protect_starters: true    # never sell a starter for market reasons
+  fixture_lookahead: 3
+  value_growth_weight: 0.3
+
+# ---------------------------------------------------------------------------
+# Named opportunities. The planner finds these on its own; listing one here
+# pins the ceiling price and records why it mattered.
+# ---------------------------------------------------------------------------
+watchlist:
+  - name: Mandi
+    player_id: "3174"
+    max_price: 12000000
+    opens_at: 2026-09-09T17:48:00+02:00
+    reason: Levante's starting centre-back, 7.33 average, no clause premium.
+
+  - name: Aubameyang
+    player_id: "3108"
+    max_price: 75000000
+    opens_at: 2026-09-10T17:48:00+02:00
+    reason: Top scorer in the game at 12.00. Funded by selling Antony.
+
+  - name: Tenaglia
+    player_id: "1337"
+    max_price: 34000000
+    opens_at: 2026-09-14T22:15:00+02:00
+    reason: Taken from us on 31/08. Set-piece taker, 7.75 average, recoverable.
+
+# ---------------------------------------------------------------------------
+# Ours to shield before their locks expire. Raising a clause costs half of the
+# increase, which is always cheaper than replacing the player.
+# ---------------------------------------------------------------------------
+protect:
+  - name: Angel Perez
+    player_id: "2932"
+    raise_to: 34000000
+    before: 2026-09-13T22:00:00+02:00
+    reason: 10.00 average on an 11.35 M clause. The cheapest theft in the league.
+
+  - name: Roberto
+    player_id: "2520"
+    raise_to: 35000000
+    before: 2026-09-13T22:00:00+02:00
+
+  - name: Recio
+    player_id: "3054"
+    raise_to: 2500000
+    before: 2026-09-13T22:00:00+02:00
