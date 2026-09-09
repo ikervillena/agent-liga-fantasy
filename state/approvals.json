@@ -198,6 +198,11 @@
         "at": "2026-09-08T23:51:02.626655Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-09T03:11:28.989569Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -220,7 +225,7 @@
       "player_name": "A. Herrero",
       "rationale": "+6.4% over market value for a player outside the eleven (average 5.50)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T00:19:22.822969Z",
@@ -228,6 +233,43 @@
     "history": [
       {
         "at": "2026-09-09T00:19:22.822969Z",
+        "note": "sent for approval",
+        "state": "pending"
+      },
+      {
+        "at": "2026-09-09T03:11:28.989569Z",
+        "note": "execution window passed",
+        "state": "expired"
+      }
+    ],
+    "intent": {
+      "amount": 13872477,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 13872477,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-09T00:19:22.822969Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "55020739",
+      "offer_id": "89633169",
+      "payload": {},
+      "player_id": "3040",
+      "player_name": "A. Herrero",
+      "rationale": "+6.4% over market value for a player outside the eleven (average 5.50)."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-09T03:11:28.989569Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-09T03:11:28.989569Z",
         "note": "sent for approval",
         "state": "pending"
       }
@@ -241,7 +283,7 @@
         "price_tolerance": 0.05,
         "squad_role": "unknown"
       },
-      "execute_at": "2026-09-09T00:19:22.822969Z",
+      "execute_at": "2026-09-09T03:11:28.989569Z",
       "expected_gain": 0.0,
       "fallback": "Let the offer lapse and keep him listed.",
       "kind": "accept_offer",
