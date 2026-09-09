@@ -1,6 +1,6 @@
 {
   "cash": 45589221,
-  "fetched_at": "2026-09-09T17:06:39.825478Z",
+  "fetched_at": "2026-09-09T18:45:06.951528Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -493,6 +493,25 @@
       "seller": null
     },
     {
+      "asking_price": 8598042,
+      "expires_at": "2026-09-12T19:27:32+02:00",
+      "market_id": "15360473",
+      "player": {
+        "average_points": 1.0,
+        "club": "",
+        "club_id": "12",
+        "id": "3140",
+        "market_value": 8598042,
+        "name": "Juan Cruz",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 4
+      },
+      "seller": null
+    },
+    {
       "asking_price": 18686127,
       "expires_at": "2026-09-10T22:05:42+02:00",
       "market_id": "23113083",
@@ -508,25 +527,6 @@
         "role": "unknown",
         "status": "ok",
         "total_points": 18
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 5149799,
-      "expires_at": "2026-09-09T20:25:34+02:00",
-      "market_id": "30212983",
-      "player": {
-        "average_points": 3.0,
-        "club": "",
-        "club_id": "12",
-        "id": "3034",
-        "market_value": 4849901,
-        "name": "Joaquín",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 12
       },
       "seller": null
     },
