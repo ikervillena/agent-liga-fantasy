@@ -679,6 +679,11 @@
         "at": "2026-09-09T18:44:30.450287Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-09T19:46:03.921586Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -701,7 +706,7 @@
       "player_name": "Mandi",
       "rationale": "Mandi (Levante UD) averages 7.33 against 3.20 from Aramburu. 2.76 M per point of average, held by Barandi07."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T18:44:30.450287Z",
@@ -711,6 +716,11 @@
         "at": "2026-09-09T18:44:30.450287Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-09T19:46:03.921586Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -733,7 +743,7 @@
       "player_name": "A. Herrero",
       "rationale": "+6.4% over market value for a player outside the eleven (average 5.50)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T18:44:30.450287Z",
@@ -741,6 +751,107 @@
     "history": [
       {
         "at": "2026-09-09T18:44:30.450287Z",
+        "note": "sent for approval",
+        "state": "pending"
+      },
+      {
+        "at": "2026-09-09T19:46:03.921586Z",
+        "note": "execution window passed",
+        "state": "expired"
+      }
+    ],
+    "intent": {
+      "amount": 13696750,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 13696750,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-09T18:44:30.450287Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "55020739",
+      "offer_id": "91047141",
+      "payload": {},
+      "player_id": "3040",
+      "player_name": "A. Herrero",
+      "rationale": "+5.0% over market value for a player outside the eleven (average 5.50)."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-09T19:46:03.921586Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:46:03.921586Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 11401190,
+      "conditions": {
+        "average_points": 7.33,
+        "player_status": "ok",
+        "price": 11401190,
+        "price_tolerance": 0.05,
+        "squad_role": "key"
+      },
+      "execute_at": "2026-09-09T19:46:03.921586Z",
+      "expected_gain": 4.13,
+      "fallback": "Skip if the budget went elsewhere; the window reopens in fourteen days.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "3174",
+      "player_name": "Mandi",
+      "rationale": "Mandi (Levante UD) averages 7.33 against 3.20 from Aramburu. 2.76 M per point of average, held by Barandi07."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-09T19:46:03.921586Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:46:03.921586Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 13872477,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 13872477,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-09T19:46:03.921586Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "55020739",
+      "offer_id": "89633169",
+      "payload": {},
+      "player_id": "3040",
+      "player_name": "A. Herrero",
+      "rationale": "+6.4% over market value for a player outside the eleven (average 5.50)."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-09T19:46:03.921586Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:46:03.921586Z",
         "note": "sent for approval",
         "state": "pending"
       }
@@ -754,7 +865,7 @@
         "price_tolerance": 0.05,
         "squad_role": "unknown"
       },
-      "execute_at": "2026-09-09T18:44:30.450287Z",
+      "execute_at": "2026-09-09T19:46:03.921586Z",
       "expected_gain": 0.0,
       "fallback": "Let the offer lapse and keep him listed.",
       "kind": "accept_offer",
