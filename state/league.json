@@ -1,6 +1,6 @@
 {
   "cash": 48060508,
-  "fetched_at": "2026-09-10T10:52:38.057472Z",
+  "fetched_at": "2026-09-10T13:52:45.860397Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -508,44 +508,6 @@
         "role": "unknown",
         "status": "ok",
         "total_points": 4
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 18686127,
-      "expires_at": "2026-09-10T22:05:42+02:00",
-      "market_id": "23113083",
-      "player": {
-        "average_points": 4.5,
-        "club": "",
-        "club_id": "2",
-        "id": "2326",
-        "market_value": 17824532,
-        "name": "Koke",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 18
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 4222295,
-      "expires_at": "2026-09-10T16:56:49+02:00",
-      "market_id": "31092283",
-      "player": {
-        "average_points": 1.75,
-        "club": "",
-        "club_id": "18",
-        "id": "2458",
-        "market_value": 3874784,
-        "name": "Diakhaby",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "doubtful",
-        "total_points": 7
       },
       "seller": null
     },
@@ -1076,7 +1038,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "unknown",
-            "status": "injured",
+            "status": "ok",
             "total_points": 1
           },
           "player_team_id": "33575856",
@@ -1605,27 +1567,6 @@
           "team_id": "38601985"
         },
         {
-          "buyout_clause": 9601490,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 1.75,
-            "club": "Valencia CF",
-            "club_id": "18",
-            "id": "2458",
-            "market_value": 3874784,
-            "name": "Diakhaby",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "unknown",
-            "status": "doubtful",
-            "total_points": 7
-          },
-          "player_team_id": "34020005",
-          "team_id": "38601985"
-        },
-        {
           "buyout_clause": 20394086,
           "clause_locked_until": "2026-09-14T10:25:16+02:00",
           "is_shielded": false,
@@ -1689,7 +1630,7 @@
           "team_id": "38601985"
         },
         {
-          "buyout_clause": 15669548,
+          "buyout_clause": 25669548,
           "clause_locked_until": "2026-09-10T17:48:14+02:00",
           "is_shielded": false,
           "manager": "SuperrGio",
@@ -1770,27 +1711,6 @@
             "total_points": 10
           },
           "player_team_id": "34020001",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 27052031,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 4.5,
-            "club": "Atlético de Madrid",
-            "club_id": "2",
-            "id": "2326",
-            "market_value": 17824532,
-            "name": "Koke",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 18
-          },
-          "player_team_id": "34020002",
           "team_id": "38601985"
         },
         {
@@ -3584,7 +3504,7 @@
             "points_by_matchday": {},
             "position": "FW",
             "role": "unknown",
-            "status": "injured",
+            "status": "ok",
             "total_points": 0
           },
           "player_team_id": "60993872",
