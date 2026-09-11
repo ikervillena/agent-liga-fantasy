@@ -1,6 +1,6 @@
 {
-  "cash": 18940960,
-  "fetched_at": "2026-09-11T18:41:12.993949Z",
+  "cash": 19040960,
+  "fetched_at": "2026-09-11T20:02:51.553479Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -533,7 +533,7 @@
   ],
   "matchday": {
     "closes_at": "2026-09-15T03:00:00+02:00",
-    "is_live": false,
+    "is_live": true,
     "number": 5,
     "opens_at": "2026-09-11T21:00:00+02:00"
   },
@@ -638,7 +638,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "unknown",
-            "status": "ok",
+            "status": "injured",
             "total_points": 15
           },
           "player_team_id": "33524471",
