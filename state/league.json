@@ -1,6 +1,6 @@
 {
   "cash": 18940960,
-  "fetched_at": "2026-09-11T09:32:05.822338Z",
+  "fetched_at": "2026-09-11T10:49:29.335128Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -250,7 +250,7 @@
       "expires_at": "2026-09-11T17:48:00+02:00",
       "market_id": "185196244",
       "player": {
-        "average_points": 0.0,
+        "average_points": 2.5,
         "club": "",
         "club_id": "16",
         "id": "2869",
@@ -260,7 +260,7 @@
         "position": "CO",
         "role": "unknown",
         "status": "ok",
-        "total_points": 0
+        "total_points": 10
       },
       "seller": null
     },
@@ -269,7 +269,7 @@
       "expires_at": "2026-09-11T17:48:00+02:00",
       "market_id": "185196246",
       "player": {
-        "average_points": 0.0,
+        "average_points": 1.25,
         "club": "",
         "club_id": "26",
         "id": "2991",
@@ -279,7 +279,7 @@
         "position": "MF",
         "role": "unknown",
         "status": "ok",
-        "total_points": 0
+        "total_points": 5
       },
       "seller": null
     },
@@ -326,7 +326,7 @@
       "expires_at": "2026-09-11T17:48:00+02:00",
       "market_id": "185196252",
       "player": {
-        "average_points": 0.0,
+        "average_points": 11.5,
         "club": "",
         "club_id": "15",
         "id": "3103",
@@ -336,7 +336,7 @@
         "position": "FW",
         "role": "unknown",
         "status": "ok",
-        "total_points": 0
+        "total_points": 46
       },
       "seller": null
     },
@@ -478,7 +478,7 @@
       "expires_at": "2026-09-11T17:48:00+02:00",
       "market_id": "185196260",
       "player": {
-        "average_points": 0.0,
+        "average_points": 3.4,
         "club": "",
         "club_id": "16",
         "id": "1989",
@@ -488,7 +488,7 @@
         "position": "DF",
         "role": "unknown",
         "status": "ok",
-        "total_points": 0
+        "total_points": 17
       },
       "seller": null
     },
@@ -625,7 +625,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 2.5,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3008",
@@ -635,7 +635,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 10
           },
           "player_team_id": "43478912",
           "team_id": "38575843"
@@ -667,7 +667,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 0.5,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2912",
@@ -677,7 +677,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 2
           },
           "player_team_id": "33524472",
           "team_id": "38575843"
@@ -751,7 +751,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 5.33,
             "club": "Málaga CF",
             "club_id": "12",
             "id": "3036",
@@ -761,7 +761,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 0
+            "total_points": 16
           },
           "player_team_id": "33524465",
           "team_id": "38575843"
@@ -793,7 +793,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 1.0,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "2480",
@@ -803,7 +803,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "doubtful",
-            "total_points": 0
+            "total_points": 4
           },
           "player_team_id": "33524464",
           "team_id": "38575843"
@@ -814,7 +814,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 12.0,
+            "average_points": 7.5,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2384",
@@ -824,7 +824,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 12
+            "total_points": 30
           },
           "player_team_id": "33524466",
           "team_id": "38575843"
@@ -856,7 +856,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.75,
             "club": "Villarreal CF",
             "club_id": "20",
             "id": "2504",
@@ -866,7 +866,7 @@
             "position": "FW",
             "role": "rotation",
             "status": "ok",
-            "total_points": 0
+            "total_points": 15
           },
           "player_team_id": "33524460",
           "team_id": "38575843"
@@ -877,7 +877,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 6.75,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3002",
@@ -887,7 +887,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 27
           },
           "player_team_id": "33524462",
           "team_id": "38575843"
@@ -898,7 +898,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.0,
+            "average_points": 7.0,
             "club": "Levante UD",
             "club_id": "11",
             "id": "2302",
@@ -908,7 +908,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 21
           },
           "player_team_id": "54326183",
           "team_id": "38575843"
@@ -970,7 +970,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 0.0,
+            "average_points": 5.0,
             "club": "Athletic Club",
             "club_id": "3",
             "id": "74",
@@ -980,7 +980,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 0
+            "total_points": 15
           },
           "player_team_id": "33575854",
           "team_id": "38578570"
@@ -1075,7 +1075,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 0.0,
+            "average_points": 5.5,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "3069",
@@ -1085,7 +1085,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 0
+            "total_points": 22
           },
           "player_team_id": "33575849",
           "team_id": "38578570"
@@ -1273,7 +1273,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 2.0,
+            "average_points": 5.75,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2552",
@@ -1283,7 +1283,7 @@
             "position": "DF",
             "role": "important",
             "status": "ok",
-            "total_points": 2
+            "total_points": 23
           },
           "player_team_id": "56354874",
           "team_id": "38578209"
@@ -1336,7 +1336,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 0.0,
+            "average_points": 7.0,
             "club": "Athletic Club",
             "club_id": "3",
             "id": "2549",
@@ -1346,7 +1346,7 @@
             "position": "MF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 0
+            "total_points": 28
           },
           "player_team_id": "69513991",
           "team_id": "38578209"
@@ -1357,7 +1357,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 0.0,
+            "average_points": 5.25,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2383",
@@ -1367,7 +1367,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 21
           },
           "player_team_id": "33569026",
           "team_id": "38578209"
@@ -1399,7 +1399,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.5,
             "club": "Levante UD",
             "club_id": "11",
             "id": "2303",
@@ -1409,7 +1409,7 @@
             "position": "FW",
             "role": "important",
             "status": "ok",
-            "total_points": 0
+            "total_points": 14
           },
           "player_team_id": "33569023",
           "team_id": "38578209"
@@ -1420,7 +1420,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 0.0,
+            "average_points": 4.75,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2217",
@@ -1430,7 +1430,7 @@
             "position": "FW",
             "role": "important",
             "status": "ok",
-            "total_points": 0
+            "total_points": 19
           },
           "player_team_id": "45292951",
           "team_id": "38578209"
@@ -1618,7 +1618,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.0,
+            "average_points": 2.5,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "2622",
@@ -1628,7 +1628,7 @@
             "position": "MF",
             "role": "important",
             "status": "ok",
-            "total_points": 0
+            "total_points": 10
           },
           "player_team_id": "34020001",
           "team_id": "38601985"
@@ -1639,7 +1639,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.0,
+            "average_points": 5.0,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2453",
@@ -1649,7 +1649,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 20
           },
           "player_team_id": "70936198",
           "team_id": "38601985"
@@ -1660,7 +1660,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.0,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "1730",
@@ -1670,7 +1670,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 12
           },
           "player_team_id": "51677029",
           "team_id": "38601985"
@@ -1681,7 +1681,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.0,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2577",
@@ -1691,7 +1691,7 @@
             "position": "FW",
             "role": "important",
             "status": "ok",
-            "total_points": 0
+            "total_points": 12
           },
           "player_team_id": "46931675",
           "team_id": "38601985"
@@ -1723,7 +1723,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 10.33,
+            "average_points": 12.0,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3108",
@@ -1733,7 +1733,7 @@
             "position": "FW",
             "role": "key",
             "status": "ok",
-            "total_points": 31
+            "total_points": 48
           },
           "player_team_id": "50210251",
           "team_id": "38601985"
@@ -1879,7 +1879,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 0.0,
+            "average_points": 5.25,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2429",
@@ -1889,7 +1889,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 21
           },
           "player_team_id": "40853517",
           "team_id": "38611081"
@@ -1921,7 +1921,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 9.5,
+            "average_points": 8.0,
             "club": "Levante UD",
             "club_id": "11",
             "id": "3164",
@@ -1931,7 +1931,7 @@
             "position": "MF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 19
+            "total_points": 24
           },
           "player_team_id": "65028618",
           "team_id": "38611081"
@@ -1942,7 +1942,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 0.0,
+            "average_points": 4.75,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3125",
@@ -1952,7 +1952,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 0
+            "total_points": 19
           },
           "player_team_id": "34189656",
           "team_id": "38611081"
@@ -2203,7 +2203,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.75,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "2464",
@@ -2213,7 +2213,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 15
           },
           "player_team_id": "33451338",
           "team_id": "38571766"
@@ -2611,7 +2611,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 0.0,
+            "average_points": 2.25,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1103",
@@ -2621,7 +2621,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 9
           },
           "player_team_id": "68136304",
           "team_id": "38622146"
@@ -2725,7 +2725,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 0.0,
+            "average_points": 0.75,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2378",
@@ -2735,7 +2735,7 @@
             "position": "GK",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 3
           },
           "player_team_id": "38208945",
           "team_id": "38572271"
@@ -2746,7 +2746,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.0,
             "club": "Villarreal CF",
             "club_id": "20",
             "id": "2467",
@@ -2756,7 +2756,7 @@
             "position": "GK",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 12
           },
           "player_team_id": "38208951",
           "team_id": "38572271"
@@ -2809,7 +2809,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 0.0,
+            "average_points": 4.5,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "1930",
@@ -2819,7 +2819,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 0
+            "total_points": 18
           },
           "player_team_id": "56338306",
           "team_id": "38572271"
@@ -2851,7 +2851,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 4.67,
+            "average_points": 4.0,
             "club": "FC Barcelona",
             "club_id": "4",
             "id": "2353",
@@ -2861,7 +2861,7 @@
             "position": "DF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 14
+            "total_points": 16
           },
           "player_team_id": "60993873",
           "team_id": "38572271"
@@ -2872,7 +2872,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 0.0,
+            "average_points": 6.75,
             "club": "Athletic Club",
             "club_id": "3",
             "id": "2318",
@@ -2882,7 +2882,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 0
+            "total_points": 27
           },
           "player_team_id": "39570976",
           "team_id": "38572271"
@@ -2935,7 +2935,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.0,
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2448",
@@ -2945,7 +2945,7 @@
             "position": "FW",
             "role": "rotation",
             "status": "ok",
-            "total_points": 0
+            "total_points": 15
           },
           "player_team_id": "33460098",
           "team_id": "38572271"
@@ -3196,7 +3196,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.25,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3148",
@@ -3289,7 +3289,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 0.0,
+            "average_points": 6.5,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "230",
@@ -3299,7 +3299,7 @@
             "position": "GK",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 26
           },
           "player_team_id": "39570974",
           "team_id": "38583054"
@@ -3415,7 +3415,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 0.0,
+            "average_points": 0.4,
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2446",
@@ -3425,7 +3425,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 2
           },
           "player_team_id": "51677030",
           "team_id": "38583054"
@@ -3478,7 +3478,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 0.0,
+            "average_points": 4.0,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1029",
@@ -3488,7 +3488,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 16
           },
           "player_team_id": "33661930",
           "team_id": "38583054"
