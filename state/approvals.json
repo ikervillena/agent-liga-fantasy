@@ -1620,6 +1620,38 @@
     "state": "pending"
   },
   {
+    "asked_at": "2026-09-11T09:31:27.682912Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-11T09:31:27.682912Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 11276009,
+      "conditions": {
+        "average_points": 5.75,
+        "player_status": "ok",
+        "price": 11276009,
+        "price_tolerance": 0.05,
+        "squad_role": "important"
+      },
+      "execute_at": "2026-09-12T22:31:57+02:00",
+      "expected_gain": 5.75,
+      "fallback": "Skip if the budget went elsewhere; the window reopens in fourteen days.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "2418",
+      "player_name": "Marc Roca",
+      "rationale": "Marc Roca (Real Betis) averages 5.75 against 0.00 from Canales. 1.96 M per point of average, held by Zubikaraiander."
+    },
+    "state": "pending"
+  },
+  {
     "asked_at": "2026-09-08T23:51:02.626655Z",
     "decided_at": null,
     "history": [
