@@ -1,6 +1,6 @@
 {
   "cash": 18940960,
-  "fetched_at": "2026-09-11T10:49:29.335128Z",
+  "fetched_at": "2026-09-11T13:50:18.411230Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -489,6 +489,25 @@
         "role": "unknown",
         "status": "ok",
         "total_points": 17
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 18438679,
+      "expires_at": "2026-09-14T14:31:20+02:00",
+      "market_id": "31730981",
+      "player": {
+        "average_points": 3.2,
+        "club": "",
+        "club_id": "16",
+        "id": "2443",
+        "market_value": 18438679,
+        "name": "Aramburu",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 16
       },
       "seller": null
     },
@@ -1079,7 +1098,7 @@
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "3069",
-            "market_value": 16996072,
+            "market_value": 19546753,
             "name": "Blanco",
             "points_by_matchday": {},
             "position": "MF",
@@ -3242,7 +3261,7 @@
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2923",
-            "market_value": 12858326,
+            "market_value": 9343202,
             "name": "Raúl Moro",
             "points_by_matchday": {},
             "position": "FW",
