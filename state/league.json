@@ -1,6 +1,6 @@
 {
   "cash": 19040960,
-  "fetched_at": "2026-09-12T10:17:56.290352Z",
+  "fetched_at": "2026-09-12T13:00:55.350122Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -574,271 +574,10 @@
   "teams": [
     {
       "cash": null,
-      "id": "38578209",
-      "manager": "UAlzaga",
-      "points": 150,
-      "rank": 1,
-      "squad": [
-        {
-          "buyout_clause": 43355304,
-          "clause_locked_until": "2026-09-15T17:48:20+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 0.0,
-            "club": "Deportivo Alavés",
-            "club_id": "21",
-            "id": "988",
-            "market_value": 21193545,
-            "name": "Sivera",
-            "points_by_matchday": {},
-            "position": "GK",
-            "role": "key",
-            "status": "ok",
-            "total_points": 0
-          },
-          "player_team_id": "57711975",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 43649575,
-          "clause_locked_until": "2026-09-13T17:48:06+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 0.0,
-            "club": "Atlético de Madrid",
-            "club_id": "2",
-            "id": "67",
-            "market_value": 40981255,
-            "name": "Marcos Llorente",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 0
-          },
-          "player_team_id": "54326199",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 19679936,
-          "clause_locked_until": "2026-08-30T18:32:47+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 5.2,
-            "club": "Sevilla FC",
-            "club_id": "17",
-            "id": "1147",
-            "market_value": 12102884,
-            "name": "Juan Iglesias",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "key",
-            "status": "ok",
-            "total_points": 26
-          },
-          "player_team_id": "33569033",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 12279938,
-          "clause_locked_until": "2026-09-14T22:00:57+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 5.75,
-            "club": "Deportivo Alavés",
-            "club_id": "21",
-            "id": "2552",
-            "market_value": 12279938,
-            "name": "Jonny Otto",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "important",
-            "status": "ok",
-            "total_points": 23
-          },
-          "player_team_id": "56354874",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 25949386,
-          "clause_locked_until": "2026-08-30T18:32:47+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 0.67,
-            "club": "Málaga CF",
-            "club_id": "12",
-            "id": "3140",
-            "market_value": 10139154,
-            "name": "Juan Cruz",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "rotation",
-            "status": "ok",
-            "total_points": 2
-          },
-          "player_team_id": "33569028",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 8000000,
-          "clause_locked_until": "2026-09-23T17:48:34+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 7.0,
-            "club": "Athletic Club",
-            "club_id": "3",
-            "id": "2549",
-            "market_value": 5463645,
-            "name": "Navarro",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "rotation",
-            "status": "ok",
-            "total_points": 28
-          },
-          "player_team_id": "69513991",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 80056100,
-          "clause_locked_until": "2026-08-30T18:32:47+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 5.25,
-            "club": "Rayo Vallecano",
-            "club_id": "14",
-            "id": "2383",
-            "market_value": 23331860,
-            "name": "Pathé I. Ciss",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 21
-          },
-          "player_team_id": "33569026",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 11427113,
-          "clause_locked_until": "2026-08-30T18:32:47+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 3.25,
-            "club": "C.A. Osasuna",
-            "club_id": "13",
-            "id": "637",
-            "market_value": 7638702,
-            "name": "Moncayola",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "key",
-            "status": "ok",
-            "total_points": 13
-          },
-          "player_team_id": "33569025",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 11930168,
-          "clause_locked_until": "2026-08-30T18:32:47+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 3.6,
-            "club": "Celta",
-            "club_id": "6",
-            "id": "2492",
-            "market_value": 9373965,
-            "name": "Iago Aspas",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "rotation",
-            "status": "ok",
-            "total_points": 18
-          },
-          "player_team_id": "33569024",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 20000000,
-          "clause_locked_until": "2026-09-25T17:48:16+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 9.0,
-            "club": "Deportivo Alavés",
-            "club_id": "21",
-            "id": "2600",
-            "market_value": 15055652,
-            "name": "Mariano",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "impact_sub",
-            "status": "ok",
-            "total_points": 36
-          },
-          "player_team_id": "71974878",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 12273443,
-          "clause_locked_until": "2026-08-30T18:32:47+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 3.5,
-            "club": "Levante UD",
-            "club_id": "11",
-            "id": "2303",
-            "market_value": 5648760,
-            "name": "I. Romero",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "important",
-            "status": "ok",
-            "total_points": 14
-          },
-          "player_team_id": "33569023",
-          "team_id": "38578209"
-        },
-        {
-          "buyout_clause": 46000000,
-          "clause_locked_until": "2026-09-07T17:48:26+02:00",
-          "is_shielded": false,
-          "manager": "UAlzaga",
-          "player": {
-            "average_points": 4.75,
-            "club": "Real Betis",
-            "club_id": "5",
-            "id": "2217",
-            "market_value": 36696623,
-            "name": "Cucho",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "important",
-            "status": "ok",
-            "total_points": 19
-          },
-          "player_team_id": "45292951",
-          "team_id": "38578209"
-        }
-      ]
-    },
-    {
-      "cash": null,
       "id": "38575843",
       "manager": "vaalenxiaa",
-      "points": 149,
-      "rank": 2,
+      "points": 155,
+      "rank": 1,
       "squad": [
         {
           "buyout_clause": 27382547,
@@ -846,7 +585,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 6.75,
+            "average_points": 5.8,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "1219",
@@ -856,7 +595,7 @@
             "position": "GK",
             "role": "important",
             "status": "ok",
-            "total_points": 27
+            "total_points": 29
           },
           "player_team_id": "33524459",
           "team_id": "38575843"
@@ -930,7 +669,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 2.5,
+            "average_points": 2.0,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3008",
@@ -1182,7 +921,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 6.75,
+            "average_points": 6.2,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3002",
@@ -1192,7 +931,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 27
+            "total_points": 31
           },
           "player_team_id": "33524462",
           "team_id": "38575843"
@@ -1238,6 +977,267 @@
           },
           "player_team_id": "33524461",
           "team_id": "38575843"
+        }
+      ]
+    },
+    {
+      "cash": null,
+      "id": "38578209",
+      "manager": "UAlzaga",
+      "points": 154,
+      "rank": 2,
+      "squad": [
+        {
+          "buyout_clause": 43355304,
+          "clause_locked_until": "2026-09-15T17:48:20+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 1.0,
+            "club": "Deportivo Alavés",
+            "club_id": "21",
+            "id": "988",
+            "market_value": 21193545,
+            "name": "Sivera",
+            "points_by_matchday": {},
+            "position": "GK",
+            "role": "key",
+            "status": "ok",
+            "total_points": 1
+          },
+          "player_team_id": "57711975",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 43649575,
+          "clause_locked_until": "2026-09-13T17:48:06+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 0.0,
+            "club": "Atlético de Madrid",
+            "club_id": "2",
+            "id": "67",
+            "market_value": 40981255,
+            "name": "Marcos Llorente",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 0
+          },
+          "player_team_id": "54326199",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 19679936,
+          "clause_locked_until": "2026-08-30T18:32:47+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 5.2,
+            "club": "Sevilla FC",
+            "club_id": "17",
+            "id": "1147",
+            "market_value": 12102884,
+            "name": "Juan Iglesias",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "key",
+            "status": "ok",
+            "total_points": 26
+          },
+          "player_team_id": "33569033",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 12279938,
+          "clause_locked_until": "2026-09-14T22:00:57+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 5.0,
+            "club": "Deportivo Alavés",
+            "club_id": "21",
+            "id": "2552",
+            "market_value": 12279938,
+            "name": "Jonny Otto",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "important",
+            "status": "ok",
+            "total_points": 25
+          },
+          "player_team_id": "56354874",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 25949386,
+          "clause_locked_until": "2026-08-30T18:32:47+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 0.67,
+            "club": "Málaga CF",
+            "club_id": "12",
+            "id": "3140",
+            "market_value": 10139154,
+            "name": "Juan Cruz",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 2
+          },
+          "player_team_id": "33569028",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 8000000,
+          "clause_locked_until": "2026-09-23T17:48:34+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 7.0,
+            "club": "Athletic Club",
+            "club_id": "3",
+            "id": "2549",
+            "market_value": 5463645,
+            "name": "Navarro",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 28
+          },
+          "player_team_id": "69513991",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 80056100,
+          "clause_locked_until": "2026-08-30T18:32:47+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 5.25,
+            "club": "Rayo Vallecano",
+            "club_id": "14",
+            "id": "2383",
+            "market_value": 23331860,
+            "name": "Pathé I. Ciss",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 21
+          },
+          "player_team_id": "33569026",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 11427113,
+          "clause_locked_until": "2026-08-30T18:32:47+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 3.25,
+            "club": "C.A. Osasuna",
+            "club_id": "13",
+            "id": "637",
+            "market_value": 7638702,
+            "name": "Moncayola",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "key",
+            "status": "ok",
+            "total_points": 13
+          },
+          "player_team_id": "33569025",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 11930168,
+          "clause_locked_until": "2026-08-30T18:32:47+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 3.6,
+            "club": "Celta",
+            "club_id": "6",
+            "id": "2492",
+            "market_value": 9373965,
+            "name": "Iago Aspas",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 18
+          },
+          "player_team_id": "33569024",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 20000000,
+          "clause_locked_until": "2026-09-25T17:48:16+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 7.4,
+            "club": "Deportivo Alavés",
+            "club_id": "21",
+            "id": "2600",
+            "market_value": 15055652,
+            "name": "Mariano",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "impact_sub",
+            "status": "ok",
+            "total_points": 37
+          },
+          "player_team_id": "71974878",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 12273443,
+          "clause_locked_until": "2026-08-30T18:32:47+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 3.5,
+            "club": "Levante UD",
+            "club_id": "11",
+            "id": "2303",
+            "market_value": 5648760,
+            "name": "I. Romero",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "important",
+            "status": "ok",
+            "total_points": 14
+          },
+          "player_team_id": "33569023",
+          "team_id": "38578209"
+        },
+        {
+          "buyout_clause": 46000000,
+          "clause_locked_until": "2026-09-07T17:48:26+02:00",
+          "is_shielded": false,
+          "manager": "UAlzaga",
+          "player": {
+            "average_points": 4.75,
+            "club": "Real Betis",
+            "club_id": "5",
+            "id": "2217",
+            "market_value": 36696623,
+            "name": "Cucho",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "important",
+            "status": "ok",
+            "total_points": 19
+          },
+          "player_team_id": "45292951",
+          "team_id": "38578209"
         }
       ]
     },
@@ -1380,7 +1380,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 5.5,
+            "average_points": 4.4,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "3069",
@@ -1506,7 +1506,7 @@
       "cash": null,
       "id": "38601985",
       "manager": "SuperrGio",
-      "points": 140,
+      "points": 142,
       "rank": 4,
       "squad": [
         {
@@ -1620,7 +1620,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 2.75,
+            "average_points": 2.2,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3011",
@@ -1788,7 +1788,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.8,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2577",
@@ -1798,7 +1798,7 @@
             "position": "FW",
             "role": "important",
             "status": "ok",
-            "total_points": 12
+            "total_points": 14
           },
           "player_team_id": "46931675",
           "team_id": "38601985"
@@ -1902,7 +1902,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 0.0,
+            "average_points": 1.0,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3261",
@@ -1912,7 +1912,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 1
           },
           "player_team_id": "70823160",
           "team_id": "38622146"
@@ -2175,7 +2175,7 @@
       "cash": null,
       "id": "38571766",
       "manager": "EkainGoñi_",
-      "points": 130,
+      "points": 133,
       "rank": 6,
       "squad": [
         {
@@ -2352,7 +2352,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.2,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2474",
@@ -2362,7 +2362,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 12
+            "total_points": 11
           },
           "player_team_id": "57711973",
           "team_id": "38571766"
@@ -2478,7 +2478,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 5.5,
+            "average_points": 5.2,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3152",
@@ -2488,7 +2488,7 @@
             "position": "FW",
             "role": "important",
             "status": "ok",
-            "total_points": 22
+            "total_points": 26
           },
           "player_team_id": "63652495",
           "team_id": "38571766"
@@ -2520,7 +2520,7 @@
       "cash": null,
       "id": "38611081",
       "manager": "iker_villena",
-      "points": 129,
+      "points": 131,
       "rank": 7,
       "squad": [
         {
@@ -2571,7 +2571,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 3.67,
+            "average_points": 2.75,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3026",
@@ -2718,7 +2718,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 4.75,
+            "average_points": 4.0,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3125",
@@ -2728,7 +2728,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 19
+            "total_points": 20
           },
           "player_team_id": "34189656",
           "team_id": "38611081"
@@ -2781,7 +2781,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 0.0,
+            "average_points": 1.0,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2932",
@@ -2791,7 +2791,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 1
           },
           "player_team_id": "55054262",
           "team_id": "38611081"
@@ -3387,7 +3387,7 @@
       "cash": null,
       "id": "38583054",
       "manager": "Zubikaraiander",
-      "points": 71,
+      "points": 73,
       "rank": 10,
       "squad": [
         {
@@ -3417,7 +3417,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 7.75,
+            "average_points": 6.6,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "1337",
@@ -3427,7 +3427,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 31
+            "total_points": 33
           },
           "player_team_id": "56404224",
           "team_id": "38583054"
