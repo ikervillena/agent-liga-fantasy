@@ -2849,6 +2849,11 @@
         "at": "2026-09-12T18:35:04.033981Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -2874,7 +2879,7 @@
       "player_name": "Roberto",
       "rationale": "Roberto averages 9.20 with no clause premium and comes off his lock on 13/09 23:09. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-12T18:35:04.033981Z",
@@ -2884,6 +2889,11 @@
         "at": "2026-09-12T18:35:04.033981Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -2909,7 +2919,7 @@
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 3.40 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-12T18:35:04.033981Z",
@@ -2919,6 +2929,11 @@
         "at": "2026-09-12T18:35:04.033981Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -2944,7 +2959,7 @@
       "player_name": "Ángel Pérez",
       "rationale": "Ángel Pérez averages 8.60 with no clause premium and comes off his lock on 13/09 23:26. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-12T18:35:04.033981Z",
@@ -2954,6 +2969,11 @@
         "at": "2026-09-12T18:35:04.033981Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -2976,7 +2996,7 @@
       "player_name": "Aramburu",
       "rationale": "+5.5% over market value for a player outside the eleven (average 3.20)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-12T18:35:04.033981Z",
@@ -2986,6 +3006,11 @@
         "at": "2026-09-12T18:35:04.033981Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -3008,7 +3033,7 @@
       "player_name": "Adama Traoré",
       "rationale": "+9.5% over market value for a player outside the eleven (average 1.00)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-08T23:51:02.626655Z",
@@ -3135,6 +3160,143 @@
       "player_id": "2418",
       "player_name": "Marc Roca",
       "rationale": "Marc Roca (Real Betis) averages 5.75 against 0.00 from Canales. 1.96 M per point of average, held by Zubikaraiander."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-12T20:58:08.682535Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 4320608,
+      "conditions": {
+        "average_points": 9.2,
+        "player_status": "ok",
+        "price": 4320608,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-12T20:58:08.682535Z",
+      "expected_gain": 9.2,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 8641216,
+        "target_clause": 35000000
+      },
+      "player_id": "2520",
+      "player_name": "Roberto",
+      "rationale": "Roberto averages 9.20 with no clause premium and comes off his lock on 13/09 23:09. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-12T20:58:08.682535Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 1710475,
+      "conditions": {
+        "average_points": 3.4,
+        "player_status": "ok",
+        "price": 1710475,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-12T20:58:08.682535Z",
+      "expected_gain": 3.4,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 3420950,
+        "target_clause": 5131425
+      },
+      "player_id": "3026",
+      "player_name": "Pablo Ramón",
+      "rationale": "Pablo Ramón averages 3.40 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-12T20:58:08.682535Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 8725636,
+      "conditions": {
+        "average_points": 8.6,
+        "player_status": "ok",
+        "price": 8725636,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-12T20:58:08.682535Z",
+      "expected_gain": 8.6,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 17451273,
+        "target_clause": 34000000
+      },
+      "player_id": "2932",
+      "player_name": "Ángel Pérez",
+      "rationale": "Ángel Pérez averages 8.60 with no clause premium and comes off his lock on 13/09 23:26. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-12T20:58:08.682535Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-12T20:58:08.682535Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 14717004,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 14717004,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-12T20:58:08.682535Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "66631170",
+      "offer_id": "98131517",
+      "payload": {},
+      "player_id": "3249",
+      "player_name": "Adama Traoré",
+      "rationale": "+9.5% over market value for a player outside the eleven (average 1.00)."
     },
     "state": "pending"
   },

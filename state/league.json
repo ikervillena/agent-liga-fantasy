@@ -1,6 +1,6 @@
 {
   "cash": -27774796,
-  "fetched_at": "2026-09-12T18:35:42.748626Z",
+  "fetched_at": "2026-09-12T20:58:47.449538Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -658,7 +658,7 @@
       "cash": null,
       "id": "38575843",
       "manager": "vaalenxiaa",
-      "points": 173,
+      "points": 171,
       "rank": 1,
       "squad": [
         {
@@ -940,7 +940,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 7.5,
+            "average_points": 5.6,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2384",
@@ -950,7 +950,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 30
+            "total_points": 28
           },
           "player_team_id": "33524466",
           "team_id": "38575843"
@@ -1066,7 +1066,7 @@
       "cash": null,
       "id": "38578209",
       "manager": "UAlzaga",
-      "points": 167,
+      "points": 166,
       "rank": 2,
       "squad": [
         {
@@ -1201,7 +1201,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 5.25,
+            "average_points": 4.0,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2383",
@@ -1211,7 +1211,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 21
+            "total_points": 20
           },
           "player_team_id": "33569026",
           "team_id": "38578209"
@@ -1651,7 +1651,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.25,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "3129",
@@ -2282,12 +2282,12 @@
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "3088",
-            "market_value": 50864032,
+            "market_value": 46815756,
             "name": "Julián Alvarez",
             "points_by_matchday": {},
             "position": "FW",
             "role": "unknown",
-            "status": "ok",
+            "status": "doubtful",
             "total_points": 7
           },
           "player_team_id": "73063499",
@@ -2632,7 +2632,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 0.75,
+            "average_points": 0.6,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2378",
@@ -2905,7 +2905,7 @@
       "cash": null,
       "id": "38622146",
       "manager": "Barandi07",
-      "points": 135,
+      "points": 136,
       "rank": 8,
       "squad": [
         {
@@ -3124,7 +3124,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.25,
+            "average_points": 2.0,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1103",
@@ -3134,7 +3134,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 9
+            "total_points": 10
           },
           "player_team_id": "68136304",
           "team_id": "38622146"
@@ -3553,7 +3553,7 @@
       "cash": null,
       "id": "38583054",
       "manager": "Zubikaraiander",
-      "points": 75,
+      "points": 85,
       "rank": 10,
       "squad": [
         {
@@ -3562,7 +3562,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 6.5,
+            "average_points": 6.0,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "230",
@@ -3572,7 +3572,7 @@
             "position": "GK",
             "role": "unknown",
             "status": "ok",
-            "total_points": 26
+            "total_points": 30
           },
           "player_team_id": "39570974",
           "team_id": "38583054"
@@ -3625,7 +3625,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 0.0,
+            "average_points": 9.0,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "2533",
@@ -3635,7 +3635,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 9
           },
           "player_team_id": "33661933",
           "team_id": "38583054"
@@ -3751,7 +3751,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 4.0,
+            "average_points": 2.6,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1029",
@@ -3761,7 +3761,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 16
+            "total_points": 13
           },
           "player_team_id": "33661930",
           "team_id": "38583054"
