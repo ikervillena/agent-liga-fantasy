@@ -1,6 +1,6 @@
 {
   "cash": 19040960,
-  "fetched_at": "2026-09-12T05:05:46.263174Z",
+  "fetched_at": "2026-09-12T09:22:37.486745Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -269,7 +269,7 @@
       "expires_at": "2026-09-12T17:48:00+02:00",
       "market_id": "191325510",
       "player": {
-        "average_points": 3.75,
+        "average_points": 5.0,
         "club": "",
         "club_id": "15",
         "id": "3093",
@@ -307,7 +307,7 @@
       "expires_at": "2026-09-12T17:48:00+02:00",
       "market_id": "191325518",
       "player": {
-        "average_points": 1.0,
+        "average_points": 0.0,
         "club": "",
         "club_id": "3",
         "id": "1484",
@@ -317,7 +317,7 @@
         "position": "FW",
         "role": "unknown",
         "status": "injured",
-        "total_points": 4
+        "total_points": 0
       },
       "seller": null
     },
@@ -535,7 +535,7 @@
       "expires_at": "2026-09-15T05:50:35+02:00",
       "market_id": "34649606",
       "player": {
-        "average_points": 3.6,
+        "average_points": 2.5,
         "club": "",
         "club_id": "18",
         "id": "1991",
@@ -545,7 +545,7 @@
         "position": "DF",
         "role": "unknown",
         "status": "injured",
-        "total_points": 18
+        "total_points": 5
       },
       "seller": null
     }
@@ -585,17 +585,17 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 9.5,
+            "average_points": 0.0,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "988",
-            "market_value": 43355304,
+            "market_value": 21193545,
             "name": "Sivera",
             "points_by_matchday": {},
             "position": "GK",
             "role": "key",
             "status": "ok",
-            "total_points": 38
+            "total_points": 0
           },
           "player_team_id": "57711975",
           "team_id": "38578209"
@@ -606,7 +606,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 5.0,
+            "average_points": 0.0,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "67",
@@ -616,7 +616,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 20
+            "total_points": 0
           },
           "player_team_id": "54326199",
           "team_id": "38578209"
@@ -631,7 +631,7 @@
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "1147",
-            "market_value": 11614558,
+            "market_value": 12102884,
             "name": "Juan Iglesias",
             "points_by_matchday": {},
             "position": "DF",
@@ -669,17 +669,17 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 1.0,
+            "average_points": 0.67,
             "club": "Málaga CF",
             "club_id": "12",
             "id": "3140",
-            "market_value": 7985913,
+            "market_value": 10139154,
             "name": "Juan Cruz",
             "points_by_matchday": {},
             "position": "MF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 4
+            "total_points": 2
           },
           "player_team_id": "33569028",
           "team_id": "38578209"
@@ -757,7 +757,7 @@
             "club": "Celta",
             "club_id": "6",
             "id": "2492",
-            "market_value": 6670613,
+            "market_value": 9373965,
             "name": "Iago Aspas",
             "points_by_matchday": {},
             "position": "FW",
@@ -909,7 +909,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 3.6,
+            "average_points": 2.5,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "1991",
@@ -919,7 +919,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "injured",
-            "total_points": 18
+            "total_points": 5
           },
           "player_team_id": "33524471",
           "team_id": "38575843"
@@ -934,7 +934,7 @@
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3008",
-            "market_value": 2661843,
+            "market_value": 2679724,
             "name": "Manu Hernando",
             "points_by_matchday": {},
             "position": "DF",
@@ -1014,17 +1014,17 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 3.4,
+            "average_points": 0.0,
             "club": "Celta",
             "club_id": "6",
             "id": "2604",
-            "market_value": 6853758,
+            "market_value": 7376314,
             "name": "Carreira",
             "points_by_matchday": {},
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 17
+            "total_points": 0
           },
           "player_team_id": "38486362",
           "team_id": "38575843"
@@ -1060,7 +1060,7 @@
             "club": "Málaga CF",
             "club_id": "12",
             "id": "3036",
-            "market_value": 11511835,
+            "market_value": 10493038,
             "name": "Dani Lorenzo",
             "points_by_matchday": {},
             "position": "MF",
@@ -1186,7 +1186,7 @@
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3002",
-            "market_value": 29666792,
+            "market_value": 21006807,
             "name": "Iñigo Vicente",
             "points_by_matchday": {},
             "position": "FW",
@@ -1279,7 +1279,7 @@
             "club": "Athletic Club",
             "club_id": "3",
             "id": "74",
-            "market_value": 13767328,
+            "market_value": 15630945,
             "name": "Yuri",
             "points_by_matchday": {},
             "position": "DF",
@@ -1317,7 +1317,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 3.25,
+            "average_points": 0.0,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2414",
@@ -1327,7 +1327,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 13
+            "total_points": 0
           },
           "player_team_id": "33575855",
           "team_id": "38578570"
@@ -1359,7 +1359,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 4.0,
+            "average_points": 0.0,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2338",
@@ -1369,7 +1369,7 @@
             "position": "MF",
             "role": "important",
             "status": "injured",
-            "total_points": 12
+            "total_points": 0
           },
           "player_team_id": "33575851",
           "team_id": "38578570"
@@ -1405,7 +1405,7 @@
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2621",
-            "market_value": 3050395,
+            "market_value": 9213125,
             "name": "Gorrotxa",
             "points_by_matchday": {},
             "position": "MF",
@@ -1422,17 +1422,17 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 4.0,
+            "average_points": 2.67,
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2372",
-            "market_value": 4457211,
+            "market_value": 3959689,
             "name": "Herrera",
             "points_by_matchday": {},
             "position": "MF",
             "role": "important",
             "status": "ok",
-            "total_points": 20
+            "total_points": 8
           },
           "player_team_id": "56954004",
           "team_id": "38578570"
@@ -1443,7 +1443,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 15.75,
+            "average_points": 0.0,
             "club": "FC Barcelona",
             "club_id": "4",
             "id": "2522",
@@ -1453,7 +1453,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 63
+            "total_points": 0
           },
           "player_team_id": "38208949",
           "team_id": "38578570"
@@ -1540,7 +1540,7 @@
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2975",
-            "market_value": 2256738,
+            "market_value": 6233782,
             "name": "A. Ferllo",
             "points_by_matchday": {},
             "position": "GK",
@@ -1578,7 +1578,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 2.8,
+            "average_points": 1.33,
             "club": "Celta",
             "club_id": "6",
             "id": "2390",
@@ -1588,7 +1588,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 14
+            "total_points": 4
           },
           "player_team_id": "46907952",
           "team_id": "38601985"
@@ -1603,12 +1603,12 @@
             "club": "Villarreal CF",
             "club_id": "20",
             "id": "2470",
-            "market_value": 14944268,
+            "market_value": 18921860,
             "name": "Foyth",
             "points_by_matchday": {},
             "position": "DF",
             "role": "important",
-            "status": "injured",
+            "status": "doubtful",
             "total_points": 16
           },
           "player_team_id": "55361981",
@@ -1662,7 +1662,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.25,
+            "average_points": 0.0,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2940",
@@ -1672,7 +1672,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 1
+            "total_points": 0
           },
           "player_team_id": "34019999",
           "team_id": "38601985"
@@ -1750,7 +1750,7 @@
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2453",
-            "market_value": 8506990,
+            "market_value": 7026183,
             "name": "Agoumé",
             "points_by_matchday": {},
             "position": "MF",
@@ -1809,7 +1809,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 1.0,
+            "average_points": 0.0,
             "club": "Celta",
             "club_id": "6",
             "id": "3071",
@@ -1819,7 +1819,7 @@
             "position": "FW",
             "role": "impact_sub",
             "status": "ok",
-            "total_points": 2
+            "total_points": 0
           },
           "player_team_id": "35044855",
           "team_id": "38601985"
@@ -1902,7 +1902,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 4.0,
+            "average_points": 0.0,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3261",
@@ -1912,7 +1912,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 4
+            "total_points": 0
           },
           "player_team_id": "70823160",
           "team_id": "38622146"
@@ -1923,17 +1923,17 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 1.0,
+            "average_points": 0.0,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "3197",
-            "market_value": 31520212,
+            "market_value": 36318441,
             "name": "Cuti Romero",
             "points_by_matchday": {},
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 2
+            "total_points": 0
           },
           "player_team_id": "43478914",
           "team_id": "38622146"
@@ -1944,7 +1944,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.5,
+            "average_points": 2.67,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2990",
@@ -1954,7 +1954,7 @@
             "position": "DF",
             "role": "important",
             "status": "ok",
-            "total_points": 10
+            "total_points": 8
           },
           "player_team_id": "34388657",
           "team_id": "38622146"
@@ -1969,7 +1969,7 @@
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2963",
-            "market_value": 3646456,
+            "market_value": 3060114,
             "name": "Quagliata",
             "points_by_matchday": {},
             "position": "DF",
@@ -2011,7 +2011,7 @@
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2178",
-            "market_value": 475611,
+            "market_value": 497594,
             "name": "F. Garcés",
             "points_by_matchday": {},
             "position": "DF",
@@ -2028,7 +2028,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 5.4,
+            "average_points": 0.0,
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2444",
@@ -2038,7 +2038,7 @@
             "position": "MF",
             "role": "important",
             "status": "ok",
-            "total_points": 27
+            "total_points": 0
           },
           "player_team_id": "34388653",
           "team_id": "38622146"
@@ -2095,7 +2095,7 @@
             "club": "Valencia CF",
             "club_id": "18",
             "id": "2612",
-            "market_value": 3510070,
+            "market_value": 5420996,
             "name": "Ugrinic",
             "points_by_matchday": {},
             "position": "MF",
@@ -2158,7 +2158,7 @@
             "club": "Celta",
             "club_id": "6",
             "id": "2603",
-            "market_value": 7515937,
+            "market_value": 8144197,
             "name": "Ferran Jutglà",
             "points_by_matchday": {},
             "position": "FW",
@@ -2184,17 +2184,17 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 7.75,
+            "average_points": 0.0,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "2507",
-            "market_value": 40042160,
+            "market_value": 24749307,
             "name": "Dmitrovic",
             "points_by_matchday": {},
             "position": "GK",
             "role": "key",
             "status": "ok",
-            "total_points": 31
+            "total_points": 0
           },
           "player_team_id": "55918607",
           "team_id": "38571766"
@@ -2236,7 +2236,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 26
+            "total_points": 13
           },
           "player_team_id": "50210249",
           "team_id": "38571766"
@@ -2247,17 +2247,17 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 5.5,
+            "average_points": 6.33,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "2924",
-            "market_value": 27892212,
+            "market_value": 30259267,
             "name": "Zaid Romero",
             "points_by_matchday": {},
             "position": "DF",
             "role": "key",
-            "status": "suspended",
-            "total_points": 22
+            "status": "ok",
+            "total_points": 19
           },
           "player_team_id": "45292954",
           "team_id": "38571766"
@@ -2289,7 +2289,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 4.25,
+            "average_points": 5.0,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "2661",
@@ -2299,7 +2299,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 17
+            "total_points": 15
           },
           "player_team_id": "55392360",
           "team_id": "38571766"
@@ -2310,17 +2310,17 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 6.5,
+            "average_points": 6.67,
             "club": "Levante UD",
             "club_id": "11",
             "id": "2300",
-            "market_value": 18387928,
+            "market_value": 13676864,
             "name": "Dela",
             "points_by_matchday": {},
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 26
+            "total_points": 20
           },
           "player_team_id": "68136305",
           "team_id": "38571766"
@@ -2440,7 +2440,7 @@
             "club": "Getafe CF",
             "club_id": "9",
             "id": "3133",
-            "market_value": 12159019,
+            "market_value": 12358860,
             "name": "Mangala",
             "points_by_matchday": {},
             "position": "MF",
@@ -2499,7 +2499,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 2.75,
+            "average_points": 3.0,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "3129",
@@ -2509,7 +2509,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 11
+            "total_points": 9
           },
           "player_team_id": "33451335",
           "team_id": "38571766"
@@ -2529,7 +2529,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 11.25,
+            "average_points": 0.0,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2541",
@@ -2539,7 +2539,7 @@
             "position": "GK",
             "role": "unknown",
             "status": "ok",
-            "total_points": 45
+            "total_points": 0
           },
           "player_team_id": "68774976",
           "team_id": "38611081"
@@ -2550,17 +2550,17 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 4.25,
+            "average_points": 2.33,
             "club": "Málaga CF",
             "club_id": "12",
             "id": "3054",
-            "market_value": 1651722,
+            "market_value": 1050795,
             "name": "Recio",
             "points_by_matchday": {},
             "position": "DF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 17
+            "total_points": 7
           },
           "player_team_id": "38208946",
           "team_id": "38611081"
@@ -2571,7 +2571,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 3.25,
+            "average_points": 3.67,
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3026",
@@ -2581,7 +2581,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 13
+            "total_points": 11
           },
           "player_team_id": "55021118",
           "team_id": "38611081"
@@ -2592,17 +2592,17 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 9.0,
+            "average_points": 9.67,
             "club": "FC Barcelona",
             "club_id": "4",
             "id": "2843",
-            "market_value": 19268269,
+            "market_value": 5525486,
             "name": "Xavi Espart",
             "points_by_matchday": {},
             "position": "DF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 36
+            "total_points": 29
           },
           "player_team_id": "70925633",
           "team_id": "38611081"
@@ -2613,7 +2613,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 7.33,
+            "average_points": 7.5,
             "club": "Levante UD",
             "club_id": "11",
             "id": "3174",
@@ -2623,7 +2623,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 22
+            "total_points": 15
           },
           "player_team_id": "69936997",
           "team_id": "38611081"
@@ -2638,7 +2638,7 @@
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2443",
-            "market_value": 18547914,
+            "market_value": 16616467,
             "name": "Aramburu",
             "points_by_matchday": {},
             "position": "DF",
@@ -2701,7 +2701,7 @@
             "club": "Levante UD",
             "club_id": "11",
             "id": "3164",
-            "market_value": 6631883,
+            "market_value": 4124767,
             "name": "Bardeli",
             "points_by_matchday": {},
             "position": "MF",
@@ -2722,7 +2722,7 @@
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3125",
-            "market_value": 27375954,
+            "market_value": 26548342,
             "name": "Canales",
             "points_by_matchday": {},
             "position": "MF",
@@ -2743,7 +2743,7 @@
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3249",
-            "market_value": 16101453,
+            "market_value": 13436470,
             "name": "Adama Traoré",
             "points_by_matchday": {},
             "position": "FW",
@@ -2760,7 +2760,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 6.0,
+            "average_points": 0.0,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2962",
@@ -2770,7 +2770,7 @@
             "position": "FW",
             "role": "important",
             "status": "ok",
-            "total_points": 24
+            "total_points": 0
           },
           "player_team_id": "65028610",
           "team_id": "38611081"
@@ -2781,7 +2781,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 10.0,
+            "average_points": 0.0,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2932",
@@ -2791,7 +2791,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 40
+            "total_points": 0
           },
           "player_team_id": "55054262",
           "team_id": "38611081"
@@ -2836,7 +2836,7 @@
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2378",
-            "market_value": 1381515,
+            "market_value": 1089835,
             "name": "D. Cárdenas",
             "points_by_matchday": {},
             "position": "GK",
@@ -2857,7 +2857,7 @@
             "club": "Villarreal CF",
             "club_id": "20",
             "id": "2467",
-            "market_value": 28320380,
+            "market_value": 32341217,
             "name": "Júnior R.",
             "points_by_matchday": {},
             "position": "GK",
@@ -3000,7 +3000,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 4.25,
+            "average_points": 0.0,
             "club": "Athletic Club",
             "club_id": "3",
             "id": "1070",
@@ -3010,7 +3010,7 @@
             "position": "MF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 17
+            "total_points": 0
           },
           "player_team_id": "33460102",
           "team_id": "38572271"
@@ -3021,17 +3021,17 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 3.8,
+            "average_points": 3.0,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "856",
-            "market_value": 7211470,
+            "market_value": 7059595,
             "name": "Guridi",
             "points_by_matchday": {},
             "position": "MF",
             "role": "important",
             "status": "ok",
-            "total_points": 19
+            "total_points": 9
           },
           "player_team_id": "54326184",
           "team_id": "38572271"
@@ -3046,7 +3046,7 @@
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2448",
-            "market_value": 7556286,
+            "market_value": 10370226,
             "name": "Oskarsson",
             "points_by_matchday": {},
             "position": "FW",
@@ -3063,17 +3063,17 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 1.4,
+            "average_points": 1.67,
             "club": "Celta",
             "club_id": "6",
             "id": "2654",
-            "market_value": 918173,
-            "name": "El Abdellaoui",
+            "market_value": 1075026,
+            "name": "El-Abdellaoui",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "impact_sub",
+            "role": "unknown",
             "status": "ok",
-            "total_points": 7
+            "total_points": 5
           },
           "player_team_id": "48504828",
           "team_id": "38572271"
@@ -3097,12 +3097,12 @@
             "club": "R. Racing Club",
             "club_id": "49",
             "id": "3018",
-            "market_value": 1433729,
+            "market_value": 2254355,
             "name": "Eriksson",
             "points_by_matchday": {},
             "position": "GK",
             "role": "bench",
-            "status": "doubtful",
+            "status": "ok",
             "total_points": 0
           },
           "player_team_id": "33459869",
@@ -3118,7 +3118,7 @@
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "265",
-            "market_value": 10306569,
+            "market_value": 10716471,
             "name": "Zubeldia",
             "points_by_matchday": {},
             "position": "DF",
@@ -3177,7 +3177,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 2.75,
+            "average_points": 4.33,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "3138",
@@ -3187,7 +3187,7 @@
             "position": "DF",
             "role": "rotation",
             "status": "suspended",
-            "total_points": 11
+            "total_points": 13
           },
           "player_team_id": "33459881",
           "team_id": "38572259"
@@ -3202,7 +3202,7 @@
             "club": "Getafe CF",
             "club_id": "9",
             "id": "3150",
-            "market_value": 15779312,
+            "market_value": 16044783,
             "name": "Mojica",
             "points_by_matchday": {},
             "position": "DF",
@@ -3219,17 +3219,17 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 1.75,
+            "average_points": 0.0,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "2431",
-            "market_value": 8450842,
+            "market_value": 15236814,
             "name": "Brahim",
             "points_by_matchday": {},
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 7
+            "total_points": 0
           },
           "player_team_id": "33459877",
           "team_id": "38572259"
@@ -3282,7 +3282,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 4.25,
+            "average_points": 4.0,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "3135",
@@ -3292,7 +3292,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 17
+            "total_points": 12
           },
           "player_team_id": "33459875",
           "team_id": "38572259"
@@ -3324,7 +3324,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 1.4,
+            "average_points": 0.0,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "1191",
@@ -3334,7 +3334,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 7
+            "total_points": 0
           },
           "player_team_id": "33459872",
           "team_id": "38572259"
@@ -3345,7 +3345,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 1.0,
+            "average_points": 0.0,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2923",
@@ -3355,7 +3355,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 4
+            "total_points": 0
           },
           "player_team_id": "33459871",
           "team_id": "38572259"
@@ -3366,7 +3366,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 5.5,
+            "average_points": 3.67,
             "club": "Elche CF",
             "club_id": "7",
             "id": "3147",
@@ -3376,7 +3376,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 22
+            "total_points": 11
           },
           "player_team_id": "33459870",
           "team_id": "38572259"
@@ -3459,7 +3459,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 2.25,
+            "average_points": 0.0,
             "club": "Real Madrid",
             "club_id": "15",
             "id": "2533",
@@ -3469,7 +3469,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 9
+            "total_points": 0
           },
           "player_team_id": "33661933",
           "team_id": "38583054"
@@ -3480,17 +3480,17 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 3.25,
+            "average_points": 0.0,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2568",
-            "market_value": 927415,
+            "market_value": 751097,
             "name": "Youssef",
             "points_by_matchday": {},
             "position": "DF",
             "role": "impact_sub",
             "status": "ok",
-            "total_points": 13
+            "total_points": 0
           },
           "player_team_id": "53469066",
           "team_id": "38583054"
@@ -3501,17 +3501,17 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 5.0,
+            "average_points": 0.0,
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "2772",
-            "market_value": 30857364,
+            "market_value": 31388484,
             "name": "C. Soler",
             "points_by_matchday": {},
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 25
+            "total_points": 0
           },
           "player_team_id": "45292952",
           "team_id": "38583054"
@@ -3547,7 +3547,7 @@
             "club": "Real Betis",
             "club_id": "5",
             "id": "2418",
-            "market_value": 11680919,
+            "market_value": 4642873,
             "name": "Marc Roca",
             "points_by_matchday": {},
             "position": "MF",
@@ -3568,7 +3568,7 @@
             "club": "Real Sociedad",
             "club_id": "16",
             "id": "1215",
-            "market_value": 6504234,
+            "market_value": 8076206,
             "name": "Turrientes",
             "points_by_matchday": {},
             "position": "MF",
@@ -3627,7 +3627,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 5.25,
+            "average_points": 6.0,
             "club": "FC Barcelona",
             "club_id": "4",
             "id": "3209",
@@ -3637,7 +3637,7 @@
             "position": "FW",
             "role": "impact_sub",
             "status": "ok",
-            "total_points": 21
+            "total_points": 18
           },
           "player_team_id": "48504830",
           "team_id": "38583054"

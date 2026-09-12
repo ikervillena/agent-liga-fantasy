@@ -1,6 +1,6 @@
 {
   "cash": 19040960,
-  "fetched_at": "2026-09-12T00:40:27.059760Z",
+  "fetched_at": "2026-09-12T05:05:46.263174Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -527,6 +527,25 @@
         "role": "unknown",
         "status": "ok",
         "total_points": 1
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 17000000,
+      "expires_at": "2026-09-15T05:50:35+02:00",
+      "market_id": "34649606",
+      "player": {
+        "average_points": 3.6,
+        "club": "",
+        "club_id": "18",
+        "id": "1991",
+        "market_value": 10031999,
+        "name": "Tárrega",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "injured",
+        "total_points": 18
       },
       "seller": null
     }
