@@ -1,6 +1,6 @@
 {
   "cash": -27774796,
-  "fetched_at": "2026-09-13T17:41:31.540464Z",
+  "fetched_at": "2026-09-13T18:16:12.704573Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -288,7 +288,7 @@
       "expires_at": "2026-09-14T17:48:00+02:00",
       "market_id": "203823723",
       "player": {
-        "average_points": 6.25,
+        "average_points": 6.0,
         "club": "",
         "club_id": "9",
         "id": "184",
@@ -298,7 +298,7 @@
         "position": "GK",
         "role": "unknown",
         "status": "ok",
-        "total_points": 25
+        "total_points": 24
       },
       "seller": null
     },
@@ -1790,7 +1790,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 3.75,
+            "average_points": 4.0,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "2661",
@@ -1800,7 +1800,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 15
+            "total_points": 16
           },
           "player_team_id": "55392360",
           "team_id": "38571766"
@@ -1958,7 +1958,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 2.2,
+            "average_points": 2.0,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "3154",
@@ -1968,7 +1968,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 11
+            "total_points": 10
           },
           "player_team_id": "33451333",
           "team_id": "38571766"
@@ -2019,10 +2019,376 @@
     },
     {
       "cash": null,
+      "id": "38601985",
+      "manager": "SuperrGio",
+      "points": 165,
+      "rank": 5,
+      "squad": [
+        {
+          "buyout_clause": 39643121,
+          "clause_locked_until": "2026-09-10T17:48:14+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 7.0,
+            "club": "Celta",
+            "club_id": "6",
+            "id": "2713",
+            "market_value": 39643121,
+            "name": "Ionut Radu",
+            "points_by_matchday": {},
+            "position": "GK",
+            "role": "key",
+            "status": "ok",
+            "total_points": 42
+          },
+          "player_team_id": "50210252",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 7750765,
+          "clause_locked_until": "2026-08-30T21:53:53+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 0.0,
+            "club": "RC Deportivo",
+            "club_id": "26",
+            "id": "2975",
+            "market_value": 2195926,
+            "name": "A. Ferllo",
+            "points_by_matchday": {},
+            "position": "GK",
+            "role": "bench",
+            "status": "ok",
+            "total_points": 0
+          },
+          "player_team_id": "34019995",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 18500000,
+          "clause_locked_until": "2026-09-25T17:48:16+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.4,
+            "club": "Real Sociedad",
+            "club_id": "16",
+            "id": "1989",
+            "market_value": 15933155,
+            "name": "Sergio Gómez",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 17
+          },
+          "player_team_id": "71974880",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 19000000,
+          "clause_locked_until": "2026-09-08T17:33:49+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 2.33,
+            "club": "Celta",
+            "club_id": "6",
+            "id": "2390",
+            "market_value": 10523603,
+            "name": "Starfelt",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 14
+          },
+          "player_team_id": "46907952",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 20394086,
+          "clause_locked_until": "2026-09-14T10:25:16+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 5.33,
+            "club": "Villarreal CF",
+            "club_id": "20",
+            "id": "2470",
+            "market_value": 14547164,
+            "name": "Foyth",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "important",
+            "status": "injured",
+            "total_points": 16
+          },
+          "player_team_id": "55361981",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 9290828,
+          "clause_locked_until": "2026-08-30T21:53:53+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.0,
+            "club": "R. Racing Club",
+            "club_id": "49",
+            "id": "3011",
+            "market_value": 6927983,
+            "name": "Jorge Salinas",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "key",
+            "status": "ok",
+            "total_points": 15
+          },
+          "player_team_id": "34020007",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 20878583,
+          "clause_locked_until": "2026-08-30T21:53:53+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.0,
+            "club": "RC Deportivo",
+            "club_id": "26",
+            "id": "2985",
+            "market_value": 14968475,
+            "name": "Noubi",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "key",
+            "status": "ok",
+            "total_points": 15
+          },
+          "player_team_id": "34020004",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 4415678,
+          "clause_locked_until": "2026-08-30T21:53:53+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 0.0,
+            "club": "Real Betis",
+            "club_id": "5",
+            "id": "2940",
+            "market_value": 1367234,
+            "name": "Fidalgo",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 0
+          },
+          "player_team_id": "34019999",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 16000001,
+          "clause_locked_until": "2026-09-25T17:48:16+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 4.25,
+            "club": "Real Betis",
+            "club_id": "5",
+            "id": "3199",
+            "market_value": 14075767,
+            "name": "F. Bernal",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 17
+          },
+          "player_team_id": "71974879",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 18389392,
+          "clause_locked_until": "2026-09-07T17:48:26+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 6.0,
+            "club": "RCD Espanyol",
+            "club_id": "8",
+            "id": "3161",
+            "market_value": 14821453,
+            "name": "Javi Hernández",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 24
+          },
+          "player_team_id": "45292950",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 12917795,
+          "clause_locked_until": "2026-08-30T21:53:53+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.4,
+            "club": "RCD Espanyol",
+            "club_id": "8",
+            "id": "2622",
+            "market_value": 4297404,
+            "name": "Urko",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "important",
+            "status": "ok",
+            "total_points": 17
+          },
+          "player_team_id": "34020001",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 13733135,
+          "clause_locked_until": "2026-09-24T18:51:10+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 5.4,
+            "club": "Sevilla FC",
+            "club_id": "17",
+            "id": "2453",
+            "market_value": 8852811,
+            "name": "Agoumé",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 27
+          },
+          "player_team_id": "70936198",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 5844528,
+          "clause_locked_until": "2026-09-11T17:48:11+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.0,
+            "club": "C.A. Osasuna",
+            "club_id": "13",
+            "id": "1730",
+            "market_value": 1922887,
+            "name": "Iker Muñoz",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 15
+          },
+          "player_team_id": "51677029",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 1988653,
+          "clause_locked_until": "2026-09-26T17:48:14+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 5.0,
+            "club": "Elche CF",
+            "club_id": "7",
+            "id": "2941",
+            "market_value": 1988653,
+            "name": "T. Morente",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "unknown",
+            "status": "ok",
+            "total_points": 25
+          },
+          "player_team_id": "73063504",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 5099693,
+          "clause_locked_until": "2026-09-08T17:48:22+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.4,
+            "club": "Deportivo Alavés",
+            "club_id": "21",
+            "id": "2577",
+            "market_value": 5099693,
+            "name": "A. Rebbach",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "important",
+            "status": "ok",
+            "total_points": 17
+          },
+          "player_team_id": "46931675",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 27000000,
+          "clause_locked_until": "2026-08-31T17:48:15+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 0.0,
+            "club": "Celta",
+            "club_id": "6",
+            "id": "3071",
+            "market_value": 14500218,
+            "name": "B. Iglesias",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "impact_sub",
+            "status": "ok",
+            "total_points": 0
+          },
+          "player_team_id": "35044855",
+          "team_id": "38601985"
+        },
+        {
+          "buyout_clause": 90955185,
+          "clause_locked_until": "2026-09-10T17:48:14+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 10.8,
+            "club": "RC Deportivo",
+            "club_id": "26",
+            "id": "3108",
+            "market_value": 90955185,
+            "name": "Aubameyang",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "key",
+            "status": "ok",
+            "total_points": 54
+          },
+          "player_team_id": "50210251",
+          "team_id": "38601985"
+        }
+      ]
+    },
+    {
+      "cash": null,
       "id": "38578570",
       "manager": "corcon 4",
       "points": 161,
-      "rank": 5,
+      "rank": 6,
       "squad": [
         {
           "buyout_clause": 7086948,
@@ -2280,375 +2646,9 @@
     },
     {
       "cash": null,
-      "id": "38601985",
-      "manager": "SuperrGio",
-      "points": 160,
-      "rank": 6,
-      "squad": [
-        {
-          "buyout_clause": 39643121,
-          "clause_locked_until": "2026-09-10T17:48:14+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 7.0,
-            "club": "Celta",
-            "club_id": "6",
-            "id": "2713",
-            "market_value": 39643121,
-            "name": "Ionut Radu",
-            "points_by_matchday": {},
-            "position": "GK",
-            "role": "key",
-            "status": "ok",
-            "total_points": 42
-          },
-          "player_team_id": "50210252",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 7750765,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 0.0,
-            "club": "RC Deportivo",
-            "club_id": "26",
-            "id": "2975",
-            "market_value": 2195926,
-            "name": "A. Ferllo",
-            "points_by_matchday": {},
-            "position": "GK",
-            "role": "bench",
-            "status": "ok",
-            "total_points": 0
-          },
-          "player_team_id": "34019995",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 18500000,
-          "clause_locked_until": "2026-09-25T17:48:16+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 3.4,
-            "club": "Real Sociedad",
-            "club_id": "16",
-            "id": "1989",
-            "market_value": 15933155,
-            "name": "Sergio Gómez",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 17
-          },
-          "player_team_id": "71974880",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 19000000,
-          "clause_locked_until": "2026-09-08T17:33:49+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 2.33,
-            "club": "Celta",
-            "club_id": "6",
-            "id": "2390",
-            "market_value": 10523603,
-            "name": "Starfelt",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 14
-          },
-          "player_team_id": "46907952",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 20394086,
-          "clause_locked_until": "2026-09-14T10:25:16+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 5.33,
-            "club": "Villarreal CF",
-            "club_id": "20",
-            "id": "2470",
-            "market_value": 14547164,
-            "name": "Foyth",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "important",
-            "status": "injured",
-            "total_points": 16
-          },
-          "player_team_id": "55361981",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 9290828,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 3.0,
-            "club": "R. Racing Club",
-            "club_id": "49",
-            "id": "3011",
-            "market_value": 6927983,
-            "name": "Jorge Salinas",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "key",
-            "status": "ok",
-            "total_points": 15
-          },
-          "player_team_id": "34020007",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 20878583,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 2.8,
-            "club": "RC Deportivo",
-            "club_id": "26",
-            "id": "2985",
-            "market_value": 14968475,
-            "name": "Noubi",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "key",
-            "status": "ok",
-            "total_points": 14
-          },
-          "player_team_id": "34020004",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 4415678,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 0.0,
-            "club": "Real Betis",
-            "club_id": "5",
-            "id": "2940",
-            "market_value": 1367234,
-            "name": "Fidalgo",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 0
-          },
-          "player_team_id": "34019999",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 16000001,
-          "clause_locked_until": "2026-09-25T17:48:16+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 4.25,
-            "club": "Real Betis",
-            "club_id": "5",
-            "id": "3199",
-            "market_value": 14075767,
-            "name": "F. Bernal",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "rotation",
-            "status": "ok",
-            "total_points": 17
-          },
-          "player_team_id": "71974879",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 18389392,
-          "clause_locked_until": "2026-09-07T17:48:26+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 6.0,
-            "club": "RCD Espanyol",
-            "club_id": "8",
-            "id": "3161",
-            "market_value": 14821453,
-            "name": "Javi Hernández",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 24
-          },
-          "player_team_id": "45292950",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 12917795,
-          "clause_locked_until": "2026-08-30T21:53:53+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 3.4,
-            "club": "RCD Espanyol",
-            "club_id": "8",
-            "id": "2622",
-            "market_value": 4297404,
-            "name": "Urko",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "important",
-            "status": "ok",
-            "total_points": 17
-          },
-          "player_team_id": "34020001",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 13733135,
-          "clause_locked_until": "2026-09-24T18:51:10+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 5.4,
-            "club": "Sevilla FC",
-            "club_id": "17",
-            "id": "2453",
-            "market_value": 8852811,
-            "name": "Agoumé",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 27
-          },
-          "player_team_id": "70936198",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 5844528,
-          "clause_locked_until": "2026-09-11T17:48:11+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 3.0,
-            "club": "C.A. Osasuna",
-            "club_id": "13",
-            "id": "1730",
-            "market_value": 1922887,
-            "name": "Iker Muñoz",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 15
-          },
-          "player_team_id": "51677029",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 1988653,
-          "clause_locked_until": "2026-09-26T17:48:14+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 5.0,
-            "club": "Elche CF",
-            "club_id": "7",
-            "id": "2941",
-            "market_value": 1988653,
-            "name": "T. Morente",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 25
-          },
-          "player_team_id": "73063504",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 5099693,
-          "clause_locked_until": "2026-09-08T17:48:22+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 3.4,
-            "club": "Deportivo Alavés",
-            "club_id": "21",
-            "id": "2577",
-            "market_value": 5099693,
-            "name": "A. Rebbach",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "important",
-            "status": "ok",
-            "total_points": 17
-          },
-          "player_team_id": "46931675",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 27000000,
-          "clause_locked_until": "2026-08-31T17:48:15+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 0.0,
-            "club": "Celta",
-            "club_id": "6",
-            "id": "3071",
-            "market_value": 14500218,
-            "name": "B. Iglesias",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "impact_sub",
-            "status": "ok",
-            "total_points": 0
-          },
-          "player_team_id": "35044855",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 90955185,
-          "clause_locked_until": "2026-09-10T17:48:14+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 10.0,
-            "club": "RC Deportivo",
-            "club_id": "26",
-            "id": "3108",
-            "market_value": 90955185,
-            "name": "Aubameyang",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "key",
-            "status": "ok",
-            "total_points": 50
-          },
-          "player_team_id": "50210251",
-          "team_id": "38601985"
-        }
-      ]
-    },
-    {
-      "cash": null,
       "id": "38622146",
       "manager": "Barandi07",
-      "points": 160,
+      "points": 161,
       "rank": 7,
       "squad": [
         {
@@ -2741,7 +2741,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.0,
+            "average_points": 2.25,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2990",
@@ -2751,7 +2751,7 @@
             "position": "DF",
             "role": "important",
             "status": "ok",
-            "total_points": 8
+            "total_points": 9
           },
           "player_team_id": "34388657",
           "team_id": "38622146"
