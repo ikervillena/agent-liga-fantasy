@@ -1,6 +1,6 @@
 {
   "cash": -27774796,
-  "fetched_at": "2026-09-13T05:24:07.085994Z",
+  "fetched_at": "2026-09-13T10:29:49.267476Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -569,44 +569,6 @@
       "seller": null
     },
     {
-      "asking_price": 17000000,
-      "expires_at": "2026-09-15T16:40:35+02:00",
-      "market_id": "34961082",
-      "player": {
-        "average_points": 1.0,
-        "club": "",
-        "club_id": "26",
-        "id": "3249",
-        "market_value": 15960173,
-        "name": "Adama Traoré",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 1
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 20000000,
-      "expires_at": "2026-09-15T16:41:34+02:00",
-      "market_id": "34962426",
-      "player": {
-        "average_points": 3.2,
-        "club": "",
-        "club_id": "16",
-        "id": "2443",
-        "market_value": 18643702,
-        "name": "Aramburu",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 16
-      },
-      "seller": null
-    },
-    {
       "asking_price": 6660207,
       "expires_at": "2026-09-15T20:07:06+02:00",
       "market_id": "35166423",
@@ -635,22 +597,10 @@
   "my_team_id": "38611081",
   "offers": [
     {
-      "amount": 17532846,
-      "market_id": "34189663",
-      "offer_id": "98131519",
-      "player_name": "Aramburu"
-    },
-    {
       "amount": 28118366,
       "market_id": "34189656",
       "offer_id": "98131521",
       "player_name": "Canales"
-    },
-    {
-      "amount": 14717004,
-      "market_id": "66631170",
-      "offer_id": "98131517",
-      "player_name": "Adama Traoré"
     }
   ],
   "teams": [
