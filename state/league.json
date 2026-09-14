@@ -1,6 +1,6 @@
 {
   "cash": 4306686,
-  "fetched_at": "2026-09-14T04:59:58.746882Z",
+  "fetched_at": "2026-09-14T10:32:04.867740Z",
   "fixtures": [
     {
       "away_club_id": "5",
@@ -603,6 +603,25 @@
         "role": "unknown",
         "status": "ok",
         "total_points": 28
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 7343817,
+      "expires_at": "2026-09-17T08:22:04+02:00",
+      "market_id": "36654816",
+      "player": {
+        "average_points": 2.5,
+        "club": "",
+        "club_id": "16",
+        "id": "2448",
+        "market_value": 7343817,
+        "name": "Oskarsson",
+        "points_by_matchday": {},
+        "position": "FW",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 15
       },
       "seller": null
     }
@@ -1311,7 +1330,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 0.0,
+            "average_points": 11.25,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2541",
@@ -1321,7 +1340,7 @@
             "position": "GK",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 45
           },
           "player_team_id": "68774976",
           "team_id": "38611081"
@@ -2451,7 +2470,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.0,
+            "average_points": 0.25,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2940",
@@ -2461,7 +2480,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 1
           },
           "player_team_id": "34019999",
           "team_id": "38601985"
@@ -2619,7 +2638,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 0.0,
+            "average_points": 1.0,
             "club": "Celta",
             "club_id": "6",
             "id": "3071",
@@ -2629,7 +2648,7 @@
             "position": "FW",
             "role": "impact_sub",
             "status": "ok",
-            "total_points": 0
+            "total_points": 2
           },
           "player_team_id": "35044855",
           "team_id": "38601985"
@@ -2733,7 +2752,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 0.0,
+            "average_points": 3.25,
             "club": "Real Betis",
             "club_id": "5",
             "id": "2414",
@@ -2743,7 +2762,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 13
           },
           "player_team_id": "33575855",
           "team_id": "38578570"
@@ -2775,7 +2794,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 0.0,
+            "average_points": 4.0,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2338",
@@ -2785,7 +2804,7 @@
             "position": "MF",
             "role": "important",
             "status": "injured",
-            "total_points": 0
+            "total_points": 12
           },
           "player_team_id": "33575851",
           "team_id": "38578570"
@@ -3546,7 +3565,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "rotation",
-            "status": "suspended",
+            "status": "injured",
             "total_points": 13
           },
           "player_team_id": "33459881",
@@ -3684,7 +3703,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 0.0,
+            "average_points": 1.4,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "1191",
@@ -3694,7 +3713,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 0
+            "total_points": 7
           },
           "player_team_id": "33459872",
           "team_id": "38572259"
