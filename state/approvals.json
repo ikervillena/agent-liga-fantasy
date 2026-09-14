@@ -4976,6 +4976,11 @@
         "at": "2026-09-14T19:52:48.935456Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5001,7 +5006,7 @@
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 3.40 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T19:52:48.935456Z",
@@ -5011,6 +5016,11 @@
         "at": "2026-09-14T19:52:48.935456Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5033,7 +5043,7 @@
       "player_name": "Aramburu",
       "rationale": "+1.6% over market value for a player outside the eleven (average 3.17)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-13T19:49:26.446035Z",
@@ -5043,6 +5053,11 @@
         "at": "2026-09-13T19:49:26.446035Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5065,7 +5080,7 @@
       "player_name": "El Hilali",
       "rationale": "El Hilali (RCD Espanyol) averages 6.40 against 4.00 from Recio. 6.23 M per point of average, held by benatoo02."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-08T23:51:02.626655Z",
@@ -5075,6 +5090,11 @@
         "at": "2026-09-08T23:51:02.626655Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5097,7 +5117,7 @@
       "player_name": "Jonny Otto",
       "rationale": "Jonny Otto (Deportivo Alavés) averages 5.75 against 3.20 from Aramburu. 4.50 M per point of average, held by UAlzaga."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T10:55:54.914854Z",
@@ -5107,6 +5127,11 @@
         "at": "2026-09-09T10:55:54.914854Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5129,7 +5154,7 @@
       "player_name": "Jonny Otto",
       "rationale": "Jonny Otto (Deportivo Alavés) averages 5.75 against 3.20 from Aramburu. 4.50 M per point of average, held by UAlzaga."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T12:58:12.042334Z",
@@ -5139,6 +5164,11 @@
         "at": "2026-09-09T12:58:12.042334Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5161,7 +5191,7 @@
       "player_name": "Jonny Otto",
       "rationale": "Jonny Otto (Deportivo Alavés) averages 5.75 against 3.20 from Aramburu. 4.50 M per point of average, held by UAlzaga."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T22:16:16.351861Z",
@@ -5171,6 +5201,11 @@
         "at": "2026-09-09T22:16:16.351861Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5193,7 +5228,7 @@
       "player_name": "Jonny Otto",
       "rationale": "Jonny Otto (Deportivo Alavés) averages 5.75 against 3.25 from Pablo Ramón. 4.70 M per point of average, held by UAlzaga."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-10T22:26:40.456470Z",
@@ -5203,6 +5238,11 @@
         "at": "2026-09-10T22:26:40.456470Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5225,7 +5265,7 @@
       "player_name": "Jonny Otto",
       "rationale": "Jonny Otto (Deportivo Alavés) averages 5.75 against 4.25 from Recio. 8.02 M per point of average, held by UAlzaga."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-11T22:35:25.291944Z",
@@ -5235,6 +5275,11 @@
         "at": "2026-09-11T22:35:25.291944Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -5257,7 +5302,7 @@
       "player_name": "Jonny Otto",
       "rationale": "Jonny Otto (Deportivo Alavés) averages 5.75 against 4.25 from Recio. 8.19 M per point of average, held by UAlzaga."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-09T22:16:16.351861Z",
@@ -5288,6 +5333,73 @@
       "player_id": "1337",
       "player_name": "Tenaglia",
       "rationale": "Tenaglia (Deportivo Alavés) averages 7.75 against 3.25 from Pablo Ramón. 7.31 M per point of average, held by Zubikaraiander."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-14T20:35:53.100355Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 1807896,
+      "conditions": {
+        "average_points": 3.4,
+        "player_status": "ok",
+        "price": 1807896,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-14T20:35:53.100355Z",
+      "expected_gain": 3.4,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 3615792,
+        "target_clause": 5423688
+      },
+      "player_id": "3026",
+      "player_name": "Pablo Ramón",
+      "rationale": "Pablo Ramón averages 3.40 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-14T20:35:53.100355Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 19144357,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 19144357,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-14T20:35:53.100355Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "34189663",
+      "offer_id": "103352658",
+      "payload": {},
+      "player_id": "2443",
+      "player_name": "Aramburu",
+      "rationale": "+1.6% over market value for a player outside the eleven (average 3.17)."
     },
     "state": "pending"
   },
@@ -5813,6 +5925,41 @@
       "player_id": "2541",
       "player_name": "Á. Valles",
       "rationale": "Á. Valles averages 11.25 with no clause premium and comes off his lock on 23/09 00:19. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-14T20:35:53.100355Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-14T20:35:53.100355Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 12779637,
+      "conditions": {
+        "average_points": 5.25,
+        "player_status": "ok",
+        "price": 12779637,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-21T22:03:08+02:00",
+      "expected_gain": 5.25,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 25559274,
+        "target_clause": 38338911
+      },
+      "player_id": "3174",
+      "player_name": "Mandi",
+      "rationale": "Mandi averages 5.25 with no clause premium and comes off his lock on 23/09 22:03. Replacing him would cost several times this."
     },
     "state": "pending"
   }
