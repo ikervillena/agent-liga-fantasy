@@ -1,6 +1,6 @@
 {
   "cash": 11206686,
-  "fetched_at": "2026-09-15T07:13:31.211376Z",
+  "fetched_at": "2026-09-15T11:20:04.256595Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -2634,7 +2634,7 @@
             "points_by_matchday": {},
             "position": "FW",
             "role": "impact_sub",
-            "status": "ok",
+            "status": "doubtful",
             "total_points": 2
           },
           "player_team_id": "35044855",
