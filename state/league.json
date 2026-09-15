@@ -1,6 +1,6 @@
 {
   "cash": 11206686,
-  "fetched_at": "2026-09-15T17:22:27.614703Z",
+  "fetched_at": "2026-09-15T19:07:55.585559Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -531,25 +531,6 @@
       "seller": null
     },
     {
-      "asking_price": 6660207,
-      "expires_at": "2026-09-15T20:07:06+02:00",
-      "market_id": "35166423",
-      "player": {
-        "average_points": 2.83,
-        "club": "",
-        "club_id": "8",
-        "id": "3105",
-        "market_value": 6422221,
-        "name": "Cala",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 17
-      },
-      "seller": null
-    },
-    {
       "asking_price": 9006186,
       "expires_at": "2026-09-16T13:22:44+02:00",
       "market_id": "35674903",
@@ -614,7 +595,7 @@
       "cash": null,
       "id": "38611081",
       "manager": "iker_villena",
-      "points": 207,
+      "points": 217,
       "rank": 1,
       "squad": [
         {
@@ -875,7 +856,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 8.6,
+            "average_points": 7.5,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2932",
@@ -885,7 +866,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 43
+            "total_points": 45
           },
           "player_team_id": "55054262",
           "team_id": "38611081"
@@ -896,7 +877,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 7.67,
+            "average_points": 9.0,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "2520",
@@ -906,7 +887,7 @@
             "position": "FW",
             "role": "key",
             "status": "ok",
-            "total_points": 46
+            "total_points": 54
           },
           "player_team_id": "55025347",
           "team_id": "38611081"
@@ -917,7 +898,7 @@
       "cash": null,
       "id": "38601985",
       "manager": "SuperrGio",
-      "points": 199,
+      "points": 208,
       "rank": 2,
       "squad": [
         {
@@ -1136,7 +1117,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 4.8,
+            "average_points": 6.4,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "3161",
@@ -1146,7 +1127,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 24
+            "total_points": 32
           },
           "player_team_id": "45292950",
           "team_id": "38601985"
@@ -1157,7 +1138,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 2.83,
+            "average_points": 3.0,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "2622",
@@ -1167,7 +1148,7 @@
             "position": "MF",
             "role": "important",
             "status": "ok",
-            "total_points": 17
+            "total_points": 18
           },
           "player_team_id": "34020001",
           "team_id": "38601985"
@@ -1241,7 +1222,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 3.4,
+            "average_points": 2.83,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2577",
@@ -1304,7 +1285,7 @@
       "cash": null,
       "id": "38578209",
       "manager": "UAlzaga",
-      "points": 199,
+      "points": 208,
       "rank": 3,
       "squad": [
         {
@@ -1313,7 +1294,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 8.0,
+            "average_points": 6.83,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "988",
@@ -1323,7 +1304,7 @@
             "position": "GK",
             "role": "key",
             "status": "ok",
-            "total_points": 40
+            "total_points": 41
           },
           "player_team_id": "57711975",
           "team_id": "38578209"
@@ -1376,7 +1357,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 5.6,
+            "average_points": 4.67,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2552",
@@ -1439,7 +1420,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 4.0,
+            "average_points": 5.33,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2383",
@@ -1449,7 +1430,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 24
+            "total_points": 32
           },
           "player_team_id": "33569026",
           "team_id": "38578209"
@@ -1502,7 +1483,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 7.6,
+            "average_points": 6.33,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2600",
@@ -1565,7 +1546,7 @@
       "cash": null,
       "id": "38575843",
       "manager": "vaalenxiaa",
-      "points": 198,
+      "points": 202,
       "rank": 4,
       "squad": [
         {
@@ -1826,7 +1807,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 5.17,
+            "average_points": 5.83,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2384",
@@ -1836,7 +1817,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 31
+            "total_points": 35
           },
           "player_team_id": "33524466",
           "team_id": "38575843"
@@ -1973,7 +1954,7 @@
       "cash": null,
       "id": "38571766",
       "manager": "EkainGoñi_",
-      "points": 192,
+      "points": 196,
       "rank": 5,
       "squad": [
         {
@@ -1982,7 +1963,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 7.33,
+            "average_points": 7.83,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "2507",
@@ -1992,7 +1973,7 @@
             "position": "GK",
             "role": "key",
             "status": "ok",
-            "total_points": 44
+            "total_points": 47
           },
           "player_team_id": "55918607",
           "team_id": "38571766"
@@ -2129,7 +2110,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 3.8,
+            "average_points": 3.17,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "2464",
@@ -2150,7 +2131,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.67,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2474",
@@ -2160,7 +2141,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 15
+            "total_points": 16
           },
           "player_team_id": "57711973",
           "team_id": "38571766"
@@ -2318,7 +2299,7 @@
       "cash": null,
       "id": "38622146",
       "manager": "Barandi07",
-      "points": 190,
+      "points": 193,
       "rank": 6,
       "squad": [
         {
@@ -2537,7 +2518,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.0,
+            "average_points": 2.33,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1103",
@@ -2547,7 +2528,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 12
+            "total_points": 14
           },
           "player_team_id": "68136304",
           "team_id": "38622146"
@@ -2579,7 +2560,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.83,
+            "average_points": 3.0,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "3105",
@@ -2589,7 +2570,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 17
+            "total_points": 18
           },
           "player_team_id": "73063502",
           "team_id": "38622146"
@@ -2621,7 +2602,7 @@
       "cash": null,
       "id": "38578570",
       "manager": "corcon 4",
-      "points": 180,
+      "points": 179,
       "rank": 7,
       "squad": [
         {
@@ -2672,7 +2653,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 0.5,
+            "average_points": 0.33,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "3120",
@@ -2756,7 +2737,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 4.4,
+            "average_points": 3.5,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "3069",
@@ -2766,7 +2747,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 22
+            "total_points": 21
           },
           "player_team_id": "33575849",
           "team_id": "38578570"
@@ -2882,7 +2863,7 @@
       "cash": null,
       "id": "38583054",
       "manager": "Zubikaraiander",
-      "points": 143,
+      "points": 151,
       "rank": 8,
       "squad": [
         {
@@ -2912,7 +2893,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 7.0,
+            "average_points": 5.67,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "1337",
@@ -2922,7 +2903,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 35
+            "total_points": 34
           },
           "player_team_id": "56404224",
           "team_id": "38583054"
@@ -2954,7 +2935,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 2.6,
+            "average_points": 2.17,
             "club": "Deportivo Alavés",
             "club_id": "21",
             "id": "2568",
@@ -3080,7 +3061,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 3.33,
+            "average_points": 4.83,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1029",
@@ -3090,7 +3071,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 20
+            "total_points": 29
           },
           "player_team_id": "33661930",
           "team_id": "38583054"
@@ -3143,7 +3124,7 @@
       "cash": null,
       "id": "38572271",
       "manager": "benatoo02",
-      "points": 141,
+      "points": 139,
       "rank": 9,
       "squad": [
         {
@@ -3236,7 +3217,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 5.33,
+            "average_points": 5.0,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "1930",
@@ -3246,7 +3227,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 32
+            "total_points": 30
           },
           "player_team_id": "56338306",
           "team_id": "38572271"
@@ -3476,7 +3457,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 2.0,
+            "average_points": 1.67,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "302",
@@ -3665,7 +3646,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 1.4,
+            "average_points": 1.17,
             "club": "Valencia CF",
             "club_id": "18",
             "id": "1191",
