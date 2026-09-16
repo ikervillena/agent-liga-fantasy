@@ -1,6 +1,6 @@
 {
   "cash": 13507543,
-  "fetched_at": "2026-09-16T16:20:41.588563Z",
+  "fetched_at": "2026-09-16T18:58:04.209378Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -364,7 +364,7 @@
       "expires_at": "2026-09-17T17:48:00+02:00",
       "market_id": "223059169",
       "player": {
-        "average_points": 6.33,
+        "average_points": 6.5,
         "club": "",
         "club_id": "17",
         "id": "2746",
@@ -374,7 +374,7 @@
         "position": "FW",
         "role": "unknown",
         "status": "ok",
-        "total_points": 19
+        "total_points": 26
       },
       "seller": null
     },
@@ -789,7 +789,7 @@
           "is_shielded": false,
           "manager": "iker_villena",
           "player": {
-            "average_points": 5.6,
+            "average_points": 4.67,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2962",
@@ -852,7 +852,7 @@
       "cash": null,
       "id": "38578209",
       "manager": "UAlzaga",
-      "points": 215,
+      "points": 223,
       "rank": 2,
       "squad": [
         {
@@ -882,7 +882,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 5.8,
+            "average_points": 5.83,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "67",
@@ -892,7 +892,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 29
+            "total_points": 35
           },
           "player_team_id": "54326199",
           "team_id": "38578209"
@@ -903,7 +903,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 5.2,
+            "average_points": 4.5,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "1147",
@@ -913,7 +913,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 26
+            "total_points": 27
           },
           "player_team_id": "33569033",
           "team_id": "38578209"
@@ -1008,7 +1008,7 @@
           "is_shielded": false,
           "manager": "UAlzaga",
           "player": {
-            "average_points": 3.2,
+            "average_points": 2.83,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "637",
@@ -1018,7 +1018,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 16
+            "total_points": 17
           },
           "player_team_id": "33569025",
           "team_id": "38578209"
@@ -1113,7 +1113,7 @@
       "cash": null,
       "id": "38601985",
       "manager": "SuperrGio",
-      "points": 214,
+      "points": 216,
       "rank": 3,
       "squad": [
         {
@@ -1185,7 +1185,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 4.0,
+            "average_points": 3.33,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2985",
@@ -1395,7 +1395,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 5.4,
+            "average_points": 4.83,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2453",
@@ -1405,7 +1405,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 27
+            "total_points": 29
           },
           "player_team_id": "70936198",
           "team_id": "38601985"
@@ -1416,7 +1416,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.5,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "1730",
@@ -1500,7 +1500,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 12.0,
+            "average_points": 10.0,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3108",
@@ -1551,7 +1551,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 5.0,
+            "average_points": 4.17,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "1033",
@@ -1614,7 +1614,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 3.8,
+            "average_points": 3.17,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2753",
@@ -1719,7 +1719,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 4.0,
+            "average_points": 3.33,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "652",
@@ -1866,7 +1866,7 @@
       "cash": null,
       "id": "38575843",
       "manager": "vaalenxiaa",
-      "points": 206,
+      "points": 205,
       "rank": 5,
       "squad": [
         {
@@ -1917,7 +1917,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 2.6,
+            "average_points": 2.17,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3149",
@@ -1959,7 +1959,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": -0.2,
+            "average_points": -0.17,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2366",
@@ -1980,7 +1980,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.8,
+            "average_points": 0.67,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2912",
@@ -2001,7 +2001,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.33,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2846",
@@ -2011,7 +2011,7 @@
             "position": "DF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 15
+            "total_points": 14
           },
           "player_team_id": "52990362",
           "team_id": "38575843"
@@ -2106,7 +2106,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 0.8,
+            "average_points": 2.17,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "2480",
@@ -2116,7 +2116,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 4
+            "total_points": 13
           },
           "player_team_id": "33524464",
           "team_id": "38575843"
@@ -2274,7 +2274,7 @@
       "cash": null,
       "id": "38622146",
       "manager": "Barandi07",
-      "points": 193,
+      "points": 200,
       "rank": 6,
       "squad": [
         {
@@ -2346,7 +2346,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 4.33,
+            "average_points": 5.0,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "3197",
@@ -2356,7 +2356,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 13
+            "total_points": 20
           },
           "player_team_id": "43478914",
           "team_id": "38622146"
@@ -2367,7 +2367,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.6,
+            "average_points": 2.17,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2990",
@@ -2388,7 +2388,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 2.8,
+            "average_points": 2.33,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "2963",
@@ -2472,7 +2472,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 3.67,
+            "average_points": 2.75,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "3211",
@@ -2838,7 +2838,7 @@
           "is_shielded": false,
           "manager": "corcon 4",
           "player": {
-            "average_points": 2.6,
+            "average_points": 2.17,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "3145",
@@ -3120,7 +3120,7 @@
       "cash": null,
       "id": "38572271",
       "manager": "benatoo02",
-      "points": 138,
+      "points": 152,
       "rank": 9,
       "squad": [
         {
@@ -3171,7 +3171,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 2.0,
+            "average_points": 4.4,
             "club": "Atlético de Madrid",
             "club_id": "2",
             "id": "255",
@@ -3181,7 +3181,7 @@
             "position": "DF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 8
+            "total_points": 22
           },
           "player_team_id": "33460108",
           "team_id": "38572271"
@@ -3276,7 +3276,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.25,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "856",
@@ -3339,7 +3339,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 3.6,
+            "average_points": 2.83,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2456",
@@ -3349,7 +3349,7 @@
             "position": "FW",
             "role": "rotation",
             "status": "ok",
-            "total_points": 18
+            "total_points": 17
           },
           "player_team_id": "77059320",
           "team_id": "38572271"
@@ -3360,7 +3360,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 4.2,
+            "average_points": 3.5,
             "club": "Sevilla FC",
             "club_id": "17",
             "id": "2454",
@@ -3402,7 +3402,7 @@
       "cash": null,
       "id": "38572259",
       "manager": "jburuta",
-      "points": 131,
+      "points": 133,
       "rank": 10,
       "squad": [
         {
@@ -3558,7 +3558,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 4.2,
+            "average_points": 3.33,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3119",
@@ -3568,7 +3568,7 @@
             "position": "MF",
             "role": "key",
             "status": "ok",
-            "total_points": 21
+            "total_points": 20
           },
           "player_team_id": "33459874",
           "team_id": "38572259"
@@ -3621,7 +3621,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 1.8,
+            "average_points": 1.67,
             "club": "RC Deportivo",
             "club_id": "26",
             "id": "3148",
@@ -3631,7 +3631,7 @@
             "position": "MF",
             "role": "rotation",
             "status": "ok",
-            "total_points": 9
+            "total_points": 10
           },
           "player_team_id": "33459876",
           "team_id": "38572259"
@@ -3663,7 +3663,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 1.6,
+            "average_points": 1.67,
             "club": "C.A. Osasuna",
             "club_id": "13",
             "id": "2923",
@@ -3673,7 +3673,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 8
+            "total_points": 10
           },
           "player_team_id": "33459871",
           "team_id": "38572259"

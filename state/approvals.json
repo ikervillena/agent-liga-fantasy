@@ -6066,6 +6066,11 @@
         "at": "2026-09-16T18:57:27.910590Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-16T19:38:20.509389Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6090,6 +6095,41 @@
       "player_id": "3026",
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 3.40 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-16T19:38:20.509389Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-16T19:38:20.509389Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 1929538,
+      "conditions": {
+        "average_points": 2.83,
+        "player_status": "ok",
+        "price": 1929538,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-16T19:38:20.509389Z",
+      "expected_gain": 2.83,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 3859076,
+        "target_clause": 5788614
+      },
+      "player_id": "3026",
+      "player_name": "Pablo Ramón",
+      "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
     "state": "pending"
   },
