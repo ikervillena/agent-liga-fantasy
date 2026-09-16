@@ -1,6 +1,6 @@
 {
   "cash": 13507543,
-  "fetched_at": "2026-09-15T23:03:25.650930Z",
+  "fetched_at": "2026-09-16T00:27:33.798036Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -1357,7 +1357,7 @@
           "is_shielded": false,
           "manager": "SuperrGio",
           "player": {
-            "average_points": 6.4,
+            "average_points": 4.8,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "3161",
@@ -1367,7 +1367,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 32
+            "total_points": 24
           },
           "player_team_id": "45292950",
           "team_id": "38601985"
@@ -2131,7 +2131,7 @@
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 5.83,
+            "average_points": 5.17,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "2384",
@@ -2141,7 +2141,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 35
+            "total_points": 31
           },
           "player_team_id": "33524466",
           "team_id": "38575843"
@@ -2539,7 +2539,7 @@
           "is_shielded": false,
           "manager": "Barandi07",
           "player": {
-            "average_points": 3.0,
+            "average_points": 2.83,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "3105",
@@ -2549,7 +2549,7 @@
             "position": "FW",
             "role": "unknown",
             "status": "ok",
-            "total_points": 18
+            "total_points": 17
           },
           "player_team_id": "73063502",
           "team_id": "38622146"
@@ -3217,7 +3217,7 @@
           "is_shielded": false,
           "manager": "benatoo02",
           "player": {
-            "average_points": 4.83,
+            "average_points": 5.33,
             "club": "RCD Espanyol",
             "club_id": "8",
             "id": "1930",
@@ -3226,8 +3226,8 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "key",
-            "status": "ok",
-            "total_points": 29
+            "status": "suspended",
+            "total_points": 32
           },
           "player_team_id": "56338306",
           "team_id": "38572271"
