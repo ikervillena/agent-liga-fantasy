@@ -1,6 +1,6 @@
 {
   "cash": 13507543,
-  "fetched_at": "2026-09-17T05:45:58.093208Z",
+  "fetched_at": "2026-09-17T11:00:33.636279Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -1975,7 +1975,7 @@
           "team_id": "38578570"
         },
         {
-          "buyout_clause": 7524725,
+          "buyout_clause": 11524725,
           "clause_locked_until": "2026-09-15T17:48:20+02:00",
           "is_shielded": false,
           "manager": "corcon 4",
@@ -2721,7 +2721,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "unknown",
-            "status": "suspended",
+            "status": "injured",
             "total_points": 0
           },
           "player_team_id": "34388659",
@@ -3504,7 +3504,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "rotation",
-            "status": "injured",
+            "status": "ok",
             "total_points": 13
           },
           "player_team_id": "33459881",
@@ -3609,7 +3609,7 @@
             "points_by_matchday": {},
             "position": "MF",
             "role": "unknown",
-            "status": "doubtful",
+            "status": "ok",
             "total_points": 12
           },
           "player_team_id": "33459875",
