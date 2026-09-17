@@ -6186,6 +6186,11 @@
         "at": "2026-09-17T00:36:46.521773Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-17T05:45:21.632256Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6211,7 +6216,7 @@
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-17T00:46:18.872225Z",
@@ -6219,6 +6224,46 @@
     "history": [
       {
         "at": "2026-09-17T00:46:18.872225Z",
+        "note": "sent for approval",
+        "state": "pending"
+      },
+      {
+        "at": "2026-09-17T05:45:21.632256Z",
+        "note": "execution window passed",
+        "state": "expired"
+      }
+    ],
+    "intent": {
+      "amount": 1973672,
+      "conditions": {
+        "average_points": 2.83,
+        "player_status": "ok",
+        "price": 1973672,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-17T00:46:18.872225Z",
+      "expected_gain": 2.83,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 3947344,
+        "target_clause": 5921016
+      },
+      "player_id": "3026",
+      "player_name": "Pablo Ramón",
+      "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-17T05:45:21.632256Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-17T05:45:21.632256Z",
         "note": "sent for approval",
         "state": "pending"
       }
@@ -6232,7 +6277,7 @@
         "price_tolerance": 0.05,
         "squad_role": "unknown"
       },
-      "execute_at": "2026-09-17T00:46:18.872225Z",
+      "execute_at": "2026-09-17T05:45:21.632256Z",
       "expected_gain": 2.83,
       "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
       "kind": "raise_clause",
