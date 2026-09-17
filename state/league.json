@@ -1,6 +1,6 @@
 {
   "cash": 13507543,
-  "fetched_at": "2026-09-17T19:08:04.842186Z",
+  "fetched_at": "2026-09-17T19:17:14.385635Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -1567,7 +1567,7 @@
           "is_shielded": false,
           "manager": "EkainGoñi_",
           "player": {
-            "average_points": 6.5,
+            "average_points": 5.8,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "2924",
@@ -1577,7 +1577,7 @@
             "position": "DF",
             "role": "key",
             "status": "ok",
-            "total_points": 26
+            "total_points": 29
           },
           "player_team_id": "45292954",
           "team_id": "38571766"
@@ -3595,7 +3595,7 @@
           "is_shielded": false,
           "manager": "jburuta",
           "player": {
-            "average_points": 4.0,
+            "average_points": 4.2,
             "club": "Getafe CF",
             "club_id": "9",
             "id": "3135",
@@ -3605,7 +3605,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 16
+            "total_points": 21
           },
           "player_team_id": "33459875",
           "team_id": "38572259"
