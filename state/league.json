@@ -1,6 +1,6 @@
 {
   "cash": 17907543,
-  "fetched_at": "2026-09-18T05:14:03.900135Z",
+  "fetched_at": "2026-09-18T09:50:23.158823Z",
   "fixtures": [
     {
       "away_club_id": "11",
@@ -512,21 +512,59 @@
       "seller": null
     },
     {
-      "asking_price": 8737175,
-      "expires_at": "2026-09-18T16:21:53+02:00",
-      "market_id": "31426629",
+      "asking_price": 24952380,
+      "expires_at": "2026-09-21T09:48:07+02:00",
+      "market_id": "40287868",
       "player": {
-        "average_points": 1.83,
+        "average_points": 2.0,
         "club": "",
-        "club_id": "6",
-        "id": "2074",
-        "market_value": 8115164,
-        "name": "Javi Rodríguez",
+        "club_id": "20",
+        "id": "2467",
+        "market_value": 24952380,
+        "name": "Júnior R.",
         "points_by_matchday": {},
-        "position": "DF",
+        "position": "GK",
         "role": "unknown",
         "status": "ok",
-        "total_points": 11
+        "total_points": 12
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 819113,
+      "expires_at": "2026-09-21T10:05:51+02:00",
+      "market_id": "40293995",
+      "player": {
+        "average_points": 1.67,
+        "club": "",
+        "club_id": "6",
+        "id": "2654",
+        "market_value": 819113,
+        "name": "El Abdellaoui",
+        "points_by_matchday": {},
+        "position": "FW",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 5
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 6169426,
+      "expires_at": "2026-09-21T10:05:55+02:00",
+      "market_id": "40294024",
+      "player": {
+        "average_points": 3.5,
+        "club": "",
+        "club_id": "17",
+        "id": "2454",
+        "market_value": 6169426,
+        "name": "Ejuke",
+        "points_by_matchday": {},
+        "position": "FW",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 21
       },
       "seller": null
     }
@@ -1147,7 +1185,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "important",
-            "status": "injured",
+            "status": "doubtful",
             "total_points": 16
           },
           "player_team_id": "55361981",
@@ -2518,7 +2556,7 @@
             "points_by_matchday": {},
             "position": "FW",
             "role": "important",
-            "status": "injured",
+            "status": "doubtful",
             "total_points": 5
           },
           "player_team_id": "33575846",
@@ -3221,27 +3259,6 @@
             "total_points": 32
           },
           "player_team_id": "56338306",
-          "team_id": "38572271"
-        },
-        {
-          "buyout_clause": 15237888,
-          "clause_locked_until": "2026-08-30T17:51:24+02:00",
-          "is_shielded": false,
-          "manager": "benatoo02",
-          "player": {
-            "average_points": 1.83,
-            "club": "Celta",
-            "club_id": "6",
-            "id": "2074",
-            "market_value": 8115164,
-            "name": "Javi Rodríguez",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 11
-          },
-          "player_team_id": "33460107",
           "team_id": "38572271"
         },
         {
