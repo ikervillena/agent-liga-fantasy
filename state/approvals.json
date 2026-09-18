@@ -7746,6 +7746,11 @@
         "at": "2026-09-18T17:40:56.933168Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T18:34:32.155103Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7771,7 +7776,7 @@
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T17:40:56.933168Z",
@@ -7781,6 +7786,11 @@
         "at": "2026-09-18T17:40:56.933168Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T18:34:32.155103Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7806,7 +7816,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T17:40:56.933168Z",
@@ -7814,6 +7824,113 @@
     "history": [
       {
         "at": "2026-09-18T17:40:56.933168Z",
+        "note": "sent for approval",
+        "state": "pending"
+      },
+      {
+        "at": "2026-09-18T18:34:32.155103Z",
+        "note": "execution window passed",
+        "state": "expired"
+      }
+    ],
+    "intent": {
+      "amount": 21533977,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 21533977,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-18T17:40:56.933168Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "34189663",
+      "offer_id": "114553687",
+      "payload": {},
+      "player_id": "2443",
+      "player_name": "Aramburu",
+      "rationale": "+9.3% over market value for a player outside the eleven (average 3.17)."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-18T18:34:32.155103Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-18T18:34:32.155103Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 1998718,
+      "conditions": {
+        "average_points": 2.83,
+        "player_status": "ok",
+        "price": 1998718,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-18T18:34:32.155103Z",
+      "expected_gain": 2.83,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 3997436,
+        "target_clause": 5996154
+      },
+      "player_id": "3026",
+      "player_name": "Pablo Ramón",
+      "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-18T18:34:32.155103Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-18T18:34:32.155103Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 8382789,
+      "conditions": {
+        "average_points": 5.8,
+        "player_status": "ok",
+        "price": 8382789,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-18T18:34:32.155103Z",
+      "expected_gain": 5.8,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 16765578,
+        "target_clause": 25148367
+      },
+      "player_id": "3164",
+      "player_name": "Bardeli",
+      "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-18T18:34:32.155103Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-18T18:34:32.155103Z",
         "note": "sent for approval",
         "state": "pending"
       }
@@ -7827,7 +7944,7 @@
         "price_tolerance": 0.05,
         "squad_role": "unknown"
       },
-      "execute_at": "2026-09-18T17:40:56.933168Z",
+      "execute_at": "2026-09-18T18:34:32.155103Z",
       "expected_gain": 0.0,
       "fallback": "Let the offer lapse and keep him listed.",
       "kind": "accept_offer",
