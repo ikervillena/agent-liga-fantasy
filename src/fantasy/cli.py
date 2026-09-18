@@ -12,7 +12,8 @@ from typing import Annotated
 
 import typer
 
-from fantasy.agent.advisor import Advisor
+from fantasy.agent.advisor import Advisor, AdvisorError
+from fantasy.agent.ask import answer as ask_question
 from fantasy.agent.session import deliberate, enrich, remember
 from fantasy.analysis.candidates import plan as build_plan
 from fantasy.channel.brief import ask_text, compose
@@ -33,6 +34,7 @@ from fantasy.sources.laliga.client import FantasyClient
 from fantasy.sources.scouting.resolve import current as current_roles
 from fantasy.sources.sync import fetch_state
 from fantasy.storage.state import Store
+from fantasy.storage.values import ValueCache
 
 app = typer.Typer(add_completion=False, help="Autonomous manager for a LaLiga Fantasy squad.")
 
@@ -126,6 +128,42 @@ def advise(
         build_notifier().send(outcome.message)
         remember(outcome, candidates, at=now)
         typer.echo("\nSent.")
+
+
+@app.command()
+def ask(
+    question: Annotated[str, typer.Argument(help="What to ask, in plain Spanish.")],
+) -> None:
+    """Ask the agent something about the league and print the answer."""
+    store = Store()
+    state = _load(store)
+    if state is None:
+        typer.echo("No snapshot yet. Run `fantasy sync` first.")
+        raise typer.Exit(code=1)
+
+    values = ValueCache().load()
+    if values.is_stale():
+        typer.echo("(prices are from an earlier day; run `fantasy values` to refresh)")
+    try:
+        typer.echo(ask_question(question, state, values, now=datetime.now(UTC)))
+    except AdvisorError as exc:
+        typer.echo(f"Could not answer: {exc}")
+        raise typer.Exit(code=1) from exc
+
+
+@app.command()
+def values() -> None:
+    """Refresh the cached price histories for every owned player."""
+    store = Store()
+    state = _load(store)
+    if state is None:
+        typer.echo("No snapshot yet. Run `fantasy sync` first.")
+        raise typer.Exit(code=1)
+
+    cache = ValueCache().load()
+    updated = cache.refresh(FantasyClient(), [p.id for p in state.owned_players])
+    cache.save()
+    typer.echo(f"{updated} price histories refreshed, {len(cache)} cached.")
 
 
 @app.command()

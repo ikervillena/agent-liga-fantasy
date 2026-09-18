@@ -70,6 +70,18 @@ class Advisor:
     def available(self) -> bool:
         return bool(self._client or os.environ.get("ANTHROPIC_API_KEY"))
 
+    @staticmethod
+    def _headers() -> dict[str, str]:
+        """Workspace header, when the key needs one.
+
+        A key created at the organisation level rather than inside a workspace
+        is rejected without this, with a 400 that names the header. Supporting
+        it here means either kind of key works, instead of the setup depending
+        on which button was clicked in the console.
+        """
+        workspace = os.environ.get("ANTHROPIC_WORKSPACE_ID", "").strip()
+        return {"anthropic-workspace-id": workspace} if workspace else {}
+
     def judge(self, briefing: str) -> Judgment:
         """Ask for a judgment on one briefing.
 
@@ -94,6 +106,7 @@ class Advisor:
                 ],
                 messages=[{"role": "user", "content": briefing}],
                 output_format=Judgment,
+                extra_headers=self._headers(),
             )
         except Exception as exc:
             raise AdvisorError(f"the advisor call failed: {exc}") from exc
