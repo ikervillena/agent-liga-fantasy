@@ -1,6 +1,15 @@
 {
   "cash": 3161934,
-  "fetched_at": "2026-09-18T22:26:56.020615Z",
+  "config": {
+    "bench": false,
+    "buyout_clauses": true,
+    "captain": false,
+    "clause_block_hours": 0,
+    "coach": false,
+    "free_formations": false,
+    "loans": false
+  },
+  "fetched_at": "2026-09-18T23:39:39.824106Z",
   "fixtures": [
     {
       "away_club_id": "11",
@@ -604,6 +613,7 @@
   ],
   "teams": [
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38611081",
       "manager": "iker_villena",
@@ -624,7 +634,7 @@
             "name": "Á. Valles",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 67
           },
@@ -645,7 +655,7 @@
             "name": "Pablo Ramón",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 17
           },
@@ -729,7 +739,7 @@
             "name": "Fran García",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 23
           },
@@ -834,7 +844,7 @@
             "name": "Ángel Pérez",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "key",
             "status": "ok",
             "total_points": 51
           },
@@ -886,6 +896,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38578209",
       "manager": "UAlzaga",
@@ -927,7 +938,7 @@
             "name": "Marcos Llorente",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 38
           },
@@ -1147,6 +1158,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38601985",
       "manager": "SuperrGio",
@@ -1272,7 +1284,7 @@
             "name": "Starfelt",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 14
           },
@@ -1314,7 +1326,7 @@
             "name": "Sergio Gómez",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 17
           },
@@ -1356,7 +1368,7 @@
             "name": "Javi Hernández",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 24
           },
@@ -1398,7 +1410,7 @@
             "name": "Fidalgo",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 2
           },
@@ -1440,7 +1452,7 @@
             "name": "Agoumé",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "key",
             "status": "ok",
             "total_points": 36
           },
@@ -1461,7 +1473,7 @@
             "name": "Iker Muñoz",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 15
           },
@@ -1555,6 +1567,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38571766",
       "manager": "EkainGoñi_",
@@ -1722,7 +1735,7 @@
             "name": "Pepelu",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 28
           },
@@ -1743,7 +1756,7 @@
             "name": "Denis Suárez",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 23
           },
@@ -1764,7 +1777,7 @@
             "name": "Rubén García",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 20
           },
@@ -1848,7 +1861,7 @@
             "name": "Enes Ünal",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "key",
             "status": "ok",
             "total_points": 13
           },
@@ -1890,7 +1903,7 @@
             "name": "Carlos Espí",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "impact_sub",
             "status": "ok",
             "total_points": 19
           },
@@ -1900,6 +1913,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38575843",
       "manager": "vaalenxiaa",
@@ -1983,7 +1997,7 @@
             "name": "Manu Hernando",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 8
           },
@@ -2025,7 +2039,7 @@
             "name": "Julio Díaz",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 6
           },
@@ -2067,7 +2081,7 @@
             "name": "Carreira",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 21
           },
@@ -2088,7 +2102,7 @@
             "name": "Nacho Perez",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 18
           },
@@ -2130,7 +2144,7 @@
             "name": "Marc Bernal",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 34
           },
@@ -2172,7 +2186,7 @@
             "name": "Unai Lopez",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 31
           },
@@ -2193,7 +2207,7 @@
             "name": "Tchouaméni",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 6
           },
@@ -2235,7 +2249,7 @@
             "name": "Iñigo Vicente",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "key",
             "status": "ok",
             "total_points": 38
           },
@@ -2256,7 +2270,7 @@
             "name": "R. Brugué",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 29
           },
@@ -2308,6 +2322,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38578570",
       "manager": "corcon 4",
@@ -2328,7 +2343,7 @@
             "name": "Gulácsi",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 12
           },
@@ -2391,7 +2406,7 @@
             "name": "Bellerín",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 20
           },
@@ -2611,6 +2626,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38622146",
       "manager": "Barandi07",
@@ -2631,7 +2647,7 @@
             "name": "Iván Villar",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 0
           },
@@ -2673,7 +2689,7 @@
             "name": "Belocian",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 12
           },
@@ -2757,7 +2773,7 @@
             "name": "Manu Sánchez",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 16
           },
@@ -2841,7 +2857,7 @@
             "name": "Óscar Valentín",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 12
           },
@@ -2904,7 +2920,7 @@
             "name": "Ferran Jutglà",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 26
           },
@@ -2914,6 +2930,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38583054",
       "manager": "Zubikaraiander",
@@ -2934,7 +2951,7 @@
             "name": "Courtois",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "key",
             "status": "ok",
             "total_points": 37
           },
@@ -3039,7 +3056,7 @@
             "name": "P. Martínez",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 17
           },
@@ -3081,7 +3098,7 @@
             "name": "Zakharyan",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 3
           },
@@ -3123,7 +3140,7 @@
             "name": "Álvaro García",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 15
           },
@@ -3175,6 +3192,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38572271",
       "manager": "benatoo02",
@@ -3195,7 +3213,7 @@
             "name": "D. Cárdenas",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 3
           },
@@ -3415,6 +3433,7 @@
       ]
     },
     {
+      "can_punctuate": true,
       "cash": null,
       "id": "38572259",
       "manager": "jburuta",
@@ -3477,7 +3496,7 @@
             "name": "Gayá",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 19
           },
@@ -3498,7 +3517,7 @@
             "name": "Egiluz",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "bench",
             "status": "injured",
             "total_points": 0
           },
@@ -3603,7 +3622,7 @@
             "name": "Moscardo",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 5
           },
@@ -3624,7 +3643,7 @@
             "name": "Andrés Garcia",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 21
           },
@@ -3666,7 +3685,7 @@
             "name": "Hugo Duro",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 11
           },
@@ -3687,7 +3706,7 @@
             "name": "Raúl Moro",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "impact_sub",
             "status": "ok",
             "total_points": 11
           },

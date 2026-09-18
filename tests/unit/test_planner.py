@@ -11,11 +11,25 @@ from fantasy.domain.models import (
     OwnedPlayer,
     PlayerStatus,
     Position,
+    SquadRole,
+    Team,
 )
 from fantasy.sources.scouting.roles import RoleBook
 
-from .conftest import ROLES, make_owned, make_player
+from .conftest import NOW, ROLES, make_owned, make_player
 from .conftest import make_policy as policy
+
+#: A legal eleven of my own, so a purchase candidate has somebody to displace.
+SQUAD_FOR_FILTERS = tuple(
+    make_owned(make_player(str(i), f"P{i}", pos, average=3.0))
+    for i, pos in enumerate(
+        [Position.GOALKEEPER]
+        + [Position.DEFENDER] * 4
+        + [Position.MIDFIELDER] * 3
+        + [Position.FORWARD] * 3,
+        start=1,
+    )
+)
 
 
 class TestBestEleven:
@@ -109,3 +123,46 @@ class TestPlanning:
         intents = plan(league, policy(), ROLES)
         costs = [i.euros_per_point for i in intents]
         assert costs == sorted(costs)
+
+
+class TestAverageIsAFloorNotAWall:
+    """The rule that lets a returning starter surface at all.
+
+    A season average is backward-looking. A key starter who missed two months
+    injured carries a low one that says nothing about what he will do now, and
+    gating on it filtered out exactly the undervalued buy worth having.
+    """
+
+    def _rival_with(self, average: float) -> LeagueState:
+        star = make_player("77", "Returner", Position.MIDFIELDER, value=8_000_000, average=average)
+        rival = Team(
+            id="theirs",
+            manager="rival",
+            squad=(make_owned(star, manager="rival", team_id="theirs"),),
+        )
+        mine = Team(id="mine", manager="iker", squad=SQUAD_FOR_FILTERS)
+        return LeagueState(
+            fetched_at=NOW,
+            league_id="L",
+            my_team_id="mine",
+            cash=50_000_000,
+            teams=(rival, mine),
+        )
+
+    def test_a_key_starter_survives_a_poor_average(self) -> None:
+        state = self._rival_with(1.5)
+        roles = RoleBook({"returner": SquadRole.KEY})
+        bought = [i for i in plan(state, policy(), roles) if i.kind is IntentKind.PAY_CLAUSE]
+        assert [i.player_name for i in bought] == ["Returner"]
+
+    def test_anybody_else_still_has_to_clear_the_floor(self) -> None:
+        state = self._rival_with(1.5)
+        roles = RoleBook({"returner": SquadRole.IMPORTANT})
+        bought = [i for i in plan(state, policy(), roles) if i.kind is IntentKind.PAY_CLAUSE]
+        assert bought == []
+
+    def test_a_good_average_needs_no_exception(self) -> None:
+        state = self._rival_with(8.0)
+        roles = RoleBook({"returner": SquadRole.IMPORTANT})
+        bought = [i for i in plan(state, policy(), roles) if i.kind is IntentKind.PAY_CLAUSE]
+        assert [i.player_name for i in bought] == ["Returner"]

@@ -23,7 +23,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 
 from fantasy.domain.intents import Conditions, Intent, IntentKind
-from fantasy.domain.models import Euros, LeagueState, OwnedPlayer, Position
+from fantasy.domain.models import Euros, LeagueState, OwnedPlayer, Position, SquadRole
 from fantasy.domain.policy import Policy
 from fantasy.domain.rules import (
     clause_premium,
@@ -97,6 +97,17 @@ def weakest_in_position(eleven: tuple[OwnedPlayer, ...], position: Position) -> 
     return min(candidates, key=lambda p: p.player.average_points, default=None)
 
 
+def _average_is_unreliable(owned: OwnedPlayer, policy: Policy, roles: RoleBook) -> bool:
+    """Whether this player's season average should be read as evidence at all.
+
+    True for a confirmed key starter whose average sits below the floor: the
+    club plays him every week, so a poor number is far more likely to be the
+    residue of an absence than a verdict on his level.
+    """
+    role = roles.role_of(owned.player.name, owned.player.id)
+    return role is SquadRole.KEY and owned.player.average_points < policy.filters.min_average
+
+
 def _passes_filters(
     owned: OwnedPlayer, policy: Policy, roles: RoleBook, now: datetime
 ) -> tuple[bool, str]:
@@ -104,17 +115,25 @@ def _passes_filters(
     player = owned.player
     if player.status.value in policy.filters.exclude_status:
         return False, f"status is {player.status.value}"
-    if player.average_points < policy.filters.min_average:
-        return False, f"average {player.average_points:.2f} below the floor"
 
     premium = clause_premium(player.market_value, owned.buyout_clause)
     if premium > policy.filters.max_clause_premium:
         return False, f"clause premium x{premium:.2f} too rich"
 
-    if policy.filters.starters_only:
-        role = roles.role_of(player.name, player.id)
-        if not role.is_starter:
-            return False, f"role is {role.value}"
+    role = roles.role_of(player.name, player.id)
+    if policy.filters.starters_only and not role.is_starter:
+        return False, f"role is {role.value}"
+
+    # The scoring average is a floor for everybody except a confirmed key
+    # starter, and that exception is the whole point of it being here rather
+    # than earlier. A season average is a backward-looking number: a player who
+    # missed two months injured carries a low one that says nothing about what
+    # he will do now, and gating on it filtered out exactly the undervalued
+    # returning starter that is the best buy on the board. Where the club
+    # treats him as key, he is worth looking at and the judgment layer gets to
+    # weigh a bad average against the reason for it.
+    if player.average_points < policy.filters.min_average and role is not SquadRole.KEY:
+        return False, f"average {player.average_points:.2f} below the floor"
 
     if owned.clause_locked_until and owned.clause_locked_until > now + HORIZON:
         return False, "window opens beyond the horizon"
@@ -284,8 +303,20 @@ def _purchase_intents(
             displaced = weakest_in_position(eleven, owned.player.position)
             baseline = displaced.player.average_points if displaced else 0.0
             gain = owned.player.average_points - baseline
+
+            # The same backward-looking average that gates entry also decides
+            # whether a player "improves" the eleven, so a key starter coming
+            # back from a long absence failed twice over: once on the floor,
+            # and again here, for the identical reason. Where the club treats
+            # him as key and the average is depressed, the honest answer is
+            # that the gain is *unknown*, not negative. He is surfaced with a
+            # gain of zero, which ranks him last on euros-per-point and hands
+            # the actual call to the judgment layer, where it belongs.
+            unreliable = _average_is_unreliable(owned, policy, roles)
             if gain <= 0:
-                continue
+                if not unreliable:
+                    continue
+                gain = 0.0
 
             opens_at = owned.clause_locked_until or now
             intents.append(
@@ -301,6 +332,13 @@ def _purchase_intents(
                     amount=price,
                     expected_gain=gain,
                     rationale=(
+                        f"{owned.name} es titular indiscutible en su club con una media de "
+                        f"{owned.player.average_points:.2f}, baja para ese rol: la media viene "
+                        f"lastrada y no dice lo que va a rendir ahora. Cuesta "
+                        f"{price / 1e6:.2f} M, de {rival.manager}."
+                    )
+                    if unreliable
+                    else (
                         f"{owned.name} ({owned.player.club or owned.player.position.value}) "
                         f"averages "
                         f"{owned.player.average_points:.2f} against "

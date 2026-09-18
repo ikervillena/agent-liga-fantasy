@@ -30,7 +30,7 @@ from fantasy.domain.policy import Autonomy, Policy
 from fantasy.execution.executor import Executor
 from fantasy.settings import POLICY_FILE, Settings
 from fantasy.sources.laliga.client import FantasyClient
-from fantasy.sources.scouting.roles import load_roles
+from fantasy.sources.scouting.resolve import current as current_roles
 from fantasy.sources.sync import fetch_state
 from fantasy.storage.state import Store
 
@@ -52,7 +52,7 @@ def sync() -> None:
     """Fetch the league and write a fresh snapshot to state/."""
     policy = Policy.load(POLICY_FILE)
     store = Store()
-    roles = load_roles()
+    roles = current_roles()
     client = FantasyClient()
     state = fetch_state(client, policy.league_id, policy.team_id, roles)
     store.save_snapshot(state.model_dump(mode="json"))
@@ -71,7 +71,7 @@ def plan() -> None:
         typer.echo("No snapshot yet. Run `fantasy sync` first.")
         raise typer.Exit(code=1)
 
-    intents = build_plan(state, policy, load_roles())
+    intents = build_plan(state, policy, current_roles())
     if not intents:
         typer.echo("Nothing worth proposing.")
         return
@@ -98,9 +98,9 @@ def advise(
         raise typer.Exit(code=1)
 
     now = datetime.now(UTC)
-    intents = build_plan(state, policy, load_roles(), now=now)
-    client = FantasyClient()
-    candidates = enrich(intents, load_roles(), client=client)
+    roles = current_roles()
+    intents = build_plan(state, policy, roles, now=now)
+    candidates = enrich(intents, roles, client=FantasyClient())
 
     outcome = deliberate(state, policy, candidates, now=now, advisor=Advisor())
 
@@ -138,7 +138,7 @@ def brief() -> None:
         typer.echo("No snapshot yet.")
         raise typer.Exit(code=1)
 
-    intents = build_plan(state, policy, load_roles())
+    intents = build_plan(state, policy, current_roles())
     approvals = store.load_approvals()
     build_notifier().send(compose(state, _load_previous(store), intents, approvals))
     typer.echo("Brief sent.")
@@ -184,7 +184,7 @@ def run(
     """The full loop: perceive, plan, revalidate, ask, execute."""
     policy = Policy.load(POLICY_FILE)
     store = Store()
-    roles = load_roles()
+    roles = current_roles()
     notifier = build_notifier()
     now = datetime.now(UTC)
 
@@ -260,7 +260,7 @@ def doctor() -> None:
     typer.echo(f"laliga credentials {'present' if settings.can_authenticate else 'MISSING'}")
     typer.echo(f"telegram           {'configured' if settings.can_notify else 'not configured'}")
 
-    roles = load_roles()
+    roles = current_roles(offline=True)
     typer.echo(f"role book          {len(roles)} players from {roles.source}")
     if len(roles) == 0:
         typer.echo("                   without roles no signing passes the starter filter")
