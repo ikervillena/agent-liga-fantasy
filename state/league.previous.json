@@ -1,6 +1,6 @@
 {
   "cash": 13507543,
-  "fetched_at": "2026-09-17T22:20:59.967075Z",
+  "fetched_at": "2026-09-18T00:25:53.732735Z",
   "fixtures": [
     {
       "away_club_id": "6",
@@ -3052,7 +3052,7 @@
           "is_shielded": false,
           "manager": "Zubikaraiander",
           "player": {
-            "average_points": 4.83,
+            "average_points": 2.5,
             "club": "Rayo Vallecano",
             "club_id": "14",
             "id": "1029",
@@ -3062,7 +3062,7 @@
             "position": "MF",
             "role": "unknown",
             "status": "ok",
-            "total_points": 29
+            "total_points": 15
           },
           "player_team_id": "33661930",
           "team_id": "38583054"
