@@ -12,6 +12,8 @@ from typing import Annotated
 
 import typer
 
+from fantasy.agent.advisor import Advisor
+from fantasy.agent.session import deliberate, enrich, remember
 from fantasy.analysis.candidates import plan as build_plan
 from fantasy.channel.brief import ask_text, compose
 from fantasy.channel.telegram import build_notifier
@@ -76,6 +78,54 @@ def plan() -> None:
     for intent in intents:
         typer.echo(f"{intent.key}  {intent.describe():<44} {intent.execute_at:%Y-%m-%d %H:%M}")
         typer.echo(f"           {intent.rationale}")
+
+
+@app.command()
+def advise(
+    send: Annotated[bool, typer.Option(help="Send the message instead of printing it.")] = False,
+) -> None:
+    """Put today's candidates to the judgment layer and show what it decides.
+
+    Read-only with respect to the game: it proposes and explains, and nothing
+    reaches the API from here. Printing by default so the reasoning can be read
+    before anything is wired to Telegram.
+    """
+    policy = Policy.load(POLICY_FILE)
+    store = Store()
+    state = _load(store)
+    if state is None:
+        typer.echo("No snapshot yet. Run `fantasy sync` first.")
+        raise typer.Exit(code=1)
+
+    now = datetime.now(UTC)
+    intents = build_plan(state, policy, load_roles(), now=now)
+    client = FantasyClient()
+    candidates = enrich(intents, load_roles(), client=client)
+
+    outcome = deliberate(state, policy, candidates, now=now, advisor=Advisor())
+
+    if outcome.error:
+        typer.echo(f"The advisor could not answer: {outcome.error}")
+        raise typer.Exit(code=1)
+    if outcome.suppressed:
+        typer.echo(f"({len(outcome.suppressed)} already communicated, not repeated)")
+    if outcome.judgment is None or outcome.judgment.is_silent:
+        typer.echo("Nothing worth saying right now.")
+        return
+
+    typer.echo(outcome.message or "(no message)")
+    for intent in outcome.selection.intents:
+        typer.echo(f"\n  → {intent.describe()}\n    {intent.rationale}")
+    for discard in outcome.judgment.discarded:
+        typer.echo(f"  no: {discard.key}: {discard.reason}")
+    if outcome.selection.unknown_keys:
+        ignored = ", ".join(outcome.selection.unknown_keys)
+        typer.echo(f"  ! unrecognised keys ignored: {ignored}")
+
+    if send and outcome.should_send:
+        build_notifier().send(outcome.message)
+        remember(outcome, candidates, at=now)
+        typer.echo("\nSent.")
 
 
 @app.command()
