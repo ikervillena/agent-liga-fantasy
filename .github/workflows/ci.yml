@@ -23,4 +23,4 @@ jobs:
       - name: Types
         run: mypy
       - name: Tests
-        run: pytest --cov=fantasy_agent --cov-report=term-missing
+        run: pytest --cov=fantasy --cov-report=term-missing
