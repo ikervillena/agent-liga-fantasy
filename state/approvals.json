@@ -6746,6 +6746,11 @@
         "at": "2026-09-18T14:06:35.197948Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6771,7 +6776,7 @@
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-11T17:31:34.682843Z",
@@ -6781,6 +6786,11 @@
         "at": "2026-09-11T17:31:34.682843Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6806,7 +6816,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 6.00 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-11T22:35:25.291944Z",
@@ -6816,6 +6826,11 @@
         "at": "2026-09-11T22:35:25.291944Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6841,7 +6856,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 6.00 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-12T22:55:40.023937Z",
@@ -6851,6 +6866,11 @@
         "at": "2026-09-12T22:55:40.023937Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6876,7 +6896,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 0.00 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-13T05:23:28.194995Z",
@@ -6886,6 +6906,11 @@
         "at": "2026-09-13T05:23:28.194995Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6911,7 +6936,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 0.00 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T00:12:09.226866Z",
@@ -6921,6 +6946,11 @@
         "at": "2026-09-14T00:12:09.226866Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6946,7 +6976,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 7.25 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T00:12:09.226866Z",
@@ -6956,6 +6986,11 @@
         "at": "2026-09-14T00:12:09.226866Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -6981,7 +7016,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.60 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T12:07:37.681577Z",
@@ -6991,6 +7026,11 @@
         "at": "2026-09-14T12:07:37.681577Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7016,7 +7056,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 7.25 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T12:07:37.681577Z",
@@ -7026,6 +7066,11 @@
         "at": "2026-09-14T12:07:37.681577Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7051,7 +7096,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.60 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T16:34:39.879558Z",
@@ -7061,6 +7106,11 @@
         "at": "2026-09-14T16:34:39.879558Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7086,7 +7136,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 7.25 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T16:34:39.879558Z",
@@ -7096,6 +7146,11 @@
         "at": "2026-09-14T16:34:39.879558Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7121,7 +7176,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.60 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T23:29:17.128752Z",
@@ -7131,6 +7186,11 @@
         "at": "2026-09-14T23:29:17.128752Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7156,7 +7216,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 7.25 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-14T23:29:17.128752Z",
@@ -7166,6 +7226,11 @@
         "at": "2026-09-14T23:29:17.128752Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7191,7 +7256,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.60 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-15T23:02:49.436609Z",
@@ -7201,6 +7266,11 @@
         "at": "2026-09-15T23:02:49.436609Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7226,7 +7296,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 7.25 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-15T23:02:49.436609Z",
@@ -7236,6 +7306,11 @@
         "at": "2026-09-15T23:02:49.436609Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7261,7 +7336,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.60 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-16T16:20:05.258286Z",
@@ -7271,6 +7346,11 @@
         "at": "2026-09-16T16:20:05.258286Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7296,7 +7376,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 7.25 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-16T16:20:05.258286Z",
@@ -7306,6 +7386,11 @@
         "at": "2026-09-16T16:20:05.258286Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7331,7 +7416,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.60 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-16T22:20:33.326976Z",
@@ -7341,6 +7426,11 @@
         "at": "2026-09-16T22:20:33.326976Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7366,7 +7456,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-16T22:20:33.326976Z",
@@ -7376,6 +7466,11 @@
         "at": "2026-09-16T22:20:33.326976Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7401,7 +7496,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.33 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-17T15:30:45.434496Z",
@@ -7411,6 +7506,11 @@
         "at": "2026-09-17T15:30:45.434496Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7436,7 +7536,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-17T15:30:45.434496Z",
@@ -7446,6 +7546,11 @@
         "at": "2026-09-17T15:30:45.434496Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7471,7 +7576,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.33 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-17T22:20:23.476484Z",
@@ -7481,6 +7586,11 @@
         "at": "2026-09-17T22:20:23.476484Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7506,7 +7616,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-17T22:20:23.476484Z",
@@ -7516,6 +7626,11 @@
         "at": "2026-09-17T22:20:23.476484Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7541,7 +7656,7 @@
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.33 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T10:45:57.315328Z",
@@ -7551,6 +7666,11 @@
         "at": "2026-09-18T10:45:57.315328Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7576,7 +7696,7 @@
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T10:45:57.315328Z",
@@ -7586,6 +7706,11 @@
         "at": "2026-09-18T10:45:57.315328Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -7610,6 +7735,108 @@
       "player_id": "2962",
       "player_name": "Luismi Cruz",
       "rationale": "Luismi Cruz averages 5.33 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-18T17:40:56.933168Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 1998718,
+      "conditions": {
+        "average_points": 2.83,
+        "player_status": "ok",
+        "price": 1998718,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-18T17:40:56.933168Z",
+      "expected_gain": 2.83,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 3997436,
+        "target_clause": 5996154
+      },
+      "player_id": "3026",
+      "player_name": "Pablo Ramón",
+      "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-18T17:40:56.933168Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 8382789,
+      "conditions": {
+        "average_points": 5.8,
+        "player_status": "ok",
+        "price": 8382789,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-18T17:40:56.933168Z",
+      "expected_gain": 5.8,
+      "fallback": "Leave him exposed and reinvest the fee if somebody takes him.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 16765578,
+        "target_clause": 25148367
+      },
+      "player_id": "3164",
+      "player_name": "Bardeli",
+      "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-18T17:40:56.933168Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-18T17:40:56.933168Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 21533977,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 21533977,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-18T17:40:56.933168Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "34189663",
+      "offer_id": "114553687",
+      "payload": {},
+      "player_id": "2443",
+      "player_name": "Aramburu",
+      "rationale": "+9.3% over market value for a player outside the eleven (average 3.17)."
     },
     "state": "pending"
   },
