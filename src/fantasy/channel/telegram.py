@@ -34,6 +34,8 @@ class Notifier(Protocol):
 
     def ask(self, text: str, decision_key: str) -> None: ...
 
+    def ask_many(self, text: str, decisions: list[tuple[str, str]]) -> None: ...
+
     def poll(self, cursor: int) -> tuple[list[Reply], int]: ...
 
 
@@ -49,6 +51,10 @@ class ConsoleNotifier:
 
     def ask(self, text: str, decision_key: str) -> None:
         self.send(f"{text}\n[decision {decision_key}]")
+
+    def ask_many(self, text: str, decisions: list[tuple[str, str]]) -> None:
+        labels = " ".join(f"[{label} {key}]" for key, label in decisions)
+        self.send(f"{text}\n{labels}")
 
     def poll(self, cursor: int) -> tuple[list[Reply], int]:
         return [], cursor
@@ -101,6 +107,36 @@ class TelegramNotifier:
                             {"text": "Reject", "callback_data": f"{decision_key}:no"},
                         ],
                         [{"text": "Tell me more", "callback_data": f"{decision_key}:explain"}],
+                    ]
+                },
+            },
+        )
+
+    def ask_many(self, text: str, decisions: list[tuple[str, str]]) -> None:
+        """One message carrying several decisions, a row of buttons each.
+
+        The agent used to send one message per decision, and a run with a dozen
+        of them buried the chat under a dozen walls of text — the exact thing
+        that made the previous version unreadable. Volume is a design property,
+        not a detail: whatever needs answering arrives as one message, and the
+        decision about how much is worth asking at all happens upstream.
+        """
+        if not decisions:
+            return
+        self._call(
+            "sendMessage",
+            {
+                "chat_id": self._settings.telegram_chat_id,
+                "text": text[:MAX_MESSAGE],
+                "parse_mode": "HTML",
+                "disable_web_page_preview": True,
+                "reply_markup": {
+                    "inline_keyboard": [
+                        [
+                            {"text": f"Sí · {label}", "callback_data": f"{key}:yes"},
+                            {"text": "No", "callback_data": f"{key}:no"},
+                        ]
+                        for key, label in decisions
                     ]
                 },
             },

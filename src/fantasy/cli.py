@@ -17,7 +17,7 @@ from fantasy.agent.ask import answer as ask_question
 from fantasy.agent.session import deliberate, enrich, remember
 from fantasy.analysis.candidates import plan as build_plan
 from fantasy.channel.brief import ask_text, compose
-from fantasy.channel.telegram import build_notifier
+from fantasy.channel.telegram import Notifier, build_notifier
 from fantasy.domain.approvals import (
     Approval,
     ApprovalState,
@@ -32,6 +32,7 @@ from fantasy.execution.executor import Executor
 from fantasy.settings import POLICY_FILE, Settings
 from fantasy.sources.laliga.client import FantasyClient
 from fantasy.sources.scouting.resolve import current as current_roles
+from fantasy.sources.scouting.roles import RoleBook
 from fantasy.sources.sync import fetch_state
 from fantasy.storage.state import Store
 from fantasy.storage.values import ValueCache
@@ -63,6 +64,70 @@ def _answer_question(question: str, store: Store, now: datetime) -> str:
 def _load_previous(store: Store) -> LeagueState | None:
     raw = store.load_previous()
     return LeagueState.model_validate(raw) if raw else None
+
+
+#: Most decisions the manager is asked about in one go. Past about three, a
+#: request for a decision stops reading as a question and starts reading as a
+#: backlog, and backlogs get ignored wholesale. Anything not asked today is not
+#: lost — it stays proposed and comes back when it actually becomes urgent.
+MAX_ASKS = 3
+
+
+def _ask_what_matters(
+    waiting: list[Approval],
+    state: LeagueState,
+    policy: Policy,
+    roles: RoleBook,
+    notifier: Notifier,
+    now: datetime,
+    advisor: Advisor | None = None,
+) -> None:
+    """Put at most a few decisions to the manager, in a single message.
+
+    The old loop sent one message per approval, so a run with a dozen of them
+    sent a dozen walls of text. Volume was never a presentation problem: an
+    agent that forwards its whole queue has not decided anything, it has just
+    moved the work. So the judgment layer chooses what is worth raising now and
+    writes the covering note; everything else waits without being mentioned.
+
+    If the judgment layer cannot be reached the agent still asks, but only
+    about the most imminent few, unexplained. Degrading to terse beats going
+    silent on a clause that opens in an hour.
+    """
+    if not waiting:
+        return
+
+    by_key = {a.key: a for a in waiting}
+    candidates = enrich([a.intent for a in waiting], roles)
+    outcome = deliberate(state, policy, candidates, now=now, advisor=advisor or Advisor())
+
+    chosen = [i.key for i in outcome.selection.intents][:MAX_ASKS]
+    note = outcome.message
+
+    if not chosen:
+        if outcome.judgment is not None and not outcome.error:
+            return  # judged: nothing here is worth interrupting for
+        soonest = sorted(waiting, key=lambda a: a.intent.execute_at)[:MAX_ASKS]
+        chosen = [a.key for a in soonest]
+        note = "Decisiones pendientes:"
+
+    decisions: list[tuple[str, str]] = []
+    lines = [note] if note else []
+    for key in chosen:
+        approval = by_key.get(key)
+        if approval is None:
+            continue
+        lines.append(f"\n<b>{approval.intent.describe()}</b>\n{approval.intent.rationale}")
+        decisions.append((key, approval.intent.player_name or approval.intent.describe()))
+
+    if not decisions:
+        return
+
+    notifier.ask_many("\n".join(lines), decisions)
+    for key, _ in decisions:
+        approval = by_key[key]
+        approval.transition(ApprovalState.PENDING, now, "sent for approval")
+        approval.asked_at = now
 
 
 @app.command()
@@ -287,13 +352,15 @@ def run(
             now,
         )
 
-    # 4. Ask about anything proposed or newly in doubt.
-    for approval in approvals.values():
-        if not needs_asking(approval):
-            continue
-        notifier.ask(ask_text(approval.intent), approval.key)
-        approval.transition(ApprovalState.PENDING, now, "sent for approval")
-        approval.asked_at = now
+    # 4. Ask — once, about the few things worth asking about.
+    _ask_what_matters(
+        [a for a in approvals.values() if needs_asking(a)],
+        state,
+        policy,
+        roles,
+        notifier,
+        now,
+    )
 
     # 5. Execute what is approved and due.
     executor = Executor(FantasyClient(), policy, store, dry_run=dry_run)
