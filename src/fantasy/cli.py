@@ -17,7 +17,6 @@ from fantasy.agent.ask import answer as ask_question
 from fantasy.agent.ask import publish_briefing
 from fantasy.agent.session import deliberate, enrich, remember
 from fantasy.analysis.candidates import plan as build_plan
-from fantasy.channel.brief import ask_text, compose
 from fantasy.channel.telegram import Notifier, build_notifier
 from fantasy.channel.wording import describe as describe_es
 from fantasy.domain.approvals import (
@@ -256,53 +255,6 @@ def values() -> None:
 
 
 @app.command()
-def brief() -> None:
-    """Send the daily brief."""
-    policy = Policy.load(POLICY_FILE)
-    store = Store()
-    state = _load(store)
-    if state is None:
-        typer.echo("No snapshot yet.")
-        raise typer.Exit(code=1)
-
-    intents = build_plan(state, policy, current_roles())
-    approvals = store.load_approvals()
-    build_notifier().send(compose(state, _load_previous(store), intents, approvals))
-    typer.echo("Brief sent.")
-
-
-@app.command()
-def decide(
-    key: Annotated[str, typer.Argument(help="The intent key the button carried.")],
-    answer: Annotated[str, typer.Argument(help="yes or no.")],
-) -> None:
-    """Record a decision that arrived through the webhook rather than by polling.
-
-    With a Telegram webhook in place `getUpdates` is unavailable, so button
-    presses reach us as an explicit dispatch instead of being discovered on a
-    later poll. Same state machine, different doorway.
-    """
-    store = Store()
-    approvals = {a.key: a for a in store.load_approvals()}
-    approval = approvals.get(key)
-    if approval is None:
-        typer.echo(f"Unknown decision {key}.")
-        raise typer.Exit(code=1)
-    if approval.state.is_terminal:
-        typer.echo(f"{key} is already {approval.state.value}; nothing to do.")
-        return
-
-    now = datetime.now(UTC)
-    if answer == "yes":
-        approval.transition(ApprovalState.APPROVED, now, "approved by manager")
-    else:
-        approval.transition(ApprovalState.REJECTED, now, "rejected by manager")
-    approval.decided_at = now
-    store.save_approvals(list(approvals.values()))
-    typer.echo(f"{key} -> {approval.state.value}")
-
-
-@app.command()
 def poll() -> None:
     """Read replies from the channel: button presses, and questions.
 
@@ -348,7 +300,7 @@ def poll() -> None:
             approval.decided_at = now
             changed += 1
         elif answer == "explain":
-            notifier.send(ask_text(approval.intent))
+            notifier.send(approval.intent.rationale)
 
     store.save_cursor(cursor)
     store.save_approvals(list(approvals.values()))

@@ -25,10 +25,6 @@ on:
     - cron: "40-59/5 15 * * *"
   workflow_dispatch:
     inputs:
-      brief:
-        description: Send the daily brief
-        type: boolean
-        default: false
       dry_run:
         description: Plan and ask, but never call the API
         type: boolean
@@ -81,7 +77,11 @@ jobs:
           DECISION_VERDICT: ${{ github.event.client_payload.verdict }}
         run: fantasy decide "$DECISION_KEY" "$DECISION_VERDICT"
 
-      - name: The loop — perceive, plan, revalidate, ask, execute
+      # `run` already perceives, judges and asks. There used to be a separate
+      # `advise --send` step on two of these schedules, which judged the same
+      # candidates a second time: two model calls and, worse, two messages
+      # about one decision — the spam this redesign exists to remove.
+      - name: The loop — perceive, plan, judge, ask, execute
         run: fantasy run ${{ inputs.dry_run && '--dry-run' || '' }}
 
       # Only after the nightly revaluation: re-reading 144 price histories is
@@ -89,14 +89,6 @@ jobs:
       - name: Refresh price histories
         if: github.event.schedule == '20 22 * * *'
         run: fantasy values
-
-      - name: Judgment on today's candidates
-        if: github.event.schedule == '0 6 * * *' || github.event.schedule == '45 13 * * *'
-        run: fantasy advise --send
-
-      - name: Daily brief
-        if: inputs.brief
-        run: fantasy brief
 
       - name: Save the state
         run: |

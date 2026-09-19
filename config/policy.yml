@@ -44,30 +44,6 @@ filters:
 objective:
   protect_starters: true    # never sell a starter for market reasons
   fixture_lookahead: 3
-  value_growth_weight: 0.3
-
-# ---------------------------------------------------------------------------
-# Named opportunities. The planner finds these on its own; listing one here
-# pins the ceiling price and records why it mattered.
-# ---------------------------------------------------------------------------
-watchlist:
-  - name: Mandi
-    player_id: "3174"
-    max_price: 12000000
-    opens_at: 2026-09-09T17:48:00+02:00
-    reason: Levante's starting centre-back, 7.33 average, no clause premium.
-
-  - name: Aubameyang
-    player_id: "3108"
-    max_price: 75000000
-    opens_at: 2026-09-10T17:48:00+02:00
-    reason: Top scorer in the game at 12.00. Funded by selling Antony.
-
-  - name: Tenaglia
-    player_id: "1337"
-    max_price: 34000000
-    opens_at: 2026-09-14T22:15:00+02:00
-    reason: Taken from us on 31/08. Set-piece taker, 7.75 average, recoverable.
 
 # ---------------------------------------------------------------------------
 # Ours to shield before their locks expire. Raising a clause costs half of the

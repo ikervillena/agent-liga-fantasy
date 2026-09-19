@@ -104,20 +104,11 @@ class Objective(BaseModel):
     model_config = ConfigDict(frozen=True, extra="forbid")
 
     protect_starters: bool = True
+    #: How many upcoming fixtures the judgment layer is shown per player. A run
+    #: of hard games is weighed there rather than scored here: any table of
+    #: opponent difficulty is a guess about football that goes stale, and the
+    #: model already knows what Barcelona away means.
     fixture_lookahead: int = 3
-    #: Relative weight of value growth against points when ranking candidates.
-    value_growth_weight: float = 0.3
-
-
-class WatchItem(BaseModel):
-    model_config = ConfigDict(frozen=True, extra="forbid")
-
-    name: str
-    player_id: str
-    action: str = "pay_clause"
-    max_price: Euros
-    opens_at: datetime | None = None
-    reason: str = ""
 
 
 class ProtectItem(BaseModel):
@@ -144,7 +135,6 @@ class Policy(BaseModel):
     limits: Limits = Field(default_factory=Limits)
     filters: Filters = Field(default_factory=Filters)
     objective: Objective = Field(default_factory=Objective)
-    watchlist: tuple[WatchItem, ...] = ()
     protect: tuple[ProtectItem, ...] = ()
 
     @model_validator(mode="after")
@@ -178,5 +168,4 @@ __all__ = [
     "Objective",
     "Policy",
     "ProtectItem",
-    "WatchItem",
 ]

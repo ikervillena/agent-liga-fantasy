@@ -26,6 +26,7 @@ from anthropic import Anthropic
 
 from fantasy.agent.advisor import AdvisorError, Effort
 from fantasy.agent.briefing import millions
+from fantasy.analysis.fixtures import club_names, describe_run
 from fantasy.analysis.valuation import Trend, valuation
 from fantasy.domain.models import LeagueState, OwnedPlayer, SquadRole
 from fantasy.domain.rules import clause_premium, effective_clause
@@ -137,7 +138,9 @@ def publish_briefing(state: LeagueState, values: ValueCache, *, now: datetime) -
     return len(digest)
 
 
-def league_digest(state: LeagueState, values: ValueCache, *, now: datetime) -> str:
+def league_digest(
+    state: LeagueState, values: ValueCache, *, now: datetime, lookahead: int = 3
+) -> str:
     """Everything a question might turn on, in one compact table."""
     lines = [
         "# Estado de la liga",
@@ -160,10 +163,20 @@ def league_digest(state: LeagueState, values: ValueCache, *, now: datetime) -> s
             f"{team.rank} | {team.manager}{mine} | {team.points} | {millions(team.squad_value)}"
         )
 
+    # Fixtures are listed once per club rather than once per player. A hundred
+    # and forty-four players share twenty clubs, so repeating the run on every
+    # row was the same handful of facts written seven times over — half the
+    # size of the whole briefing, and paid for on every question.
+    lines += ["", "## Próximos partidos por club"]
+    for club_id, name in sorted(club_names(state).items(), key=lambda kv: kv[1]):
+        run = describe_run(state, club_id, count=lookahead)
+        if run:
+            lines.append(f"{name}: {run}")
+
     lines += [
         "",
         "## Todos los jugadores con dueño",
-        "Columnas: jugador · pos · dueño · media · valor · cláusula · prima · "
+        "Columnas: jugador · pos · club · dueño · media · valor · cláusula · prima · "
         "se abre · rol · tendencia de valor",
     ]
     for owned in sorted(state.owned_players, key=_ordering):
@@ -259,7 +272,7 @@ def _player_row(owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: 
 
     owner = f"{owned.manager}{' (TÚ)' if mine else ''}"
     return (
-        f"{player.name} · {player.position.value} · {owner} · "
+        f"{player.name} · {player.position.value} · {player.club or '?'} · {owner} · "
         f"{player.average_points:.2f} · {millions(player.market_value)} · "
         f"{millions(clause)} · x{premium:.2f} · {window} · "
         f"{_ROLE_ES.get(player.role, '?')} · {trend}"
