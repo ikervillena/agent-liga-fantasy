@@ -1063,6 +1063,11 @@
         "at": "2026-09-19T16:47:36.960605Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-19T17:50:39.549904Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1086,7 +1091,7 @@
       "player_name": "Aramburu",
       "rationale": "+2.6% over market value for a player outside the eleven (average 3.17)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T22:26:19.535302Z",

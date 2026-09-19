@@ -196,12 +196,12 @@ def _protection_intents(
                 payload={"increase": target - current, "target_clause": target},
                 expected_gain=owned.player.average_points,
                 rationale=(
-                    f"{owned.name} averages {owned.player.average_points:.2f} with no clause "
-                    f"premium and comes off his lock on "
-                    f"{owned.clause_locked_until:%d/%m %H:%M}. Replacing him would cost "
-                    f"several times this."
+                    f"{owned.name} tiene media {owned.player.average_points:.2f} y la cláusula "
+                    f"a precio de mercado. Se le abre el "
+                    f"{owned.clause_locked_until:%d/%m a las %H:%M} y reemplazarlo costaría "
+                    f"varias veces esto."
                 ),
-                fallback="Leave him exposed and reinvest the fee if somebody takes him.",
+                fallback="Dejarlo expuesto y reinvertir si alguien se lo lleva.",
                 conditions=Conditions(
                     price=cost,
                     average_points=owned.player.average_points,
@@ -230,10 +230,10 @@ def _liquidation_intents(
                 amount=owned.player.market_value,
                 expected_gain=0.0,
                 rationale=(
-                    f"{owned.name} has left the competition and cannot score again. "
-                    f"He is holding {owned.player.market_value / 1e6:.2f} M of squad value hostage."
+                    f"{owned.name} ya no está en la competición: no va a puntuar más y te retiene "
+                    f"{owned.player.market_value / 1e6:.2f} M de valor."
                 ),
-                fallback="If nobody bids, he costs nothing to keep listed.",
+                fallback="Si nadie puja, tenerlo listado no cuesta nada.",
                 conditions=Conditions(price=owned.player.market_value),
             )
         )
@@ -270,10 +270,10 @@ def _offer_intents(
                 amount=offer.amount,
                 expected_gain=0.0,
                 rationale=(
-                    f"{surplus:+.1%} over market value for a player outside the eleven "
-                    f"(average {owned.player.average_points:.2f})."
+                    f"Te pagan un {surplus:+.1%} sobre su valor por alguien que no juega en tu "
+                    f"once (media {owned.player.average_points:.2f})."
                 ),
-                fallback="Let the offer lapse and keep him listed.",
+                fallback="Dejar que caduque y mantenerlo en venta.",
                 conditions=Conditions(price=offer.amount),
             )
         )
@@ -340,14 +340,13 @@ def _purchase_intents(
                     if unreliable
                     else (
                         f"{owned.name} ({owned.player.club or owned.player.position.value}) "
-                        f"averages "
-                        f"{owned.player.average_points:.2f} against "
-                        f"{baseline:.2f} from {displaced.name if displaced else 'an empty slot'}. "
-                        f"{euros_per_average_point(price, gain) / 1e6:.2f} M per point of average, "
-                        f"held by {rival.manager}."
+                        f"tiene media {owned.player.average_points:.2f} frente a "
+                        f"{baseline:.2f} de {displaced.name if displaced else 'un hueco vacío'}. "
+                        f"Sale a {euros_per_average_point(price, gain) / 1e6:.2f} M por punto de "
+                        f"media, y lo tiene {rival.manager}."
                     ),
                     fallback=(
-                        "Skip if the budget went elsewhere; the window reopens in fourteen days."
+                        "Pasar si el presupuesto va a otra cosa: la ventana vuelve en 14 días."
                     ),
                     conditions=Conditions(
                         price=price,
