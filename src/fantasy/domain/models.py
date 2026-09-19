@@ -286,6 +286,10 @@ class LeagueState(BaseModel):
     league_id: str
     my_team_id: str
     matchday: Matchday | None = None
+    #: The matchday a decision taken now is for. Once the current one has
+    #: kicked off its squad is frozen, so this is the deadline that binds —
+    #: and across an international break the two are three weeks apart.
+    next_matchday: Matchday | None = None
     config: LeagueConfig = Field(default_factory=LeagueConfig)
     cash: Euros = 0
     teams: tuple[Team, ...] = ()

@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-19T00:06:16.608933Z",
+  "fetched_at": "2026-09-19T00:17:21.989495Z",
   "fixtures": [
     {
       "away_club_id": "11",
@@ -585,6 +585,12 @@
     "opens_at": "2026-09-18T21:00:00+02:00"
   },
   "my_team_id": "38611081",
+  "next_matchday": {
+    "closes_at": "2026-10-12T21:00:00+02:00",
+    "is_live": false,
+    "number": 8,
+    "opens_at": "2026-10-09T21:00:00+02:00"
+  },
   "offers": [
     {
       "amount": 13647669,

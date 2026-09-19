@@ -12,6 +12,7 @@ from datetime import UTC, datetime
 from typing import Any
 
 from fantasy.domain.models import LeagueState, MarketListing, Offer, Player, Team
+from fantasy.sources.laliga.calendar import matchday_from
 from fantasy.sources.laliga.client import ApiError, FantasyClient
 from fantasy.sources.mapping import (
     as_int,
@@ -78,12 +79,19 @@ def fetch_state(
     market = _fetch_market(client, league_id)
     offers = _fetch_offers(client, league_id, teams, team_id)
     fixtures = _fetch_fixtures(client, matchday.number if matchday else 0)
+    # Once the current matchday has started, the deadline that binds any new
+    # decision belongs to the next one, and only the calendar knows when it is.
+    upcoming = matchday_from(
+        [f for f in fixtures if matchday and f.matchday == matchday.number + 1],
+        matchday.number + 1 if matchday else 0,
+    )
 
     return LeagueState(
         fetched_at=datetime.now(UTC),
         league_id=league_id,
         my_team_id=team_id,
         matchday=matchday,
+        next_matchday=upcoming,
         cash=cash,
         teams=tuple(teams),
         market=tuple(market),

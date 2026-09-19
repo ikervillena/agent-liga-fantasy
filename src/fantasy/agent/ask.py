@@ -28,7 +28,8 @@ from fantasy.agent.advisor import AdvisorError, Effort
 from fantasy.agent.briefing import millions
 from fantasy.analysis.valuation import Trend, valuation
 from fantasy.domain.models import LeagueState, OwnedPlayer, SquadRole
-from fantasy.domain.rules import clause_premium, effective_clause, lineup_deadline
+from fantasy.domain.rules import clause_premium, effective_clause
+from fantasy.sources.laliga.calendar import governing_deadline
 from fantasy.storage.values import ValueCache
 
 MODEL = "claude-opus-5"
@@ -115,13 +116,7 @@ def league_digest(state: LeagueState, values: ValueCache, *, now: datetime) -> s
         if not me.can_punctuate:
             lines.append("ATENCIÓN: ahora mismo NO puntúas (saldo negativo).")
 
-    deadline = lineup_deadline(state.matchday)
-    if deadline is not None and state.matchday is not None:
-        hours = (deadline - now).total_seconds() / 3600
-        remaining = f"quedan {hours:.0f} h" if hours > 0 else "ya cerrada"
-        lines.append(
-            f"Jornada {state.matchday.number}: cierra {deadline:%d/%m %H:%M} ({remaining})."
-        )
+    lines.extend(_deadlines(state, now))
 
     lines += ["", "## Clasificación", "Pos | Manager | Puntos | Valor plantilla"]
     for team in sorted(state.teams, key=lambda t: t.rank or 99):
@@ -153,6 +148,37 @@ def league_digest(state: LeagueState, values: ValueCache, *, now: datetime) -> s
             lines.append(f"{offer.player_name}: {millions(offer.amount)}")
 
     return "\n".join(lines)
+
+
+def _deadlines(state: LeagueState, now: datetime) -> list[str]:
+    """When the squad next freezes, which is what every decision is measured against.
+
+    Both matchdays are stated because the gap between them is the whole
+    question during an international break: a signing that leaves the balance
+    negative is ruinous with a day to recover and perfectly sensible with three
+    weeks.
+    """
+    lines: list[str] = []
+    current = state.matchday
+    if current is not None and current.opens_at is not None:
+        started = "EN CURSO" if now >= current.opens_at else "aún no ha empezado"
+        lines.append(
+            f"Jornada {current.number}: empezó {current.opens_at:%d/%m %H:%M} ({started})."
+        )
+
+    binding = governing_deadline(current, state.next_matchday, now)
+    if binding is None:
+        lines.append("No tengo la fecha de la próxima jornada.")
+        return lines
+
+    days = (binding - now).total_seconds() / 86400
+    upcoming = state.next_matchday.number if state.next_matchday else "?"
+    lines.append(
+        f"PLAZO QUE MANDA: la jornada {upcoming} arranca el {binding:%d/%m a las %H:%M}, "
+        f"dentro de {days:.1f} días. Tu saldo tiene que estar en positivo en ese instante, "
+        f"no antes: hasta entonces puedes estar en negativo sin perder nada."
+    )
+    return lines
 
 
 def _ordering(owned: OwnedPlayer) -> tuple[str, float]:
