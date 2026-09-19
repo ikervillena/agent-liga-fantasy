@@ -40,9 +40,15 @@ single question.
      -d "secret_token=<WEBHOOK_SECRET>"
    ```
 
-4. **Check it.** `getWebhookInfo` should show the URL and no
-   `last_error_message`. Then write to the bot: a 👀 lands immediately, the
-   answer about ten seconds later.
+4. **Check it.** Open `https://<your-worker>.workers.dev/health`. It reports
+   which secrets are set (never their values), whether the token and the chat
+   id actually work, and how much of the briefing it can read — and sends a
+   confirmation to the chat if it can. Then `getWebhookInfo` should show the
+   URL with no `last_error_message`.
+
+   Telegram reporting a clean delivery is not proof: the relay returns 200 the
+   moment it accepts an update and does the real work afterwards, so a bad
+   secret shows up as silence, not as an error. That is what `/health` is for.
 
 ## What runs where, afterwards
 

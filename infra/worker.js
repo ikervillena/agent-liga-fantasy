@@ -22,6 +22,11 @@ const MODEL = "claude-sonnet-5";
 
 export default {
   async fetch(request, env, ctx) {
+    // A relay that fails silently is untestable from outside, and the first
+    // time it broke that is exactly what happened: Telegram reported a clean
+    // delivery, the Worker returned 200, and nothing arrived. This says which
+    // half is at fault without exposing a single secret value.
+    if (new URL(request.url).pathname === "/health") return health(env);
     if (request.method !== "POST") return new Response("ok");
     // Telegram echoes this header back; without it anyone could post here.
     if (request.headers.get("x-telegram-bot-api-secret-token") !== env.WEBHOOK_SECRET) {
@@ -74,8 +79,11 @@ async function ask(question, digest, persona, env) {
     }),
   });
 
-  const data = await response.json();
-  if (!response.ok) return `No he podido responder: ${data?.error?.message ?? response.status}`;
+  const data = await response.json().catch(() => null);
+  if (!response.ok || !data) {
+    console.error(`anthropic ${response.status}: ${JSON.stringify(data)}`);
+    return `No he podido responder: ${data?.error?.message ?? response.status}`;
+  }
   const out = (data.content ?? [])
     .filter((b) => b.type === "text")
     .map((b) => b.text)
@@ -124,12 +132,54 @@ const typing = (env) => api("sendChatAction", { chat_id: env.TELEGRAM_CHAT_ID, a
 const send = (text, env) =>
   api("sendMessage", { chat_id: env.TELEGRAM_CHAT_ID, text, disable_web_page_preview: true }, env);
 
+// Failures are logged rather than swallowed: discarding them turned a wrong
+// chat id into total silence, with a clean 200 on the wire and nothing to look
+// at. Returns Telegram's own parsed reply rather than the HTTP response, since
+// the API answers 200 with `ok:false` often enough that the status alone is
+// not the answer.
 async function api(method, payload, env) {
-  return fetch(`https://api.telegram.org/bot${env.TELEGRAM_TOKEN}/${method}`, {
-    method: "POST",
+  try {
+    const response = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_TOKEN}/${method}`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const body = await response.json().catch(() => ({ ok: false, description: "unparseable" }));
+    if (!body.ok) console.error(`telegram ${method}: ${body.description}`);
+    return body;
+  } catch (error) {
+    console.error(`telegram ${method} threw: ${error}`);
+    return { ok: false, description: String(error) };
+  }
+}
+
+// Which half is broken, without revealing what any secret contains.
+async function health(env) {
+  const present = (name) => Boolean(env[name] && String(env[name]).trim());
+  const report = {
+    secrets: Object.fromEntries(
+      ["ANTHROPIC_API_KEY", "TELEGRAM_TOKEN", "TELEGRAM_CHAT_ID", "WEBHOOK_SECRET", "GITHUB_TOKEN"]
+        .map((name) => [name, present(name)]),
+    ),
+    chat_id_looks_numeric: /^-?\d+$/.test(String(env.TELEGRAM_CHAT_ID ?? "").trim()),
+    digest_chars: (await text(`${RAW}/digest.txt`)).length,
+    persona_chars: (await text(`${RAW}/persona.txt`)).length,
+  };
+
+  // getMe proves the token; a send to the configured chat proves the chat id.
+  const me = await api("getMe", {}, env);
+  report.telegram_token_ok = Boolean(me.ok);
+  const probe = await api(
+    "sendMessage",
+    { chat_id: env.TELEGRAM_CHAT_ID, text: "✅ Relay operativo." },
+    env,
+  );
+  report.can_send_to_chat = Boolean(probe.ok);
+  if (!probe.ok) report.send_error = probe.description;
+
+  return new Response(JSON.stringify(report, null, 2), {
     headers: { "content-type": "application/json" },
-    body: JSON.stringify(payload),
-  }).catch(() => null);
+  });
 }
 
 async function text(url) {
