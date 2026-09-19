@@ -1,6 +1,6 @@
 # 5. Squad roles are curated, not scraped
 
-**Status:** accepted · 2026-09-08
+**Status:** superseded by [0006](0006-scraped-roles.md) · 2026-09-08
 
 ## Context
 

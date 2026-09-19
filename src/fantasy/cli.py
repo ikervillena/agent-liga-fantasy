@@ -44,6 +44,22 @@ def _load(store: Store) -> LeagueState | None:
     return LeagueState.model_validate(raw) if raw else None
 
 
+def _answer_question(question: str, store: Store, now: datetime) -> str:
+    """Answer one question from the channel, or say plainly why it could not.
+
+    A failure here is reported to the manager rather than swallowed: an
+    unanswered question in a chat window looks like the agent is broken, which
+    is worse than an honest error.
+    """
+    state = _load(store)
+    if state is None:
+        return "Todavía no tengo una foto de la liga. Espera al próximo volcado."
+    try:
+        return ask_question(question, state, ValueCache().load(), now=now)
+    except AdvisorError as exc:
+        return f"No he podido responder: {exc}"
+
+
 def _load_previous(store: Store) -> LeagueState | None:
     raw = store.load_previous()
     return LeagueState.model_validate(raw) if raw else None
@@ -184,15 +200,28 @@ def brief() -> None:
 
 @app.command()
 def poll() -> None:
-    """Read replies from the channel and apply them to pending approvals."""
+    """Read replies from the channel: button presses, and questions.
+
+    Anything that is not a button press is treated as a question and answered.
+    That is what makes the channel a conversation rather than a notification
+    feed — the manager can ask at any time, and the reply lands in the same
+    thread as everything else.
+    """
     store = Store()
     notifier = build_notifier()
     replies, cursor = notifier.poll(store.load_cursor())
     approvals = {a.key: a for a in store.load_approvals()}
     now = datetime.now(UTC)
     changed = 0
+    answered = 0
 
     for reply in replies:
+        if reply.get("kind") == "text":
+            question = str(reply.get("text") or "").strip()
+            if question:
+                notifier.send(_answer_question(question, store, now))
+                answered += 1
+            continue
         if reply.get("kind") != "decision":
             continue
         approval = approvals.get(str(reply.get("decision")))
@@ -212,7 +241,7 @@ def poll() -> None:
 
     store.save_cursor(cursor)
     store.save_approvals(list(approvals.values()))
-    typer.echo(f"{len(replies)} replies read, {changed} approvals updated.")
+    typer.echo(f"{len(replies)} replies read, {changed} approvals updated, {answered} answered.")
 
 
 @app.command()
