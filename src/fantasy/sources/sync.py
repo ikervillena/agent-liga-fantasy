@@ -76,8 +76,16 @@ def fetch_state(
     cash_raw = _safe("cash", client.cash, team_id) or {}
     cash = as_int(pick(cash_raw, "teamMoney", "money"))
 
-    market = _fetch_market(client, league_id)
-    offers = _fetch_offers(client, league_id, teams, team_id)
+    raw_market = _safe("market", client.market, league_id)
+    market = _fetch_market(raw_market)
+    # An offer is accepted against the *market* id, not the player's. They are
+    # different identifiers and the only place that links them is the market
+    # listing, so it is resolved here rather than guessed downstream.
+    offers = _fetch_offers(client, league_id, teams, team_id, _market_ids(raw_market))
+
+    # Whether the squad scores at all is the game's own verdict, and it lives
+    # on the leagues endpoint rather than on the standings row.
+    teams = _apply_scoring_status(teams, team_id, _can_punctuate(client, team_id))
     fixtures = _fetch_fixtures(client, matchday.number if matchday else 0)
     # Once the current matchday has started, the deadline that binds any new
     # decision belongs to the next one, and only the calendar knows when it is.
@@ -100,8 +108,37 @@ def fetch_state(
     )
 
 
-def _fetch_market(client: FantasyClient, league_id: str) -> list[MarketListing]:
-    raw = _safe("market", client.market, league_id)
+def _can_punctuate(client: FantasyClient, team_id: str) -> bool:
+    """The API's verdict on our own squad. Absent data is read optimistically:
+    a false warning every run would train the manager to ignore a real one."""
+    raw = _safe("leagues", client.leagues)
+    entries = raw if isinstance(raw, list) else [raw]
+    for entry in entries:
+        team = pick(entry, "team", default={}) or {}
+        if str(pick(team, "id", default="")) == team_id:
+            return bool(pick(team, "canPunctuate", default=True))
+    return True
+
+
+def _apply_scoring_status(teams: list[Team], team_id: str, scores: bool) -> list[Team]:
+    return [t.model_copy(update={"can_punctuate": scores}) if t.id == team_id else t for t in teams]
+
+
+def _market_ids(raw: Any) -> dict[str, str]:
+    """`playerTeamId` to the market id its listing carries."""
+    if not isinstance(raw, list):
+        return {}
+    found: dict[str, str] = {}
+    for row in raw:
+        player_team = pick(row, "playerTeam", default={}) or {}
+        ptid = str(pick(player_team, "playerTeamId", "id", default=""))
+        market_id = str(pick(row, "id", default=""))
+        if ptid and market_id:
+            found[ptid] = market_id
+    return found
+
+
+def _fetch_market(raw: Any) -> list[MarketListing]:
     if not isinstance(raw, list):
         return []
     listings: list[MarketListing] = []
@@ -131,7 +168,11 @@ def _fetch_market(client: FantasyClient, league_id: str) -> list[MarketListing]:
 
 
 def _fetch_offers(
-    client: FantasyClient, league_id: str, teams: list[Team], my_team_id: str
+    client: FantasyClient,
+    league_id: str,
+    teams: list[Team],
+    my_team_id: str,
+    market_ids: dict[str, str],
 ) -> list[Offer]:
     """Bids rivals have placed on players we listed.
 
@@ -150,7 +191,11 @@ def _fetch_offers(
             raw = client.offers_for(league_id, owned.player_team_id)
         except ApiError:
             continue
-        offers.extend(to_offers(raw, owned.player_team_id, owned.name))
+        # No market id means the player is not actually listed, so an offer on
+        # him could not be accepted even if one were reported.
+        market_id = market_ids.get(owned.player_team_id)
+        if market_id:
+            offers.extend(to_offers(raw, market_id, owned.name))
     return offers
 
 

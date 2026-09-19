@@ -154,6 +154,14 @@ class FantasyClient:
         return self.get(f"{self.base}/calendar", params={"weekNumber": matchday})
 
     # -- league --------------------------------------------------------------
+    def leagues(self) -> Any:
+        """The user's leagues, each with our own team summarised.
+
+        The only place the API states whether our squad will actually score:
+        `team.canPunctuate`. The standings row does not carry it.
+        """
+        return self.get(f"{self.base}/leagues")
+
     def standings(self, league_id: str) -> Any:
         return self.get(f"{self.base}/leagues/{league_id}/standing")
 

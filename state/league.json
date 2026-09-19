@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-19T00:25:12.490427Z",
+  "fetched_at": "2026-09-19T11:24:19.301296Z",
   "fixtures": [
     {
       "away_club_id": "11",
@@ -594,25 +594,25 @@
   "offers": [
     {
       "amount": 13647669,
-      "market_id": "69936997",
+      "market_id": "40539872",
       "offer_id": "114553681",
       "player_name": "Mandi"
     },
     {
       "amount": 21533977,
-      "market_id": "34189663",
+      "market_id": "36877332",
       "offer_id": "114553687",
       "player_name": "Aramburu"
     },
     {
       "amount": 8899106,
-      "market_id": "65028618",
+      "market_id": "40551991",
       "offer_id": "114553690",
       "player_name": "Bardeli"
     },
     {
       "amount": 27716552,
-      "market_id": "34189656",
+      "market_id": "24142735",
       "offer_id": "114553683",
       "player_name": "Canales"
     }

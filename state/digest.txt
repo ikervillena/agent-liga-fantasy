@@ -1,9 +1,9 @@
 # Estado de la liga
-Ahora: Saturday 19/09 10:28
+Ahora: Saturday 19/09 11:24
 Tu caja: 3,16 M
 Vas 1º con 243 puntos.
 Jornada 7: empezó 18/09 21:00 (EN CURSO).
-PLAZO QUE MANDA: la jornada 8 arranca el 09/10 a las 21:00, dentro de 20.4 días. Tu saldo tiene que estar en positivo en ese instante, no antes: hasta entonces puedes estar en negativo sin perder nada.
+PLAZO QUE MANDA: la jornada 8 arranca el 09/10 a las 21:00, dentro de 20.3 días. Tu saldo tiene que estar en positivo en ese instante, no antes: hasta entonces puedes estar en negativo sin perder nada.
 
 ## Clasificación
 Pos | Manager | Puntos | Valor plantilla
