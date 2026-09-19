@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-18T23:37:41.853191Z",
+  "fetched_at": "2026-09-18T23:39:39.824106Z",
   "fixtures": [
     {
       "away_club_id": "11",
@@ -938,7 +938,7 @@
             "name": "Marcos Llorente",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 38
           },
@@ -1284,7 +1284,7 @@
             "name": "Starfelt",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 14
           },
@@ -1410,7 +1410,7 @@
             "name": "Fidalgo",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 2
           },
@@ -1735,7 +1735,7 @@
             "name": "Pepelu",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 28
           },
@@ -1903,7 +1903,7 @@
             "name": "Carlos Espí",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "impact_sub",
             "status": "ok",
             "total_points": 19
           },
@@ -1997,7 +1997,7 @@
             "name": "Manu Hernando",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 8
           },
@@ -2081,7 +2081,7 @@
             "name": "Carreira",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 21
           },
@@ -2102,7 +2102,7 @@
             "name": "Nacho Perez",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 18
           },
@@ -2144,7 +2144,7 @@
             "name": "Marc Bernal",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 34
           },
@@ -2186,7 +2186,7 @@
             "name": "Unai Lopez",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 31
           },
@@ -2207,7 +2207,7 @@
             "name": "Tchouaméni",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 6
           },
@@ -2647,7 +2647,7 @@
             "name": "Iván Villar",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 0
           },
@@ -2689,7 +2689,7 @@
             "name": "Belocian",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 12
           },
@@ -2920,7 +2920,7 @@
             "name": "Ferran Jutglà",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 26
           },
@@ -2951,7 +2951,7 @@
             "name": "Courtois",
             "points_by_matchday": {},
             "position": "GK",
-            "role": "unknown",
+            "role": "key",
             "status": "ok",
             "total_points": 37
           },
@@ -3098,7 +3098,7 @@
             "name": "Zakharyan",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 3
           },
@@ -3496,7 +3496,7 @@
             "name": "Gayá",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "important",
             "status": "ok",
             "total_points": 19
           },
@@ -3517,7 +3517,7 @@
             "name": "Egiluz",
             "points_by_matchday": {},
             "position": "DF",
-            "role": "unknown",
+            "role": "bench",
             "status": "injured",
             "total_points": 0
           },
@@ -3622,7 +3622,7 @@
             "name": "Moscardo",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "unknown",
+            "role": "bench",
             "status": "ok",
             "total_points": 5
           },
@@ -3685,7 +3685,7 @@
             "name": "Hugo Duro",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "unknown",
+            "role": "rotation",
             "status": "ok",
             "total_points": 11
           },
