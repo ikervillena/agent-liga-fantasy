@@ -16,6 +16,12 @@
 // Button presses take the other path: they change state that lives in the repo,
 // so they are forwarded to GitHub Actions as a dispatch and applied there.
 
+// Secrets pasted into a dashboard pick up stray whitespace and newlines more
+// often than not, and a token with a trailing newline fails as a flat 404 with
+// nothing to distinguish it from a wrong token. Trimming here costs nothing
+// and removes a whole afternoon of confusion.
+const clean = (value) => String(value ?? "").trim();
+
 const REPO = "ikervillena/agent-liga-fantasy";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main/state`;
 const MODEL = "claude-sonnet-5";
@@ -29,7 +35,7 @@ export default {
     if (new URL(request.url).pathname === "/health") return health(env);
     if (request.method !== "POST") return new Response("ok");
     // Telegram echoes this header back; without it anyone could post here.
-    if (request.headers.get("x-telegram-bot-api-secret-token") !== env.WEBHOOK_SECRET) {
+    if (request.headers.get("x-telegram-bot-api-secret-token") !== clean(env.WEBHOOK_SECRET)) {
       return new Response("forbidden", { status: 403 });
     }
 
@@ -63,7 +69,7 @@ async function ask(question, digest, persona, env) {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      "x-api-key": env.ANTHROPIC_API_KEY,
+      "x-api-key": clean(env.ANTHROPIC_API_KEY),
       "anthropic-version": "2023-06-01",
     },
     body: JSON.stringify({
@@ -102,7 +108,7 @@ async function decide(callback, env) {
   await fetch(`https://api.github.com/repos/${REPO}/dispatches`, {
     method: "POST",
     headers: {
-      authorization: `Bearer ${env.GITHUB_TOKEN}`,
+      authorization: `Bearer ${clean(env.GITHUB_TOKEN)}`,
       accept: "application/vnd.github+json",
       "content-type": "application/json",
       "user-agent": "fantasy-agent-relay",
@@ -127,10 +133,10 @@ const react = (message, env) =>
     reaction: [{ type: "emoji", emoji: "👀" }],
   }, env);
 
-const typing = (env) => api("sendChatAction", { chat_id: env.TELEGRAM_CHAT_ID, action: "typing" }, env);
+const typing = (env) => api("sendChatAction", { chat_id: clean(env.TELEGRAM_CHAT_ID), action: "typing" }, env);
 
 const send = (text, env) =>
-  api("sendMessage", { chat_id: env.TELEGRAM_CHAT_ID, text, disable_web_page_preview: true }, env);
+  api("sendMessage", { chat_id: clean(env.TELEGRAM_CHAT_ID), text, disable_web_page_preview: true }, env);
 
 // Failures are logged rather than swallowed: discarding them turned a wrong
 // chat id into total silence, with a clean 200 on the wire and nothing to look
@@ -139,7 +145,7 @@ const send = (text, env) =>
 // not the answer.
 async function api(method, payload, env) {
   try {
-    const response = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_TOKEN}/${method}`, {
+    const response = await fetch(`https://api.telegram.org/bot${clean(env.TELEGRAM_TOKEN)}/${method}`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(payload),
@@ -156,7 +162,11 @@ async function api(method, payload, env) {
 // Which half is broken, without revealing what any secret contains.
 async function health(env) {
   const present = (name) => Boolean(env[name] && String(env[name]).trim());
+  // A token that differs only by a trailing newline looks identical in a
+  // dashboard, so the length is reported: it is the one property that
+  // distinguishes "wrong value" from "right value, stray whitespace".
   const report = {
+    token_length: clean(env.TELEGRAM_TOKEN).length,
     secrets: Object.fromEntries(
       ["ANTHROPIC_API_KEY", "TELEGRAM_TOKEN", "TELEGRAM_CHAT_ID", "WEBHOOK_SECRET", "GITHUB_TOKEN"]
         .map((name) => [name, present(name)]),
@@ -171,7 +181,7 @@ async function health(env) {
   report.telegram_token_ok = Boolean(me.ok);
   const probe = await api(
     "sendMessage",
-    { chat_id: env.TELEGRAM_CHAT_ID, text: "✅ Relay operativo." },
+    { chat_id: clean(env.TELEGRAM_CHAT_ID), text: "✅ Relay operativo." },
     env,
   );
   report.can_send_to_chat = Boolean(probe.ok);
