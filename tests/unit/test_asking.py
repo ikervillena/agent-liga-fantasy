@@ -130,3 +130,17 @@ class TestSilenceAndFallback:
 
     def test_no_pending_approvals_is_a_no_op(self, league, tmp_path):
         assert run_ask([], league, FakeAdvisor(fail=True), tmp_path).batches == []
+
+
+class TestItSpeaksSpanish:
+    """The chat is in Spanish; the domain's English must not leak into it."""
+
+    def test_the_operation_is_named_in_spanish(self, league, tmp_path):
+        waiting = [approval(1)]
+        judgment = Judgment(
+            worth_saying=True, message="Mira esto", picks=(Pick(key=waiting[0].key, reasoning="x"),)
+        )
+        notifier = run_ask(waiting, league, FakeAdvisor(judgment), tmp_path)
+        body = "\n".join(notifier.sent)
+        assert "Blindar a" in body
+        assert "Raise clause" not in body

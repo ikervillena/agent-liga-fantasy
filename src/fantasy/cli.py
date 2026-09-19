@@ -18,6 +18,7 @@ from fantasy.agent.session import deliberate, enrich, remember
 from fantasy.analysis.candidates import plan as build_plan
 from fantasy.channel.brief import ask_text, compose
 from fantasy.channel.telegram import Notifier, build_notifier
+from fantasy.channel.wording import describe as describe_es
 from fantasy.domain.approvals import (
     Approval,
     ApprovalState,
@@ -109,7 +110,7 @@ def _ask_what_matters(
             return  # judged: nothing here is worth interrupting for
         soonest = sorted(waiting, key=lambda a: a.intent.execute_at)[:MAX_ASKS]
         chosen = [a.key for a in soonest]
-        note = "Decisiones pendientes:"
+        note = "Tienes esto pendiente de decidir:"
 
     decisions: list[tuple[str, str]] = []
     lines = [note] if note else []
@@ -117,8 +118,8 @@ def _ask_what_matters(
         approval = by_key.get(key)
         if approval is None:
             continue
-        lines.append(f"\n<b>{approval.intent.describe()}</b>\n{approval.intent.rationale}")
-        decisions.append((key, approval.intent.player_name or approval.intent.describe()))
+        lines.append(f"\n<b>{describe_es(approval.intent)}</b>\n{approval.intent.rationale}")
+        decisions.append((key, approval.intent.player_name or describe_es(approval.intent)))
 
     if not decisions:
         return
@@ -198,7 +199,7 @@ def advise(
 
     typer.echo(outcome.message or "(no message)")
     for intent in outcome.selection.intents:
-        typer.echo(f"\n  → {intent.describe()}\n    {intent.rationale}")
+        typer.echo(f"\n  → {describe_es(intent)}\n    {intent.rationale}")
     for discard in outcome.judgment.discarded:
         typer.echo(f"  no: {discard.key}: {discard.reason}")
     if outcome.selection.unknown_keys:
