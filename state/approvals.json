@@ -946,6 +946,11 @@
         "at": "2026-09-19T11:30:57.707905Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-19T16:47:36.960605Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -969,7 +974,7 @@
       "player_name": "Aramburu",
       "rationale": "+8.8% over market value for a player outside the eleven (average 3.17)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T10:45:57.315328Z",
@@ -979,6 +984,11 @@
         "at": "2026-09-18T10:45:57.315328Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-19T16:47:36.960605Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1002,7 +1012,7 @@
       "player_name": "Y. Zabiri",
       "rationale": "Y. Zabiri (R. Racing Club) averages 7.00 against 5.33 from Luismi Cruz. 8.49 M per point of average, held by EkainGoñi_."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-13T05:23:28.194995Z",
@@ -1012,6 +1022,11 @@
         "at": "2026-09-13T05:23:28.194995Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-19T16:47:36.960605Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1037,6 +1052,39 @@
       "player_id": "3249",
       "player_name": "Adama Traoré",
       "rationale": "Adama Traoré averages 1.00 with no clause premium and comes off his lock on 21/09 17:48. Replacing him would cost several times this."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-19T16:47:36.960605Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-19T16:47:36.960605Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 20291138,
+      "anchor": null,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 20291138,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-19T16:47:36.960605Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "36877332",
+      "offer_id": "117196448",
+      "payload": {},
+      "player_id": "2443",
+      "player_name": "Aramburu",
+      "rationale": "+2.6% over market value for a player outside the eleven (average 3.17)."
     },
     "state": "pending"
   },
