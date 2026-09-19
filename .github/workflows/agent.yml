@@ -34,7 +34,7 @@ on:
         type: boolean
         default: false
   repository_dispatch:
-    types: [run-agent]
+    types: [run-agent, decision]
   push:
     branches: [main]
     paths: ["config/policy.yml", "config/roles.yml"]
@@ -66,6 +66,20 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -e .
+
+      # A button was tapped in Telegram. The relay cannot touch the approval
+      # state, which lives here, so it forwards the verdict and this applies it.
+      #
+      # The payload arrives through the environment rather than being
+      # interpolated into the command. `${{ }}` is substituted into the shell
+      # before it runs, so a crafted value would execute as script; an
+      # environment variable is data whatever it contains.
+      - name: Apply a decision from the chat
+        if: github.event.action == 'decision'
+        env:
+          DECISION_KEY: ${{ github.event.client_payload.key }}
+          DECISION_VERDICT: ${{ github.event.client_payload.verdict }}
+        run: fantasy decide "$DECISION_KEY" "$DECISION_VERDICT"
 
       - name: The loop — perceive, plan, revalidate, ask, execute
         run: fantasy run ${{ inputs.dry_run && '--dry-run' || '' }}

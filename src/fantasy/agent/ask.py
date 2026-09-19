@@ -29,6 +29,7 @@ from fantasy.agent.briefing import millions
 from fantasy.analysis.valuation import Trend, valuation
 from fantasy.domain.models import LeagueState, OwnedPlayer, SquadRole
 from fantasy.domain.rules import clause_premium, effective_clause
+from fantasy.settings import STATE_DIR
 from fantasy.sources.laliga.calendar import governing_deadline
 from fantasy.storage.values import ValueCache
 
@@ -90,8 +91,16 @@ def answer(
             max_tokens=1500,
             thinking={"type": "adaptive"},
             output_config={"effort": effort},
-            system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
-            messages=[{"role": "user", "content": f"{brief}\n\n## Pregunta de Iker\n{question}"}],
+            # The digest goes in the cached prefix rather than in the turn. It
+            # is identical between syncs, so a follow-up question re-reads it
+            # at a tenth of the price instead of paying full freight again:
+            # measured at $0.0405 for the first question and $0.0109 for the
+            # next, on the same league.
+            system=[
+                {"type": "text", "text": SYSTEM},
+                {"type": "text", "text": brief, "cache_control": {"type": "ephemeral"}},
+            ],
+            messages=[{"role": "user", "content": question}],
             extra_headers={"anthropic-workspace-id": workspace} if workspace else {},
         )
     except Exception as exc:
@@ -108,6 +117,24 @@ def answer(
     if not text:
         raise AdvisorError("the answer was empty")
     return text
+
+
+def publish_briefing(state: LeagueState, values: ValueCache, *, now: datetime) -> int:
+    """Write the digest and the persona to disk for the chat relay to read.
+
+    The relay that answers Telegram runs somewhere always-on, which this agent
+    is not, and rewriting the digest logic there would mean two implementations
+    of what the agent knows — drifting apart from the first change onwards.
+
+    So the relay is given no logic at all. It fetches these two files and posts
+    them to the model verbatim. Everything about what the agent knows and how it
+    speaks stays in this repository, in one language, covered by these tests.
+    """
+    digest = league_digest(state, values, now=now)
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    (STATE_DIR / "digest.txt").write_text(digest, encoding="utf-8")
+    (STATE_DIR / "persona.txt").write_text(SYSTEM, encoding="utf-8")
+    return len(digest)
 
 
 def league_digest(state: LeagueState, values: ValueCache, *, now: datetime) -> str:
@@ -239,4 +266,4 @@ def _player_row(owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: 
     )
 
 
-__all__ = ["MODEL", "SYSTEM", "answer", "league_digest"]
+__all__ = ["MODEL", "SYSTEM", "answer", "league_digest", "publish_briefing"]
