@@ -43,14 +43,15 @@ rather than a signing nobody intended.
 src/fantasy/
   domain/      models · rules · policy · intents · approvals   ← pure, no I/O
   sources/     laliga (auth, client, prices) · scouting · sync
-  analysis/    valuation · candidates
-  agent/       briefing · advisor · selection · ask · prompts/
-  channel/     telegram · brief · ledger
+  analysis/    valuation · fixtures · candidates
+  agent/       briefing · advisor · selection · session · ask · prompts/
+  channel/     telegram · wording · ledger
   execution/   executor                                        ← the only writer
   storage/     state · values
   cli.py
 tests/         unit · fixtures (real captured payloads) · evals
 config/        policy.yml · roles.yml
+infra/         worker.js — the Telegram relay
 docs/adr/      why things are the way they are
 ```
 
@@ -68,6 +69,7 @@ fantasy sync                         # fetch the league into state/
 fantasy plan                         # the candidate operations, deterministic
 fantasy advise                       # what the judgment layer makes of them
 fantasy ask "¿hay algún clausulazo interesante ahora mismo?"
+fantasy values                       # refresh the cached price histories
 fantasy run --dry-run                # the whole loop, touching nothing
 ```
 
@@ -76,7 +78,13 @@ fantasy run --dry-run                # the whole loop, touching nothing
 Anything you send the Telegram bot that is not a button press is treated as a
 question and answered against the current league — who is appreciating fastest,
 whether a clause is worth taking, what a signing would do to your balance
-before kick-off. The `chat` workflow reads the channel every five minutes.
+before kick-off.
+
+A webhook on a Cloudflare Worker answers it, because GitHub Actions is not a
+chat transport: a five-minute cron ran twice in nine hours. The relay holds no
+logic of its own — `fantasy sync` publishes `state/digest.txt` and
+`state/persona.txt` and the Worker posts them verbatim. Setup in
+[`infra/`](infra/README.md).
 
 ## Autonomy
 
@@ -107,7 +115,8 @@ starting place is not, and comes back to you.
 | 08:00 | the morning read |
 | 15:45 | about two hours before the market closes |
 | 17:40–18:00 | clause windows open at 17:48 |
-| every 5 min | the chat |
+| on a button | a decision dispatched from the chat |
+| on message | the chat, through the relay |
 
 ## Testing
 
