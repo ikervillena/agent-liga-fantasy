@@ -20,7 +20,7 @@ would only make it worse to read.
 from __future__ import annotations
 
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from anthropic import Anthropic
 
@@ -173,14 +173,7 @@ def league_digest(
         if run:
             lines.append(f"{name}: {run}")
 
-    lines += [
-        "",
-        "## Todos los jugadores con dueño",
-        "Columnas: jugador · pos · club · dueño · media · valor · cláusula · prima · "
-        "se abre · rol · tendencia de valor",
-    ]
-    for owned in sorted(state.owned_players, key=_ordering):
-        lines.append(_player_row(owned, values, now=now, mine=owned.team_id == state.my_team_id))
+    lines.extend(_squad_tables(state, values, now=now))
 
     if state.market:
         lines += ["", "## Mercado libre ahora", "jugador · pos · valor · precio"]
@@ -229,6 +222,54 @@ def _deadlines(state: LeagueState, now: datetime) -> list[str]:
     return lines
 
 
+#: A clause opening within this window is a live opportunity and gets the full
+#: row. Beyond it, the player cannot be signed in any decision being taken now.
+OPPORTUNITY_WINDOW = timedelta(days=10)
+
+
+def _squad_tables(state: LeagueState, values: ValueCache, *, now: datetime) -> list[str]:
+    """The players, at two levels of detail.
+
+    The table used to be 87% of the briefing: a hundred and forty-four players
+    with ten fields each, sent in full on every question. Most of it could not
+    matter to most questions — a rival's bench player whose clause is locked
+    for another fortnight cannot be signed today whatever is asked.
+
+    So the detail follows what a decision could actually turn on. Our own
+    squad and anyone whose clause is open or opening soon get everything.
+    Everyone else keeps name, club, value and price trend, which is all that
+    "who is appreciating fastest?" needs, and loses the rest.
+    """
+    live: list[str] = []
+    rest: list[str] = []
+
+    for owned in sorted(state.owned_players, key=_ordering):
+        mine = owned.team_id == state.my_team_id
+        opens = owned.clause_locked_until
+        soon = opens is None or opens <= now + OPPORTUNITY_WINDOW
+        if mine or (soon and not owned.is_shielded):
+            live.append(_full_row(owned, values, now=now, mine=mine))
+        else:
+            rest.append(_brief_row(owned, values))
+
+    lines = [
+        "",
+        "## Tu plantilla y las cláusulas alcanzables",
+        "jugador · pos · club · dueño · media · valor · [cláusula · prima si no es x1,00] · "
+        "se abre · rol · tendencia",
+        *live,
+    ]
+    if rest:
+        lines += [
+            "",
+            "## Resto de la liga (fuera de alcance ahora)",
+            "Cláusula bloqueada más de 10 días o blindado. "
+            "jugador · club · dueño · valor · tendencia",
+            *rest,
+        ]
+    return lines
+
+
 def _ordering(owned: OwnedPlayer) -> tuple[str, float]:
     return (owned.manager, -owned.player.average_points)
 
@@ -250,7 +291,24 @@ _ROLE_ES = {
 }
 
 
-def _player_row(owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: bool) -> str:
+def _trend(owned: OwnedPlayer, values: ValueCache) -> str:
+    series = values.get(owned.player.id)
+    if series is None or not series.points:
+        return "?"
+    read = valuation(series)
+    sign = "+" if read.velocity >= 0 else ""
+    return f"{sign}{read.velocity / 1e6:.2f}/d {sign}{read.delta_7d / 1e6:.2f}/7d".replace(".", ",")
+
+
+def _brief_row(owned: OwnedPlayer, values: ValueCache) -> str:
+    player = owned.player
+    return (
+        f"{player.name} {player.club or '?'} {owned.manager} "
+        f"{millions(player.market_value)} {_trend(owned, values)}"
+    )
+
+
+def _full_row(owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: bool) -> str:
     player = owned.player
     clause = effective_clause(player.market_value, owned.buyout_clause)
     premium = clause_premium(player.market_value, owned.buyout_clause)
@@ -262,20 +320,15 @@ def _player_row(owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: 
     else:
         window = f"{owned.clause_locked_until:%d/%m %H:%M}"
 
-    trend = "?"
-    series = values.get(player.id)
-    if series is not None and series.points:
-        read = valuation(series)
-        trend = (
-            f"{_TREND_ES[read.trend]} {millions(read.velocity)}/dia, 7d {millions(read.delta_7d)}"
-        )
-
-    owner = f"{owned.manager}{' (TÚ)' if mine else ''}"
+    # The clause and its premium are only stated when they differ from the
+    # value. At x1.00 they repeat a number already on the line, and most of
+    # the league sits at x1.00.
+    priced = "" if abs(premium - 1.0) < 0.005 else f"{millions(clause)} x{premium:.2f} "
+    owner = f"{owned.manager}{'(TÚ)' if mine else ''}"
     return (
-        f"{player.name} · {player.position.value} · {player.club or '?'} · {owner} · "
-        f"{player.average_points:.2f} · {millions(player.market_value)} · "
-        f"{millions(clause)} · x{premium:.2f} · {window} · "
-        f"{_ROLE_ES.get(player.role, '?')} · {trend}"
+        f"{player.name} {player.position.value} {player.club or '?'} {owner} "
+        f"{player.average_points:.2f} {millions(player.market_value)} {priced}"
+        f"{window} {_ROLE_ES.get(player.role, '?')} {_trend(owned, values)}"
     )
 
 

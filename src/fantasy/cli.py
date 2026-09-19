@@ -310,8 +310,18 @@ def poll() -> None:
 @app.command()
 def run(
     dry_run: Annotated[bool, typer.Option(help="Never touch the API.")] = False,
+    execute_only: Annotated[
+        bool,
+        typer.Option(help="Fire what is already approved; do not judge or ask."),
+    ] = False,
 ) -> None:
-    """The full loop: perceive, plan, revalidate, ask, execute."""
+    """The full loop: perceive, plan, revalidate, ask, execute.
+
+    `--execute-only` skips the judgment and the asking. The dense band around
+    17:48 exists to fire an approval at the exact minute a clause opens, not
+    to think: without this it deliberated on every pass, which is five model
+    calls in twenty minutes to reach the same conclusion five times.
+    """
     policy = Policy.load(POLICY_FILE)
     store = Store()
     roles = current_roles()
@@ -351,14 +361,15 @@ def run(
         )
 
     # 4. Ask — once, about the few things worth asking about.
-    _ask_what_matters(
-        [a for a in approvals.values() if needs_asking(a)],
-        state,
-        policy,
-        roles,
-        notifier,
-        now,
-    )
+    if not execute_only:
+        _ask_what_matters(
+            [a for a in approvals.values() if needs_asking(a)],
+            state,
+            policy,
+            roles,
+            notifier,
+            now,
+        )
 
     # 5. Execute what is approved and due.
     executor = Executor(FantasyClient(), policy, store, dry_run=dry_run)

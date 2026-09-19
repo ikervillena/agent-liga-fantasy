@@ -81,7 +81,15 @@ jobs:
       # `advise --send` step on two of these schedules, which judged the same
       # candidates a second time: two model calls and, worse, two messages
       # about one decision — the spam this redesign exists to remove.
+      # The 17:40-18:00 band exists to fire at the exact minute a clause
+      # opens, not to think about it: judging on all five passes reached the
+      # same conclusion five times and paid for it five times.
+      - name: Fire what is already approved
+        if: github.event.schedule == '40-59/5 15 * * *'
+        run: fantasy run --execute-only
+
       - name: The loop — perceive, plan, judge, ask, execute
+        if: github.event.schedule != '40-59/5 15 * * *'
         run: fantasy run ${{ inputs.dry_run && '--dry-run' || '' }}
 
       # Only after the nightly revaluation: re-reading 144 price histories is
