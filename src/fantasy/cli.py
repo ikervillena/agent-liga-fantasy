@@ -284,6 +284,13 @@ def poll() -> None:
         if reply.get("kind") == "text":
             question = str(reply.get("text") or "").strip()
             if question:
+                # Seen, then thinking, then the answer. Silence while a model
+                # reasons reads as a broken bot, and these two calls cost
+                # nothing next to the one that follows.
+                message_id = reply.get("message_id")
+                if isinstance(message_id, int):
+                    notifier.acknowledge(message_id)
+                notifier.typing()
                 notifier.send(_answer_question(question, store, now))
                 answered += 1
             continue

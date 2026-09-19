@@ -69,7 +69,9 @@ class Executor:
                 continue
 
             intent = approval.intent
-            refusal = self._policy.limits.rejects(intent.amount, spent, done)
+            refusal = self._policy.limits.rejects(
+                intent.amount, spent, done, spends=intent.kind.spends_money
+            )
             if refusal:
                 outcomes.append(Outcome(approval.key, "blocked", refusal))
                 self._log(approval, "blocked", refusal, now)

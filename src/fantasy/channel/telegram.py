@@ -36,6 +36,10 @@ class Notifier(Protocol):
 
     def ask_many(self, text: str, decisions: list[tuple[str, str]]) -> None: ...
 
+    def acknowledge(self, message_id: int) -> None: ...
+
+    def typing(self) -> None: ...
+
     def poll(self, cursor: int) -> tuple[list[Reply], int]: ...
 
 
@@ -55,6 +59,12 @@ class ConsoleNotifier:
     def ask_many(self, text: str, decisions: list[tuple[str, str]]) -> None:
         labels = " ".join(f"[{label} {key}]" for key, label in decisions)
         self.send(f"{text}\n{labels}")
+
+    def acknowledge(self, message_id: int) -> None:
+        pass
+
+    def typing(self) -> None:
+        pass
 
     def poll(self, cursor: int) -> tuple[list[Reply], int]:
         return [], cursor
@@ -81,7 +91,7 @@ class TelegramNotifier:
         return None
 
     def send(self, text: str) -> None:
-        for chunk in split_message(text):
+        for chunk in as_messages(text):
             self._call(
                 "sendMessage",
                 {
@@ -142,6 +152,29 @@ class TelegramNotifier:
             },
         )
 
+    def acknowledge(self, message_id: int) -> None:
+        """React to the incoming message the instant it is read.
+
+        Thinking takes seconds; a chat that shows nothing for that long reads
+        as broken. An eye on the message says "seen, working on it" before any
+        answer exists, which is the difference between waiting and wondering.
+        """
+        self._call(
+            "setMessageReaction",
+            {
+                "chat_id": self._settings.telegram_chat_id,
+                "message_id": message_id,
+                "reaction": [{"type": "emoji", "emoji": "👀"}],
+            },
+        )
+
+    def typing(self) -> None:
+        """Show the typing indicator. Telegram clears it after about five seconds."""
+        self._call(
+            "sendChatAction",
+            {"chat_id": self._settings.telegram_chat_id, "action": "typing"},
+        )
+
     def poll(self, cursor: int) -> tuple[list[Reply], int]:
         """Everything new since `cursor`, plus the cursor to store next time."""
         url = TELEGRAM_API.format(token=self._settings.telegram_token, method="getUpdates")
@@ -172,8 +205,37 @@ class TelegramNotifier:
             message = update.get("message") or {}
             text = str(message.get("text") or "").strip()
             if text:
-                replies.append(Reply(kind="text", text=text))
+                replies.append(Reply(kind="text", text=text, message_id=message.get("message_id")))
         return replies, latest
+
+
+#: Under this, an answer is one message. Over it, the paragraphs are sent
+#: separately — a person making three points in a chat sends three messages,
+#: not one essay, and the reader can act on the first without scrolling.
+SPLIT_OVER = 320
+
+#: Never more than this many, or the chat becomes its own kind of spam.
+MAX_PARTS = 4
+
+
+def as_messages(text: str) -> list[str]:
+    """How one answer becomes what actually arrives in the chat."""
+    body = text.strip()
+    if len(body) <= SPLIT_OVER:
+        return split_message(body)
+
+    paragraphs = [p.strip() for p in body.split("\n\n") if p.strip()]
+    if len(paragraphs) < 2:
+        return split_message(body)
+
+    if len(paragraphs) > MAX_PARTS:
+        head = paragraphs[: MAX_PARTS - 1]
+        paragraphs = [*head, "\n\n".join(paragraphs[MAX_PARTS - 1 :])]
+
+    parts: list[str] = []
+    for paragraph in paragraphs:
+        parts.extend(split_message(paragraph))
+    return parts
 
 
 def split_message(text: str, size: int = MAX_MESSAGE) -> list[str]:

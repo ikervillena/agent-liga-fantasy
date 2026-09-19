@@ -45,14 +45,38 @@ class Limits(BaseModel):
     max_operations_per_day: int = 4
     min_cash_reserve: Euros = 0
 
-    def rejects(self, amount: Euros, spent_this_run: Euros, done_today: int) -> str | None:
-        """Returns why the operation is refused, or None if it passes."""
+    def rejects(
+        self,
+        amount: Euros,
+        spent_this_run: Euros,
+        done_today: int,
+        *,
+        spends: bool = True,
+        cash: Euros | None = None,
+    ) -> str | None:
+        """Why this operation is refused, or None if it passes.
+
+        `spends` is the distinction that was missing. The money caps exist to
+        bound what the agent can *spend*, and applying them to an incoming sum
+        inverts their meaning: a 50 M offer for one of our players was refused
+        for "exceeding the per-operation cap", which is the cap working exactly
+        backwards. Sales and accepted offers still count against the daily
+        operation limit, because that one bounds activity rather than money.
+        """
+        if done_today >= self.max_operations_per_day:
+            return f"already at the daily cap of {self.max_operations_per_day} operations"
+        if not spends:
+            return None
+
         if amount > self.max_per_operation:
             return f"{amount:,} exceeds the per-operation cap of {self.max_per_operation:,}"
         if spent_this_run + amount > self.max_per_run:
             return f"would exceed the per-run budget of {self.max_per_run:,}"
-        if done_today >= self.max_operations_per_day:
-            return f"already at the daily cap of {self.max_operations_per_day} operations"
+        if cash is not None and cash - amount < self.min_cash_reserve:
+            return (
+                f"would leave {cash - amount:,} in hand, below the "
+                f"{self.min_cash_reserve:,} reserve"
+            )
         return None
 
 
