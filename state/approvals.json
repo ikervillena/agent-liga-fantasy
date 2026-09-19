@@ -864,6 +864,11 @@
         "at": "2026-09-19T00:05:40.216222Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-19T11:30:57.707905Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -890,7 +895,7 @@
       "player_name": "Pablo Ramón",
       "rationale": "Pablo Ramón averages 2.83 with no clause premium and comes off his lock on 13/09 23:07. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-19T00:05:40.216222Z",
@@ -900,6 +905,11 @@
         "at": "2026-09-19T00:05:40.216222Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-19T11:30:57.707905Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -925,6 +935,39 @@
       "player_id": "3164",
       "player_name": "Bardeli",
       "rationale": "Bardeli averages 5.80 with no clause premium and comes off his lock on 20/09 18:05. Replacing him would cost several times this."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-19T11:30:57.707905Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-19T11:30:57.707905Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 21533977,
+      "anchor": null,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 21533977,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-19T11:30:57.707905Z",
+      "expected_gain": 0.0,
+      "fallback": "Let the offer lapse and keep him listed.",
+      "kind": "accept_offer",
+      "market_id": "36877332",
+      "offer_id": "114553687",
+      "payload": {},
+      "player_id": "2443",
+      "player_name": "Aramburu",
+      "rationale": "+8.8% over market value for a player outside the eleven (average 3.17)."
     },
     "state": "pending"
   },
