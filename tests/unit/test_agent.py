@@ -116,9 +116,7 @@ class TestBriefing:
 
     def test_includes_the_deadline_when_there_is_a_matchday(self, league):
         kickoff = NOW + timedelta(days=1)
-        with_matchday = league.model_copy(
-            update={"matchday": Matchday(number=5, opens_at=kickoff)}
-        )
+        with_matchday = league.model_copy(update={"matchday": Matchday(number=5, opens_at=kickoff)})
         text = render(with_matchday, make_policy(), [], now=NOW)
         assert "Jornada 5" in text
 

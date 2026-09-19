@@ -90,9 +90,7 @@ class TestCanPayClause:
     def test_refused_inside_the_pre_matchday_block(self):
         """The case that produced "sign him for this matchday" a day too late."""
         config = LeagueConfig(clause_block_hours=24)
-        ok, reason = can_pay_clause(
-            self._open(), KICKOFF - timedelta(hours=20), MATCHDAY, config
-        )
+        ok, reason = can_pay_clause(self._open(), KICKOFF - timedelta(hours=20), MATCHDAY, config)
         assert not ok
         assert "blocked" in reason
 

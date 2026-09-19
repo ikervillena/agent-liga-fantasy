@@ -22,10 +22,7 @@ from fantasy.sources.scouting.futbolfantasy import (
 from fantasy.sources.scouting.roles import RoleBook
 
 FIXTURE = (
-    Path(__file__).resolve().parents[1]
-    / "fixtures"
-    / "futbolfantasy"
-    / "jerarquias_levante.html"
+    Path(__file__).resolve().parents[1] / "fixtures" / "futbolfantasy" / "jerarquias_levante.html"
 )
 
 
@@ -85,9 +82,7 @@ class TestNameIndex:
 
     def test_an_ambiguous_surname_refuses_to_guess(self):
         """Two players, one surname, different tiers: the alias is not indexed."""
-        index = build_index(
-            {"Pablo García": SquadRole.KEY, "Sergio García": SquadRole.BENCH}
-        )
+        index = build_index({"Pablo García": SquadRole.KEY, "Sergio García": SquadRole.BENCH})
         book = RoleBook(index)
         assert book.role_of("García") is SquadRole.UNKNOWN
         assert book.role_of("Pablo García") is SquadRole.KEY

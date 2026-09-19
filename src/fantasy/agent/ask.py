@@ -82,9 +82,7 @@ def answer(
             thinking={"type": "adaptive"},
             output_config={"effort": effort},
             system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
-            messages=[
-                {"role": "user", "content": f"{brief}\n\n## Pregunta de Iker\n{question}"}
-            ],
+            messages=[{"role": "user", "content": f"{brief}\n\n## Pregunta de Iker\n{question}"}],
             extra_headers={"anthropic-workspace-id": workspace} if workspace else {},
         )
     except Exception as exc:
@@ -178,9 +176,7 @@ _ROLE_ES = {
 }
 
 
-def _player_row(
-    owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: bool
-) -> str:
+def _player_row(owned: OwnedPlayer, values: ValueCache, *, now: datetime, mine: bool) -> str:
     player = owned.player
     clause = effective_clause(player.market_value, owned.buyout_clause)
     premium = clause_premium(player.market_value, owned.buyout_clause)
@@ -197,8 +193,7 @@ def _player_row(
     if series is not None and series.points:
         read = valuation(series)
         trend = (
-            f"{_TREND_ES[read.trend]} {millions(read.velocity)}/dia, "
-            f"7d {millions(read.delta_7d)}"
+            f"{_TREND_ES[read.trend]} {millions(read.velocity)}/dia, 7d {millions(read.delta_7d)}"
         )
 
     owner = f"{owned.manager}{' (TÚ)' if mine else ''}"

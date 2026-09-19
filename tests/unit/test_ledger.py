@@ -42,9 +42,7 @@ class TestRepetition:
 class TestChangedFactsBreakSilence:
     def test_a_changed_fingerprint_is_news_again(self, ledger: Ledger):
         ledger.record("abc", at=NOW, fingerprint="precio-12M")
-        assert not ledger.already_said(
-            "abc", now=NOW + timedelta(hours=1), fingerprint="precio-6M"
-        )
+        assert not ledger.already_said("abc", now=NOW + timedelta(hours=1), fingerprint="precio-6M")
 
     def test_the_latest_statement_wins(self, ledger: Ledger):
         ledger.record("abc", at=NOW, fingerprint="old")
