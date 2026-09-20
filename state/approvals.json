@@ -1094,6 +1094,39 @@
     "state": "expired"
   },
   {
+    "asked_at": "2026-09-20T10:51:49.717527Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-20T10:51:49.717527Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 17326370,
+      "anchor": "2026-09-14T11:12:04+02:00",
+      "conditions": {
+        "average_points": 4.83,
+        "player_status": "ok",
+        "price": 17326370,
+        "price_tolerance": 0.05,
+        "squad_role": "key"
+      },
+      "execute_at": "2026-09-20T10:51:49.717527Z",
+      "expected_gain": 2.54,
+      "fallback": "Pasar si el presupuesto va a otra cosa: la ventana vuelve en 14 días.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "2661",
+      "player_name": "Djene",
+      "rationale": "Djene es titular indiscutible en su club con una media de 4.83, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 17.33 M, de EkainGoñi_."
+    },
+    "state": "pending"
+  },
+  {
     "asked_at": "2026-09-18T22:26:19.535302Z",
     "decided_at": null,
     "history": [
@@ -1234,6 +1267,39 @@
       "player_id": "3174",
       "player_name": "Mandi",
       "rationale": "Mandi averages 4.20 with no clause premium and comes off his lock on 23/09 22:03. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-20T10:51:49.717527Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-20T10:51:49.717527Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 19162048,
+      "anchor": "2026-09-22T17:48:34+02:00",
+      "conditions": {
+        "average_points": 4.5,
+        "player_status": "ok",
+        "price": 19162048,
+        "price_tolerance": 0.05,
+        "squad_role": "key"
+      },
+      "execute_at": "2026-09-22T17:48:34+02:00",
+      "expected_gain": 2.21,
+      "fallback": "Pasar si el presupuesto va a otra cosa: la ventana vuelve en 14 días.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "2300",
+      "player_name": "Dela",
+      "rationale": "Dela es titular indiscutible en su club con una media de 4.50, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 19.16 M, de EkainGoñi_."
     },
     "state": "pending"
   },
