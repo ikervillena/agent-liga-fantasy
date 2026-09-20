@@ -1,5 +1,5 @@
 {
-  "cash": 3161934,
+  "cash": 47827775,
   "config": {
     "bench": false,
     "buyout_clauses": true,
@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-20T00:11:30.346897Z",
+  "fetched_at": "2026-09-20T10:52:25.272823Z",
   "fixtures": [
     {
       "away_club_id": "11",
@@ -502,25 +502,6 @@
       "seller": null
     },
     {
-      "asking_price": 29042638,
-      "expires_at": "2026-09-21T17:28:29+02:00",
-      "market_id": "24142735",
-      "player": {
-        "average_points": 3.43,
-        "club": "",
-        "club_id": "49",
-        "id": "3125",
-        "market_value": 28517274,
-        "name": "Canales",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 24
-      },
-      "seller": null
-    },
-    {
       "asking_price": 19706141,
       "expires_at": "2026-09-21T17:44:35+02:00",
       "market_id": "36877332",
@@ -536,25 +517,6 @@
         "role": "unknown",
         "status": "ok",
         "total_points": 19
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 12964732,
-      "expires_at": "2026-09-21T17:28:05+02:00",
-      "market_id": "40539872",
-      "player": {
-        "average_points": 4.2,
-        "club": "",
-        "club_id": "11",
-        "id": "3174",
-        "market_value": 12639060,
-        "name": "Mandi",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 21
       },
       "seller": null
     },
@@ -593,12 +555,6 @@
   },
   "offers": [
     {
-      "amount": 13554210,
-      "market_id": "40539872",
-      "offer_id": "117196443",
-      "player_name": "Mandi"
-    },
-    {
       "amount": 20291138,
       "market_id": "36877332",
       "offer_id": "117196448",
@@ -609,12 +565,6 @@
       "market_id": "40551991",
       "offer_id": "117196450",
       "player_name": "Bardeli"
-    },
-    {
-      "amount": 31111631,
-      "market_id": "24142735",
-      "offer_id": "117196446",
-      "player_name": "Canales"
     }
   ],
   "teams": [
@@ -1686,27 +1636,6 @@
           "team_id": "38611081"
         },
         {
-          "buyout_clause": 12639060,
-          "clause_locked_until": "2026-09-23T22:03:08+02:00",
-          "is_shielded": false,
-          "manager": "iker_villena",
-          "player": {
-            "average_points": 4.2,
-            "club": "Levante UD",
-            "club_id": "11",
-            "id": "3174",
-            "market_value": 12639060,
-            "name": "Mandi",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "key",
-            "status": "ok",
-            "total_points": 21
-          },
-          "player_team_id": "69936997",
-          "team_id": "38611081"
-        },
-        {
           "buyout_clause": 29104946,
           "clause_locked_until": "2026-08-30T23:24:50+02:00",
           "is_shielded": false,
@@ -1788,27 +1717,6 @@
             "total_points": 34
           },
           "player_team_id": "34189658",
-          "team_id": "38611081"
-        },
-        {
-          "buyout_clause": 39315741,
-          "clause_locked_until": "2026-08-30T23:24:50+02:00",
-          "is_shielded": false,
-          "manager": "iker_villena",
-          "player": {
-            "average_points": 3.43,
-            "club": "R. Racing Club",
-            "club_id": "49",
-            "id": "3125",
-            "market_value": 28517274,
-            "name": "Canales",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "key",
-            "status": "ok",
-            "total_points": 24
-          },
-          "player_team_id": "34189656",
           "team_id": "38611081"
         },
         {

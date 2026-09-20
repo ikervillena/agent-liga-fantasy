@@ -1101,6 +1101,11 @@
         "at": "2026-09-20T10:51:49.717527Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-20T16:57:43.132999Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1123,6 +1128,39 @@
       "player_id": "2661",
       "player_name": "Djene",
       "rationale": "Djene es titular indiscutible en su club con una media de 4.83, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 17.33 M, de EkainGoñi_."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-20T16:57:43.132999Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-20T16:57:43.132999Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 30458916,
+      "anchor": "2026-09-10T17:48:14+02:00",
+      "conditions": {
+        "average_points": 4.83,
+        "player_status": "ok",
+        "price": 30458916,
+        "price_tolerance": 0.05,
+        "squad_role": "key"
+      },
+      "execute_at": "2026-09-20T16:57:43.132999Z",
+      "expected_gain": 2.54,
+      "fallback": "Pasar si el presupuesto va a otra cosa: la ventana vuelve en 14 días.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "3123",
+      "player_name": "Marcos Alonso",
+      "rationale": "Marcos Alonso es titular indiscutible en su club con una media de 4.83, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 30.46 M, de EkainGoñi_."
     },
     "state": "pending"
   },
