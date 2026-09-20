@@ -141,3 +141,4 @@ Decisions with a rationale worth keeping live in [`docs/adr/`](docs/adr/):
 - [Squad roles are scraped, with manual override](docs/adr/0006-scraped-roles.md)
 - [One structured call, not a tool loop](docs/adr/0007-judgment-layer.md)
 - [What an intent is, and why the price is not part of it](docs/adr/0008-intent-identity.md)
+- [The briefing is the reasoning](docs/adr/0009-briefing-shape.md)

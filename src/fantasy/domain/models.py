@@ -100,7 +100,24 @@ class Player(BaseModel):
 
     @property
     def matchdays_played(self) -> int:
-        return len(self.points_by_matchday)
+        """How many matchdays the total was earned over.
+
+        This is the number that makes an average readable — six a game across
+        two substitute appearances and across seven starts are the same average
+        and opposite decisions — so it is worth reconstructing when the API
+        withholds it, which for squad entries it does: `weekPoints` comes back
+        on the competition-wide player but not on the one nested in a squad,
+        and every player we hold therefore reported zero matchdays.
+
+        The total and the average are both present and consistent, so the count
+        divides out. The average arrives rounded to two decimals, which moves
+        the quotient by well under half a matchday at any realistic total.
+        """
+        if self.points_by_matchday:
+            return len(self.points_by_matchday)
+        if self.average_points <= 0:
+            return 0
+        return round(self.total_points / self.average_points)
 
 
 class OwnedPlayer(BaseModel):

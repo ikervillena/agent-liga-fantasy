@@ -55,13 +55,57 @@ async function answer(message, env) {
   const question = message?.text?.trim();
   if (!question) return;
 
-  await Promise.all([react(message, env), typing(env)]);
+  await react(message, env);
 
   const [digest, persona] = await Promise.all([text(`${RAW}/digest.txt`), text(`${RAW}/persona.txt`)]);
   if (!digest) return send("No tengo el informe de la liga todavía.", env);
 
-  const reply = await ask(question, digest, persona, env);
-  for (const part of split(reply)) await send(part, env);
+  // Telegram's typing indicator expires after about five seconds and the model
+  // takes fifteen or more, so a single `sendChatAction` showed "escribiendo…"
+  // briefly and then left the chat looking dead for the rest of the wait. It
+  // has to be renewed while the thinking happens.
+  const stop = keepTyping(env);
+  let reply;
+  try {
+    reply = await ask(question, digest, persona, env);
+  } finally {
+    stop();
+  }
+
+  // Sent one at a time, with the indicator up and a pause in between, because
+  // three messages arriving in the same instant is not what several messages
+  // from a person looks like — it is one wall of text in three pieces.
+  const parts = split(reply);
+  for (const [index, part] of parts.entries()) {
+    if (index > 0) {
+      await typing(env);
+      await sleep(pause(part));
+    }
+    await send(part, env);
+  }
+}
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Long enough to read as composed rather than pasted, short enough that three
+// messages do not add ten seconds to an answer that already took fifteen.
+const pause = (part) => Math.min(2500, 500 + part.length * 8);
+
+// Renews the typing action until the returned function is called. Waiting on a
+// timer costs no CPU time on Workers, which bills execution rather than wall
+// clock, so this is free — but it must be stoppable in a `finally`, or a failed
+// model call would leave the loop running for the life of the instance.
+function keepTyping(env) {
+  let live = true;
+  (async () => {
+    while (live) {
+      await typing(env);
+      await sleep(4000);
+    }
+  })();
+  return () => {
+    live = false;
+  };
 }
 
 async function ask(question, digest, persona, env) {
@@ -74,7 +118,9 @@ async function ask(question, digest, persona, env) {
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 1500,
+      // Headroom for adaptive thinking, which spends over a thousand tokens
+      // before writing a word. At 1500 the reply was truncated or empty.
+      max_tokens: 3000,
       thinking: { type: "adaptive" },
       output_config: { effort: "medium" },
       system: [
@@ -119,11 +165,42 @@ async function decide(callback, env) {
 
 // Paragraphs become separate messages: a person making three points in a chat
 // sends three messages, not one essay.
+//
+// The previous version only ever split on blank lines, and only above 320
+// characters. A single dense paragraph — which is most of what the model
+// actually writes — passed through whole however long it was. That was the
+// "biblia": not a formatting failure so much as a splitter that gave up
+// whenever there was nothing convenient to split on.
+const SOFT_LIMIT = 260;
+
 function split(body) {
-  if (body.length <= 320) return [body];
-  const parts = body.split("\n\n").map((p) => p.trim()).filter(Boolean);
-  if (parts.length < 2) return [body];
-  return parts.length > 3 ? [...parts.slice(0, 2), parts.slice(2).join("\n\n")] : parts;
+  const parts = [];
+  for (const block of body.split(/\n{2,}/).map((p) => p.trim()).filter(Boolean)) {
+    if (block.length <= SOFT_LIMIT) parts.push(block);
+    else parts.push(...sentences(block));
+  }
+  if (!parts.length) return [body];
+  // Never more than three: past that it stops reading as a conversation and
+  // starts reading as a notification storm.
+  return parts.length > 3 ? [...parts.slice(0, 2), parts.slice(2).join(" ")] : parts;
+}
+
+// Break a long block at sentence ends, packing as much into each message as
+// fits under the limit. Splitting mid-sentence would read worse than not
+// splitting at all.
+function sentences(block) {
+  const out = [];
+  let current = "";
+  for (const piece of block.split(/(?<=[.!?…])\s+/)) {
+    if (current && `${current} ${piece}`.length > SOFT_LIMIT) {
+      out.push(current);
+      current = piece;
+    } else {
+      current = current ? `${current} ${piece}` : piece;
+    }
+  }
+  if (current) out.push(current);
+  return out;
 }
 
 const react = (message, env) =>

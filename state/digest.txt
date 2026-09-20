@@ -1,9 +1,9 @@
 # Estado de la liga
-Ahora: Saturday 19/09 17:49
+Ahora: Sunday 20/09 11:15
 Tu caja: 3,16 M
 Vas 2º con 254 puntos.
 Jornada 7: empezó 18/09 21:00 (EN CURSO).
-PLAZO QUE MANDA: la jornada 8 arranca el 09/10 a las 21:00, dentro de 20.0 días. Tu saldo tiene que estar en positivo en ese instante, no antes: hasta entonces puedes estar en negativo sin perder nada.
+PLAZO QUE MANDA: la jornada 8 arranca el 09/10 a las 21:00, dentro de 19.3 días. Tu saldo tiene que estar en positivo en ese instante, no antes: hasta entonces puedes estar en negativo sin perder nada.
 
 ## Clasificación
 Pos | Manager | Puntos | Valor plantilla
@@ -40,155 +40,158 @@ Sevilla FC: J8 en Levante UD · J9 en Real Madrid · J10 vs C.A. Osasuna
 Valencia CF: J8 en R. Racing Club · J9 vs Athletic Club · J10 vs Villarreal CF
 Villarreal CF: J8 en Real Madrid · J9 vs Elche CF · J10 en Valencia CF
 
-## Tu plantilla y las cláusulas alcanzables
-jugador · pos · club · dueño · media · valor · [cláusula · prima si no es x1,00] · se abre · rol · tendencia
-Cuti Romero DF Atlético de Madrid Barandi07 5.75 33,78 M 52,75 M x1.56 ABIERTA ? +0,32/d +2,26/7d
-Sucic MF Real Sociedad Barandi07 5.00 11,62 M 16,82 M x1.45 ABIERTA importante +0,40/d +2,83/7d
-A. Herrero GK Málaga CF Barandi07 4.83 17,89 M 23/09 22:02 clave +0,49/d +3,44/7d
-Oyarzabal FW Real Sociedad Barandi07 4.67 52,41 M 79,14 M x1.51 ABIERTA clave -0,71/d -4,98/7d
-Ferran Jutglà FW Celta Barandi07 3.71 8,84 M 15,84 M x1.79 ABIERTA importante +0,19/d +1,32/7d
-Kochorashvili MF Sevilla FC Barandi07 3.50 6,50 M 9,49 M x1.46 ABIERTA importante -0,07/d -0,52/7d
-Quagliata DF RC Deportivo Barandi07 2.83 4,02 M 24/09 17:48 importante +0,05/d +0,37/7d
-Manu Sánchez DF Levante UD Barandi07 2.67 5,38 M 23/09 22:05 importante +0,01/d +0,05/7d
-Óscar Valentín MF Rayo Vallecano Barandi07 2.57 3,32 M 3,94 M x1.19 22/09 17:48 rotacion -0,05/d -0,34/7d
-Cala FW RCD Espanyol Barandi07 2.57 6,04 M 7,67 M x1.27 26/09 17:48 ? -0,09/d -0,62/7d
-Ximo Navarro DF RC Deportivo Barandi07 2.17 4,73 M 9,27 M x1.96 ABIERTA importante -0,02/d -0,15/7d
-Belocian DF R. Racing Club Barandi07 2.00 3,15 M 24/09 17:48 suplente +0,02/d +0,16/7d
-Iván Villar GK Celta Barandi07 0.00 0,56 M 1,57 M x2.79 ABIERTA suplente -0,01/d -0,04/7d
-F. Garcés DF Deportivo Alavés Barandi07 0.00 0,47 M 1,00 M x2.13 ABIERTA ? -0,00/d -0,01/7d
-Dmitrovic GK RCD Espanyol EkainGoñi_ 6.86 41,09 M 41,31 M x1.01 ABIERTA clave +0,15/d +1,05/7d
-Y. Zabiri FW R. Racing Club EkainGoñi_ 6.00 15,17 M ABIERTA importante +0,89/d +6,25/7d
-Zaid Romero DF Getafe CF EkainGoñi_ 5.80 24,84 M 29,00 M x1.17 ABIERTA clave -0,44/d -3,05/7d
-M. Román MF Celta EkainGoñi_ 5.14 12,86 M ABIERTA ? +0,33/d +2,31/7d
-Marcos Alonso DF Celta EkainGoñi_ 4.83 30,61 M ABIERTA clave +0,21/d +1,44/7d
-Djene DF Getafe CF EkainGoñi_ 4.83 16,98 M ABIERTA clave +0,16/d +1,11/7d
-Pepelu MF Valencia CF EkainGoñi_ 4.67 10,67 M 12,63 M x1.18 ABIERTA rotacion +0,16/d +1,14/7d
-Suazo DF Sevilla FC EkainGoñi_ 4.50 5,65 M 9,05 M x1.60 ABIERTA importante +0,19/d +1,35/7d
-Dela DF Levante UD EkainGoñi_ 4.50 19,41 M 22/09 17:48 clave +0,15/d +1,02/7d
-Catena DF C.A. Osasuna EkainGoñi_ 4.00 32,01 M 34,00 M x1.06 ABIERTA clave -0,64/d -4,47/7d
-Mangala MF Getafe CF EkainGoñi_ 3.67 11,42 M 18,06 M x1.58 ABIERTA clave -0,11/d -0,74/7d
-Rubén García MF C.A. Osasuna EkainGoñi_ 3.57 14,01 M 23,10 M x1.65 ABIERTA importante -0,13/d -0,94/7d
-Denis Suárez MF Deportivo Alavés EkainGoñi_ 3.29 2,81 M ABIERTA rotacion +0,04/d +0,29/7d
-Carlos Espí FW Real Madrid EkainGoñi_ 3.17 13,86 M 14,78 M x1.07 ABIERTA revulsivo -0,05/d -0,37/7d
-Enes Ünal FW Getafe CF EkainGoñi_ 2.17 16,78 M 20,74 M x1.24 ABIERTA clave -0,27/d -1,89/7d
-Williot MF Celta EkainGoñi_ 1.43 4,41 M 13,39 M x3.03 ABIERTA rotacion -0,08/d -0,55/7d
-Aubameyang FW RC Deportivo SuperrGio 10.50 101,76 M ABIERTA clave +1,87/d +13,11/7d
-Ionut Radu GK Celta SuperrGio 6.29 41,68 M ABIERTA clave +0,40/d +2,78/7d
-Agoumé MF Sevilla FC SuperrGio 6.00 11,21 M 13,73 M x1.23 24/09 18:51 clave +0,39/d +2,70/7d
-Foyth DF Villarreal CF SuperrGio 5.33 12,27 M 20,39 M x1.66 ABIERTA importante -0,38/d -2,68/7d
-T. Morente FW Elche CF SuperrGio 4.86 2,62 M 26/09 17:48 ? +0,10/d +0,73/7d
-Javi Hernández MF RCD Espanyol SuperrGio 4.00 17,33 M 18,39 M x1.06 ABIERTA importante +0,38/d +2,65/7d
-F. Bernal MF Real Betis SuperrGio 3.83 13,96 M 16,00 M x1.15 25/09 17:48 rotacion +0,01/d +0,10/7d
-A. Rebbach FW Deportivo Alavés SuperrGio 3.71 5,19 M ABIERTA importante +0,01/d +0,04/7d
-Noubi DF RC Deportivo SuperrGio 3.33 15,79 M 20,88 M x1.32 ABIERTA clave +0,13/d +0,91/7d
-Sergio Gómez DF Real Sociedad SuperrGio 2.83 16,76 M 18,50 M x1.10 25/09 17:48 importante +0,14/d +1,01/7d
-Urko MF RCD Espanyol SuperrGio 2.43 4,48 M 12,92 M x2.89 ABIERTA importante +0,02/d +0,12/7d
-Iker Muñoz MF C.A. Osasuna SuperrGio 2.43 2,00 M 5,84 M x2.92 ABIERTA importante +0,01/d +0,09/7d
-Areso DF Athletic Club SuperrGio 2.29 4,28 M 5,00 M x1.17 28/09 17:48 importante +0,05/d +0,36/7d
-Starfelt DF Celta SuperrGio 2.00 9,53 M 19,00 M x1.99 ABIERTA importante -0,14/d -0,96/7d
-Jorge Salinas DF R. Racing Club SuperrGio 1.86 6,95 M 9,29 M x1.34 ABIERTA clave -0,00/d -0,01/7d
-B. Iglesias FW Celta SuperrGio 0.67 12,48 M 27,00 M x2.16 ABIERTA revulsivo -0,33/d -2,33/7d
-Fidalgo MF Real Betis SuperrGio 0.33 1,18 M 4,42 M x3.75 ABIERTA suplente -0,03/d -0,22/7d
-A. Ferllo GK RC Deportivo SuperrGio 0.00 1,88 M 7,75 M x4.12 ABIERTA suplente -0,05/d -0,37/7d
-Sivera GK Deportivo Alavés UAlzaga 9.29 41,68 M 51,68 M x1.24 ABIERTA clave -0,24/d -1,68/7d
-Marcos Llorente DF Atlético de Madrid UAlzaga 6.33 42,11 M 43,65 M x1.04 ABIERTA importante +0,16/d +1,13/7d
-Mariano FW Deportivo Alavés UAlzaga 6.29 19,83 M 20,00 M x1.01 25/09 17:48 revulsivo +0,68/d +4,77/7d
-Navarro MF Athletic Club UAlzaga 6.00 9,35 M 23/09 17:48 rotacion +0,56/d +3,89/7d
-Juan Iglesias DF Sevilla FC UAlzaga 5.67 15,16 M 19,68 M x1.30 ABIERTA clave +0,51/d +3,55/7d
-Jonny Otto DF Deportivo Alavés UAlzaga 5.14 14,37 M ABIERTA importante +0,30/d +2,09/7d
-Cucho FW Real Betis UAlzaga 5.00 34,40 M 46,00 M x1.34 ABIERTA importante -0,33/d -2,29/7d
-Pathé I. Ciss MF Rayo Vallecano UAlzaga 3.71 25,41 M 80,06 M x3.15 ABIERTA ? +0,30/d +2,07/7d
-I. Romero FW Levante UD UAlzaga 3.67 6,18 M 12,27 M x1.99 ABIERTA importante +0,08/d +0,53/7d
-Iago Aspas FW Celta UAlzaga 3.33 5,81 M 11,93 M x2.05 ABIERTA rotacion -0,12/d -0,86/7d
-Moncayola MF C.A. Osasuna UAlzaga 2.71 7,41 M 11,43 M x1.54 ABIERTA clave -0,03/d -0,23/7d
-Juan Cruz MF Málaga CF UAlzaga 1.83 6,75 M 25,95 M x3.84 ABIERTA rotacion -0,18/d -1,23/7d
-Adeyemi FW FC Barcelona Zubikaraiander 7.50 55,45 M ABIERTA revulsivo +0,95/d +6,68/7d
-Courtois GK Real Madrid Zubikaraiander 6.17 60,80 M 78,00 M x1.28 ABIERTA clave -0,14/d -1,00/7d
-Tenaglia DF Deportivo Alavés Zubikaraiander 6.00 34,06 M ABIERTA clave +0,08/d +0,57/7d
-C. Soler MF Real Sociedad Zubikaraiander 5.17 30,45 M 33,95 M x1.12 ABIERTA clave -0,06/d -0,41/7d
-Á. Carreras DF Real Madrid Zubikaraiander 4.00 9,40 M 20,40 M x2.17 ABIERTA ? +0,16/d +1,13/7d
-Niño FW Málaga CF Zubikaraiander 4.00 1,07 M 1,52 M x1.42 ABIERTA ? -0,01/d -0,08/7d
-P. Martínez MF Málaga CF Zubikaraiander 3.40 4,70 M 29/09 17:48 suplente -0,00/d -0,01/7d
-Turrientes MF Real Sociedad Zubikaraiander 2.67 7,05 M 11,89 M x1.69 ABIERTA rotacion +0,08/d +0,54/7d
-Youssef DF Deportivo Alavés Zubikaraiander 2.43 0,96 M 5,00 M x5.21 ABIERTA revulsivo +0,00/d +0,03/7d
-Álvaro García MF Rayo Vallecano Zubikaraiander 2.43 18,29 M 30,35 M x1.66 ABIERTA importante -0,05/d -0,36/7d
-J. Vertrouwd DF Rayo Vallecano Zubikaraiander 0.67 0,64 M 1,00 M x1.56 ABIERTA ? -0,01/d -0,06/7d
-Zakharyan MF Real Sociedad Zubikaraiander 0.50 0,57 M 1,00 M x1.74 ABIERTA suplente -0,01/d -0,04/7d
-El Hilali DF RCD Espanyol benatoo02 5.33 15,87 M ABIERTA clave +0,29/d +2,05/7d
-Laporte DF Athletic Club benatoo02 5.29 42,19 M 44,46 M x1.05 ABIERTA clave -0,01/d -0,10/7d
-Le Normand DF Atlético de Madrid benatoo02 5.20 9,83 M 16,91 M x1.72 ABIERTA ? -0,03/d -0,18/7d
-O. Sancet MF Athletic Club benatoo02 4.71 44,31 M ABIERTA clave +0,39/d +2,73/7d
-Guridi MF Sevilla FC benatoo02 4.00 6,73 M 7,43 M x1.10 ABIERTA importante -0,07/d -0,48/7d
-De Galarreta MF Athletic Club benatoo02 4.00 16,66 M 20,71 M x1.24 ABIERTA rotacion +0,20/d +1,41/7d
-Christensen DF FC Barcelona benatoo02 3.00 8,69 M ABIERTA rotacion +0,09/d +0,63/7d
-Isaac FW Sevilla FC benatoo02 3.00 5,45 M 5,82 M x1.07 29/09 17:48 rotacion -0,07/d -0,51/7d
-D. Cárdenas GK Rayo Vallecano benatoo02 0.43 1,27 M ABIERTA suplente -0,02/d -0,11/7d
-Raphinha FW FC Barcelona corcon 4 16.00 142,81 M 148,51 M x1.04 ABIERTA ? +1,13/d +7,90/7d
-Yuri DF Athletic Club corcon 4 4.50 15,20 M 20,82 M x1.37 ABIERTA clave +0,21/d +1,44/7d
-Aimar MF C.A. Osasuna corcon 4 4.00 8,25 M 26,68 M x3.23 ABIERTA importante -0,28/d -1,93/7d
-Blanco MF Deportivo Alavés corcon 4 3.71 19,62 M 30,95 M x1.58 ABIERTA clave -0,03/d -0,18/7d
-Rafita DF Málaga CF corcon 4 3.67 7,58 M 11,52 M x1.52 ABIERTA importante +0,09/d +0,62/7d
-Herrera MF Real Sociedad corcon 4 3.50 5,14 M 13,00 M x2.53 ABIERTA importante +0,10/d +0,68/7d
-Bellerín DF Real Betis corcon 4 3.33 17,23 M 23,82 M x1.38 ABIERTA rotacion +0,04/d +0,29/7d
-De Haas DF Valencia CF corcon 4 2.67 4,09 M 15,31 M x3.74 ABIERTA ? -0,07/d -0,50/7d
-Isi FW Rayo Vallecano corcon 4 2.50 9,03 M 32,20 M x3.57 ABIERTA importante -0,28/d -1,94/7d
-Robbie Ure FW Sevilla FC corcon 4 2.50 10,69 M 23,82 M x2.23 ABIERTA importante -0,24/d -1,67/7d
-Gulácsi GK Villarreal CF corcon 4 2.00 3,41 M 15,09 M x4.43 ABIERTA suplente +0,10/d +0,73/7d
-Gorrotxa MF Real Sociedad corcon 4 1.25 2,59 M 10,37 M x4.01 ABIERTA rotacion -0,07/d -0,46/7d
-Á. Valles GK Real Betis iker_villena(TÚ) 11.17 52,99 M 23/09 00:19 importante +0,46/d +3,19/7d
-Xavi Espart DF FC Barcelona iker_villena(TÚ) 8.17 35,10 M 24/09 18:44 rotacion +2,26/d +15,83/7d
-Camello FW Rayo Vallecano iker_villena(TÚ) 7.71 21,47 M 25,20 M x1.17 02/10 17:48 rotacion +1,32/d +9,22/7d
-Ángel Pérez FW Deportivo Alavés iker_villena(TÚ) 7.57 23,45 M 34,09 M x1.45 ABIERTA clave +0,99/d +6,90/7d
-Roberto FW RCD Espanyol iker_villena(TÚ) 6.71 36,98 M 46,02 M x1.24 ABIERTA clave +1,52/d +10,62/7d
-Bardeli MF Levante UD iker_villena(TÚ) 5.80 8,56 M 20/09 18:05 rotacion +0,28/d +1,93/7d
-Riquelme MF Real Betis iker_villena(TÚ) 5.67 18,63 M 30,07 M x1.61 ABIERTA rotacion +0,39/d +2,76/7d
-Marc Roca MF Real Betis iker_villena(TÚ) 5.00 14,66 M 27/09 23:09 importante +0,43/d +2,98/7d
-Mandi DF Levante UD iker_villena(TÚ) 4.20 12,87 M 23/09 22:03 clave +0,06/d +0,45/7d
-Fran García DF Real Betis iker_villena(TÚ) 3.83 30,35 M 40,06 M x1.32 ABIERTA importante +0,52/d +3,64/7d
-Canales MF R. Racing Club iker_villena(TÚ) 3.57 28,88 M 39,32 M x1.36 ABIERTA clave +0,22/d +1,51/7d
-Aramburu DF Real Sociedad iker_villena(TÚ) 3.17 19,78 M 29,10 M x1.47 ABIERTA importante +0,18/d +1,24/7d
-Pablo Ramón DF R. Racing Club iker_villena(TÚ) 2.29 2,03 M ABIERTA importante +0,05/d +0,32/7d
-Fer Niño FW Elche CF jburuta 6.86 12,45 M 24,85 M x2.00 ABIERTA ? +0,26/d +1,83/7d
-Sangante DF Sevilla FC jburuta 4.33 7,59 M 14,56 M x1.92 ABIERTA rotacion -0,24/d -1,67/7d
-Andrés Garcia MF Getafe CF jburuta 4.20 7,58 M 14,94 M x1.97 ABIERTA rotacion -0,11/d -0,79/7d
-Amatucci MF RC Deportivo jburuta 3.83 17,71 M 21,71 M x1.23 ABIERTA clave -0,02/d -0,15/7d
-Gayá DF Valencia CF jburuta 3.17 7,65 M 18,20 M x2.38 ABIERTA importante -0,02/d -0,13/7d
-Mojica DF Getafe CF jburuta 3.00 14,85 M 19,54 M x1.32 ABIERTA clave -0,13/d -0,93/7d
-Zubeldia DF Real Sociedad jburuta 2.40 11,13 M 16,75 M x1.50 ABIERTA importante +0,12/d +0,82/7d
-Asp Jensen MF RC Deportivo jburuta 2.00 3,78 M 10,58 M x2.80 ABIERTA rotacion -0,10/d -0,70/7d
-Raúl Moro FW C.A. Osasuna jburuta 1.86 7,79 M 22,57 M x2.90 ABIERTA revulsivo -0,19/d -1,35/7d
-Hugo Duro FW Valencia CF jburuta 1.83 4,87 M 14,13 M x2.90 ABIERTA rotacion -0,09/d -0,60/7d
-Brahim MF Real Madrid jburuta 1.33 7,57 M 17,78 M x2.35 ABIERTA ? -0,13/d -0,88/7d
-Moscardo MF RCD Espanyol jburuta 0.71 3,52 M 15,42 M x4.38 ABIERTA suplente -0,09/d -0,66/7d
-Eriksson GK R. Racing Club jburuta 0.00 1,20 M 4,85 M x4.04 ABIERTA suplente -0,03/d -0,23/7d
-Egiluz DF Athletic Club jburuta 0.00 0,42 M 1,00 M x2.37 ABIERTA suplente +0,00/d +0,01/7d
-R. Brugué FW Levante UD vaalenxiaa 5.80 5,20 M ABIERTA rotacion +0,21/d +1,46/7d
-Agirrezabala GK R. Racing Club vaalenxiaa 5.71 21,62 M 27,38 M x1.27 ABIERTA importante +0,87/d +6,07/7d
-Marc Bernal MF FC Barcelona vaalenxiaa 5.67 26,56 M ABIERTA rotacion +0,88/d +6,19/7d
-Iñigo Vicente FW R. Racing Club vaalenxiaa 5.14 33,46 M 42,12 M x1.26 ABIERTA clave +0,54/d +3,79/7d
-Unai Lopez MF Rayo Vallecano vaalenxiaa 5.00 15,81 M 19,85 M x1.26 ABIERTA importante +0,40/d +2,83/7d
-Nico Williams FW Athletic Club vaalenxiaa 4.71 56,49 M 29/09 17:48 importante +0,50/d +3,53/7d
-Dani Lorenzo MF Málaga CF vaalenxiaa 4.40 11,07 M 26,19 M x2.37 ABIERTA clave -0,06/d -0,44/7d
-Ayoze FW Villarreal CF vaalenxiaa 4.33 15,19 M 28,92 M x1.90 ABIERTA rotacion -0,06/d -0,39/7d
-Berenguer FW Athletic Club vaalenxiaa 3.86 11,52 M 14,88 M x1.29 ABIERTA rotacion +0,20/d +1,40/7d
-Carreira DF Celta vaalenxiaa 3.00 7,75 M ABIERTA rotacion +0,13/d +0,90/7d
-Nacho Perez DF Levante UD vaalenxiaa 3.00 2,25 M ABIERTA suplente +0,04/d +0,25/7d
-Tchouaméni MF Real Madrid vaalenxiaa 3.00 22,06 M 24,88 M x1.13 21/09 17:48 suplente -0,16/d -1,09/7d
-Johnny MF Atlético de Madrid vaalenxiaa 2.83 2,90 M 9,55 M x3.29 ABIERTA ? -0,01/d -0,08/7d
-Arguibide DF C.A. Osasuna vaalenxiaa 2.29 3,46 M 4,30 M x1.24 ABIERTA rotacion +0,01/d +0,09/7d
-Bright Ede DF RC Deportivo vaalenxiaa 2.17 3,83 M 15,70 M x4.10 ABIERTA rotacion -0,07/d -0,47/7d
-Manu Hernando DF R. Racing Club vaalenxiaa 1.14 2,30 M 13,50 M x5.87 ABIERTA rotacion -0,05/d -0,36/7d
-Julio Díaz DF Sevilla FC vaalenxiaa 1.00 0,43 M 1,00 M x2.30 ABIERTA rotacion +0,00/d +0,01/7d
-Ruben GK Villarreal CF vaalenxiaa 0.00 0,46 M 1,00 M x2.17 ABIERTA ? -0,00/d -0,00/7d
-Diego Rico DF C.A. Osasuna vaalenxiaa -0.14 2,13 M 8,12 M x3.81 ABIERTA suplente -0,07/d -0,47/7d
+## TU PLANTILLA (13 jugadores)
+pos · jugador · club · pts(jornadas) · media · valor · tendencia · rol · [estado] · cláusula que pagaría un rival · si está expuesto ya
+GK Á. Valles Real Betis 67pts(6j) 11.17 52,99 M +0,46/d (+0,9%/d) importante te lo quitan por 52,99 M a salvo hasta 23/09 00:19
+DF Xavi Espart FC Barcelona 49pts(6j) 8.17 35,10 M +2,26/d (+6,4%/d) rotacion te lo quitan por 35,10 M a salvo hasta 24/09 18:44
+DF Mandi Levante UD 21pts(5j) 4.20 12,87 M +0,06/d (+0,5%/d) clave te lo quitan por 12,87 M a salvo hasta 23/09 22:03
+DF Fran García Real Betis 23pts(6j) 3.83 30,35 M +0,52/d (+1,7%/d) importante te lo quitan por 40,06 M EXPUESTO YA
+DF Aramburu Real Sociedad 19pts(6j) 3.17 19,78 M +0,18/d (+0,9%/d) importante te lo quitan por 29,10 M EXPUESTO YA
+DF Pablo Ramón R. Racing Club 16pts(7j) 2.29 2,03 M +0,05/d (+2,2%/d) importante te lo quitan por 2,03 M EXPUESTO YA
+MF Bardeli Levante UD 29pts(5j) 5.80 8,56 M +0,28/d (+3,2%/d) rotacion te lo quitan por 8,56 M a salvo hasta 20/09 18:05
+MF Riquelme Real Betis 34pts(6j) 5.67 18,63 M +0,39/d (+2,1%/d) rotacion te lo quitan por 30,07 M EXPUESTO YA
+MF Marc Roca Real Betis 30pts(6j) 5.00 14,66 M +0,43/d (+2,9%/d) importante te lo quitan por 14,66 M a salvo hasta 27/09 23:09
+MF Canales R. Racing Club 25pts(7j) 3.57 28,88 M +0,22/d (+0,7%/d) clave te lo quitan por 39,32 M EXPUESTO YA
+FW Camello Rayo Vallecano 54pts(7j) 7.71 21,47 M +1,32/d (+6,1%/d) rotacion te lo quitan por 25,20 M a salvo hasta 02/10 17:48
+FW Ángel Pérez Deportivo Alavés 53pts(7j) 7.57 23,45 M +0,99/d (+4,2%/d) clave te lo quitan por 34,09 M EXPUESTO YA
+FW Roberto RCD Espanyol 47pts(7j) 6.71 36,98 M +1,52/d (+4,1%/d) clave te lo quitan por 46,02 M EXPUESTO YA
 
-## Resto de la liga (fuera de alcance ahora)
-Cláusula bloqueada más de 10 días o blindado. jugador · club · dueño · valor · tendencia
-Gerenabarrena Athletic Club SuperrGio 3,94 M +0,13/d +0,92/7d
-Giuliano Atlético de Madrid benatoo02 38,33 M -0,07/d -0,48/7d
-Ilaix Moriba Celta benatoo02 7,97 M +0,16/d +1,15/7d
-Miguel Sierra Sevilla FC corcon 4 6,22 M +0,25/d +1,77/7d
-Recio Málaga CF corcon 4 2,23 M +0,08/d +0,58/7d
+## CLAUSULAS ALCANZABLES (95) — de mayor a menor media
+jugador · pos · club · dueño · pts(jornadas) · media · valor · [cláusula · prima si no es x1,00] · se abre · rol · [estado] · tendencia
+Raphinha FW FC Barcelona corcon 4 96pts(6j) 16.00 142,81 M 148,51 M x1.04 ABIERTA ? +1,13/d (+0,8%/d)
+Aubameyang FW RC Deportivo SuperrGio 63pts(6j) 10.50 101,76 M ABIERTA clave +1,87/d (+1,8%/d)
+Sivera GK Deportivo Alavés UAlzaga 65pts(7j) 9.29 41,68 M 51,68 M x1.24 ABIERTA clave -0,24/d (-0,6%/d)
+Adeyemi FW FC Barcelona Zubikaraiander 45pts(6j) 7.50 55,45 M ABIERTA revulsivo +0,95/d (+1,7%/d)
+Dmitrovic GK RCD Espanyol EkainGoñi_ 48pts(7j) 6.86 41,09 M 41,31 M x1.01 ABIERTA clave +0,15/d (+0,4%/d)
+Fer Niño FW Elche CF jburuta 48pts(7j) 6.86 12,45 M 24,85 M x2.00 ABIERTA ? +0,26/d (+2,1%/d)
+Marcos Llorente DF Atlético de Madrid UAlzaga 38pts(6j) 6.33 42,11 M 43,65 M x1.04 ABIERTA importante +0,16/d (+0,4%/d)
+Mariano FW Deportivo Alavés UAlzaga 44pts(7j) 6.29 19,83 M 20,00 M x1.01 25/09 17:48 revulsivo +0,68/d (+3,4%/d)
+Ionut Radu GK Celta SuperrGio 44pts(7j) 6.29 41,68 M ABIERTA clave +0,40/d (+1,0%/d)
+Courtois GK Real Madrid Zubikaraiander 37pts(6j) 6.17 60,80 M 78,00 M x1.28 ABIERTA clave -0,14/d (-0,2%/d)
+Navarro MF Athletic Club UAlzaga 42pts(7j) 6.00 9,35 M 23/09 17:48 rotacion +0,56/d (+5,9%/d)
+Agoumé MF Sevilla FC SuperrGio 36pts(6j) 6.00 11,21 M 13,73 M x1.23 24/09 18:51 clave +0,39/d (+3,4%/d)
+Y. Zabiri FW R. Racing Club EkainGoñi_ 42pts(7j) 6.00 15,17 M ABIERTA importante +0,89/d (+5,9%/d)
+Tenaglia DF Deportivo Alavés Zubikaraiander 42pts(7j) 6.00 34,06 M ABIERTA clave +0,08/d (+0,2%/d)
+Zaid Romero DF Getafe CF EkainGoñi_ 29pts(5j) 5.80 24,84 M 29,00 M x1.17 ABIERTA clave -0,44/d (-1,8%/d)
+R. Brugué FW Levante UD vaalenxiaa 29pts(5j) 5.80 5,20 M ABIERTA rotacion +0,21/d (+4,0%/d)
+Cuti Romero DF Atlético de Madrid Barandi07 23pts(4j) 5.75 33,78 M 52,75 M x1.56 ABIERTA ? +0,32/d (+1,0%/d)
+Agirrezabala GK R. Racing Club vaalenxiaa 40pts(7j) 5.71 21,62 M 27,38 M x1.27 ABIERTA importante +0,87/d (+4,0%/d)
+Juan Iglesias DF Sevilla FC UAlzaga 34pts(6j) 5.67 15,16 M 19,68 M x1.30 ABIERTA clave +0,51/d (+3,3%/d)
+Marc Bernal MF FC Barcelona vaalenxiaa 34pts(6j) 5.67 26,56 M ABIERTA rotacion +0,88/d (+3,3%/d)
+Foyth DF Villarreal CF SuperrGio 16pts(3j) 5.33 12,27 M 20,39 M x1.66 ABIERTA importante DUDA -0,38/d (-3,1%/d)
+El Hilali DF RCD Espanyol benatoo02 32pts(6j) 5.33 15,87 M ABIERTA clave SANCIONADO +0,29/d (+1,8%/d)
+Laporte DF Athletic Club benatoo02 37pts(7j) 5.29 42,19 M 44,46 M x1.05 ABIERTA clave -0,01/d
+Le Normand DF Atlético de Madrid benatoo02 26pts(5j) 5.20 9,83 M 16,91 M x1.72 ABIERTA ? -0,03/d (-0,3%/d)
+C. Soler MF Real Sociedad Zubikaraiander 31pts(6j) 5.17 30,45 M 33,95 M x1.12 ABIERTA clave -0,06/d
+Jonny Otto DF Deportivo Alavés UAlzaga 36pts(7j) 5.14 14,37 M ABIERTA importante +0,30/d (+2,1%/d)
+M. Román MF Celta EkainGoñi_ 36pts(7j) 5.14 12,86 M ABIERTA ? +0,33/d (+2,6%/d)
+Iñigo Vicente FW R. Racing Club vaalenxiaa 36pts(7j) 5.14 33,46 M 42,12 M x1.26 ABIERTA clave +0,54/d (+1,6%/d)
+Cucho FW Real Betis UAlzaga 30pts(6j) 5.00 34,40 M 46,00 M x1.34 ABIERTA importante -0,33/d (-1,0%/d)
+Unai Lopez MF Rayo Vallecano vaalenxiaa 35pts(7j) 5.00 15,81 M 19,85 M x1.26 ABIERTA importante +0,40/d (+2,6%/d)
+Sucic MF Real Sociedad Barandi07 30pts(6j) 5.00 11,62 M 16,82 M x1.45 ABIERTA importante +0,40/d (+3,5%/d)
+T. Morente FW Elche CF SuperrGio 34pts(7j) 4.86 2,62 M 26/09 17:48 ? +0,10/d (+4,0%/d)
+Marcos Alonso DF Celta EkainGoñi_ 29pts(6j) 4.83 30,61 M ABIERTA clave +0,21/d (+0,7%/d)
+Djene DF Getafe CF EkainGoñi_ 29pts(6j) 4.83 16,98 M ABIERTA clave +0,16/d (+0,9%/d)
+A. Herrero GK Málaga CF Barandi07 29pts(6j) 4.83 17,89 M 23/09 22:02 clave +0,49/d (+2,7%/d)
+Nico Williams FW Athletic Club vaalenxiaa 33pts(7j) 4.71 56,49 M 29/09 17:48 importante +0,50/d (+0,9%/d)
+O. Sancet MF Athletic Club benatoo02 33pts(7j) 4.71 44,31 M ABIERTA clave +0,39/d (+0,9%/d)
+Pepelu MF Valencia CF EkainGoñi_ 28pts(6j) 4.67 10,67 M 12,63 M x1.18 ABIERTA rotacion +0,16/d (+1,5%/d)
+Oyarzabal FW Real Sociedad Barandi07 28pts(6j) 4.67 52,41 M 79,14 M x1.51 ABIERTA clave -0,71/d (-1,4%/d)
+Suazo DF Sevilla FC EkainGoñi_ 27pts(6j) 4.50 5,65 M 9,05 M x1.60 ABIERTA importante +0,19/d (+3,4%/d)
+Dela DF Levante UD EkainGoñi_ 27pts(6j) 4.50 19,41 M 22/09 17:48 clave +0,15/d (+0,7%/d)
+Yuri DF Athletic Club corcon 4 27pts(6j) 4.50 15,20 M 20,82 M x1.37 ABIERTA clave +0,21/d (+1,3%/d)
+Dani Lorenzo MF Málaga CF vaalenxiaa 22pts(5j) 4.40 11,07 M 26,19 M x2.37 ABIERTA clave -0,06/d (-0,6%/d)
+Ayoze FW Villarreal CF vaalenxiaa 26pts(6j) 4.33 15,19 M 28,92 M x1.90 ABIERTA rotacion -0,06/d (-0,4%/d)
+Sangante DF Sevilla FC jburuta 13pts(3j) 4.33 7,59 M 14,56 M x1.92 ABIERTA rotacion -0,24/d (-3,1%/d)
+Andrés Garcia MF Getafe CF jburuta 21pts(5j) 4.20 7,58 M 14,94 M x1.97 ABIERTA rotacion -0,11/d (-1,5%/d)
+Javi Hernández MF RCD Espanyol SuperrGio 24pts(6j) 4.00 17,33 M 18,39 M x1.06 ABIERTA importante +0,38/d (+2,2%/d)
+Catena DF C.A. Osasuna EkainGoñi_ 28pts(7j) 4.00 32,01 M 34,00 M x1.06 ABIERTA clave -0,64/d (-2,0%/d)
+Aimar MF C.A. Osasuna corcon 4 12pts(3j) 4.00 8,25 M 26,68 M x3.23 ABIERTA importante LESIONADO -0,28/d (-3,3%/d)
+Guridi MF Sevilla FC benatoo02 24pts(6j) 4.00 6,73 M 7,43 M x1.10 ABIERTA importante -0,07/d (-1,0%/d)
+De Galarreta MF Athletic Club benatoo02 28pts(7j) 4.00 16,66 M 20,71 M x1.24 ABIERTA rotacion +0,20/d (+1,2%/d)
+Á. Carreras DF Real Madrid Zubikaraiander 24pts(6j) 4.00 9,40 M 20,40 M x2.17 ABIERTA ? +0,16/d (+1,7%/d)
+Niño FW Málaga CF Zubikaraiander 8pts(2j) 4.00 1,07 M 1,52 M x1.42 ABIERTA ? -0,01/d (-1,1%/d)
+Berenguer FW Athletic Club vaalenxiaa 27pts(7j) 3.86 11,52 M 14,88 M x1.29 ABIERTA rotacion +0,20/d (+1,7%/d)
+F. Bernal MF Real Betis SuperrGio 23pts(6j) 3.83 13,96 M 16,00 M x1.15 25/09 17:48 rotacion +0,01/d
+Amatucci MF RC Deportivo jburuta 23pts(6j) 3.83 17,71 M 21,71 M x1.23 ABIERTA clave -0,02/d
+Pathé I. Ciss MF Rayo Vallecano UAlzaga 26pts(7j) 3.71 25,41 M 80,06 M x3.15 ABIERTA ? +0,30/d (+1,2%/d)
+A. Rebbach FW Deportivo Alavés SuperrGio 26pts(7j) 3.71 5,19 M ABIERTA importante +0,01/d
+Blanco MF Deportivo Alavés corcon 4 26pts(7j) 3.71 19,62 M 30,95 M x1.58 ABIERTA clave -0,03/d
+Ferran Jutglà FW Celta Barandi07 26pts(7j) 3.71 8,84 M 15,84 M x1.79 ABIERTA importante +0,19/d (+2,1%/d)
+I. Romero FW Levante UD UAlzaga 22pts(6j) 3.67 6,18 M 12,27 M x1.99 ABIERTA importante +0,08/d (+1,2%/d)
+Mangala MF Getafe CF EkainGoñi_ 22pts(6j) 3.67 11,42 M 18,06 M x1.58 ABIERTA clave -0,11/d (-0,9%/d)
+Rafita DF Málaga CF corcon 4 22pts(6j) 3.67 7,58 M 11,52 M x1.52 ABIERTA importante +0,09/d (+1,2%/d)
+Rubén García MF C.A. Osasuna EkainGoñi_ 25pts(7j) 3.57 14,01 M 23,10 M x1.65 ABIERTA importante -0,13/d (-1,0%/d)
+Recio DF Málaga CF corcon 4 21pts(6j) 3.50 2,23 M 2,30 M x1.03 29/09 21:36 rotacion +0,08/d (+3,7%/d)
+Herrera MF Real Sociedad corcon 4 21pts(6j) 3.50 5,14 M 13,00 M x2.53 ABIERTA importante +0,10/d (+1,9%/d)
+Kochorashvili MF Sevilla FC Barandi07 14pts(4j) 3.50 6,50 M 9,49 M x1.46 ABIERTA importante -0,07/d (-1,1%/d)
+P. Martínez MF Málaga CF Zubikaraiander 17pts(5j) 3.40 4,70 M 29/09 17:48 suplente -0,00/d
+Iago Aspas FW Celta UAlzaga 20pts(6j) 3.33 5,81 M 11,93 M x2.05 ABIERTA rotacion LESIONADO -0,12/d (-2,1%/d)
+Noubi DF RC Deportivo SuperrGio 20pts(6j) 3.33 15,79 M 20,88 M x1.32 ABIERTA clave +0,13/d (+0,8%/d)
+Bellerín DF Real Betis corcon 4 20pts(6j) 3.33 17,23 M 23,82 M x1.38 ABIERTA rotacion +0,04/d (+0,2%/d)
+Denis Suárez MF Deportivo Alavés EkainGoñi_ 23pts(7j) 3.29 2,81 M ABIERTA rotacion +0,04/d (+1,5%/d)
+Carlos Espí FW Real Madrid EkainGoñi_ 19pts(6j) 3.17 13,86 M 14,78 M x1.07 ABIERTA revulsivo -0,05/d (-0,4%/d)
+Gayá DF Valencia CF jburuta 19pts(6j) 3.17 7,65 M 18,20 M x2.38 ABIERTA importante -0,02/d (-0,2%/d)
+Carreira DF Celta vaalenxiaa 21pts(7j) 3.00 7,75 M ABIERTA rotacion +0,13/d (+1,7%/d)
+Nacho Perez DF Levante UD vaalenxiaa 18pts(6j) 3.00 2,25 M ABIERTA suplente +0,04/d (+1,6%/d)
+Tchouaméni MF Real Madrid vaalenxiaa 6pts(2j) 3.00 22,06 M 24,88 M x1.13 21/09 17:48 suplente -0,16/d (-0,7%/d)
+Christensen DF FC Barcelona benatoo02 18pts(6j) 3.00 8,69 M ABIERTA rotacion +0,09/d (+1,0%/d)
+Isaac FW Sevilla FC benatoo02 18pts(6j) 3.00 5,45 M 5,82 M x1.07 29/09 17:48 rotacion -0,07/d (-1,3%/d)
+Mojica DF Getafe CF jburuta 18pts(6j) 3.00 14,85 M 19,54 M x1.32 ABIERTA clave -0,13/d (-0,9%/d)
+Sergio Gómez DF Real Sociedad SuperrGio 17pts(6j) 2.83 16,76 M 18,50 M x1.10 25/09 17:48 importante +0,14/d (+0,9%/d)
+Quagliata DF RC Deportivo Barandi07 17pts(6j) 2.83 4,02 M 24/09 17:48 importante +0,05/d (+1,3%/d)
+Moncayola MF C.A. Osasuna UAlzaga 19pts(7j) 2.71 7,41 M 11,43 M x1.54 ABIERTA clave -0,03/d (-0,4%/d)
+Manu Sánchez DF Levante UD Barandi07 16pts(6j) 2.67 5,38 M 23/09 22:05 importante +0,01/d
+Isi FW Rayo Vallecano corcon 4 5pts(2j) 2.50 9,03 M 32,20 M x3.57 ABIERTA importante DUDA -0,28/d (-3,1%/d)
+Robbie Ure FW Sevilla FC corcon 4 15pts(6j) 2.50 10,69 M 23,82 M x2.23 ABIERTA importante -0,24/d (-2,2%/d)
+Urko MF RCD Espanyol SuperrGio 17pts(7j) 2.43 4,48 M 12,92 M x2.89 ABIERTA importante +0,02/d (+0,4%/d)
+Iker Muñoz MF C.A. Osasuna SuperrGio 17pts(7j) 2.43 2,00 M 5,84 M x2.92 ABIERTA importante +0,01/d (+0,6%/d)
+Álvaro García MF Rayo Vallecano Zubikaraiander 17pts(7j) 2.43 18,29 M 30,35 M x1.66 ABIERTA importante -0,05/d (-0,3%/d)
+Zubeldia DF Real Sociedad jburuta 12pts(5j) 2.40 11,13 M 16,75 M x1.50 ABIERTA importante LESIONADO +0,12/d (+1,1%/d)
+Areso DF Athletic Club SuperrGio 16pts(7j) 2.29 4,28 M 5,00 M x1.17 28/09 17:48 importante +0,05/d (+1,2%/d)
+Enes Ünal FW Getafe CF EkainGoñi_ 13pts(6j) 2.17 16,78 M 20,74 M x1.24 ABIERTA clave -0,27/d (-1,6%/d)
+Ximo Navarro DF RC Deportivo Barandi07 13pts(6j) 2.17 4,73 M 9,27 M x1.96 ABIERTA importante -0,02/d (-0,4%/d)
+Starfelt DF Celta SuperrGio 14pts(7j) 2.00 9,53 M 19,00 M x1.99 ABIERTA importante -0,14/d (-1,4%/d)
+Jorge Salinas DF R. Racing Club SuperrGio 13pts(7j) 1.86 6,95 M 9,29 M x1.34 ABIERTA clave -0,00/d
+
+## Resto de la liga (no fichable ahora, o irrelevante)
+Cláusula bloqueada más de 10 días, blindado, o media baja sin ser titular. jugador · club · dueño · valor · tendencia
+Miguel Sierra Sevilla FC corcon 4 6,22 M +0,25/d (+4,1%/d)
+Giuliano Atlético de Madrid benatoo02 38,33 M -0,07/d
+Ilaix Moriba Celta benatoo02 7,97 M +0,16/d (+2,1%/d)
+Johnny Atlético de Madrid vaalenxiaa 2,90 M -0,01/d (-0,4%/d)
+De Haas Valencia CF corcon 4 4,09 M -0,07/d (-1,7%/d)
+Turrientes Real Sociedad Zubikaraiander 7,05 M +0,08/d (+1,1%/d)
+Óscar Valentín Rayo Vallecano Barandi07 3,32 M -0,05/d (-1,5%/d)
+Cala RCD Espanyol Barandi07 6,04 M -0,09/d (-1,5%/d)
+Gerenabarrena Athletic Club SuperrGio 3,94 M +0,13/d (+3,3%/d)
+Youssef Deportivo Alavés Zubikaraiander 0,96 M +0,00/d (+0,5%/d)
+Arguibide C.A. Osasuna vaalenxiaa 3,46 M +0,01/d (+0,4%/d)
+Bright Ede RC Deportivo vaalenxiaa 3,83 M -0,07/d (-1,8%/d)
+Gulácsi Villarreal CF corcon 4 3,41 M +0,10/d (+3,1%/d)
+Belocian R. Racing Club Barandi07 3,15 M +0,02/d (+0,7%/d)
+Asp Jensen RC Deportivo jburuta 3,78 M -0,10/d (-2,6%/d)
+Raúl Moro C.A. Osasuna jburuta 7,79 M -0,19/d (-2,5%/d)
+Juan Cruz Málaga CF UAlzaga 6,75 M -0,18/d (-2,6%/d)
+Hugo Duro Valencia CF jburuta 4,87 M -0,09/d (-1,8%/d)
+Williot Celta EkainGoñi_ 4,41 M -0,08/d (-1,8%/d)
+Brahim Real Madrid jburuta 7,57 M -0,13/d (-1,7%/d)
+Gorrotxa Real Sociedad corcon 4 2,59 M -0,07/d (-2,6%/d)
+Manu Hernando R. Racing Club vaalenxiaa 2,30 M -0,05/d (-2,2%/d)
+Julio Díaz Sevilla FC vaalenxiaa 0,43 M +0,00/d (+0,2%/d)
+Moscardo RCD Espanyol jburuta 3,52 M -0,09/d (-2,7%/d)
+B. Iglesias Celta SuperrGio 12,48 M -0,33/d (-2,7%/d)
+J. Vertrouwd Rayo Vallecano Zubikaraiander 0,64 M -0,01/d (-1,4%/d)
+Zakharyan Real Sociedad Zubikaraiander 0,57 M -0,01/d (-1,0%/d)
+D. Cárdenas Rayo Vallecano benatoo02 1,27 M -0,02/d (-1,2%/d)
+Fidalgo Real Betis SuperrGio 1,18 M -0,03/d (-2,7%/d)
+A. Ferllo RC Deportivo SuperrGio 1,88 M -0,05/d (-2,8%/d)
+Ruben Villarreal CF vaalenxiaa 0,46 M -0,00/d
+Iván Villar Celta Barandi07 0,56 M -0,01/d (-0,9%/d)
+F. Garcés Deportivo Alavés Barandi07 0,47 M -0,00/d
+Eriksson R. Racing Club jburuta 1,20 M -0,03/d (-2,8%/d)
+Egiluz Athletic Club jburuta 0,42 M +0,00/d (+0,4%/d)
+Diego Rico C.A. Osasuna vaalenxiaa 2,13 M -0,07/d (-3,1%/d)
 
 ## Mercado libre ahora
 jugador · pos · valor · precio
