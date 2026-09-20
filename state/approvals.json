@@ -1139,6 +1139,11 @@
         "at": "2026-09-20T16:57:43.132999Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-20T18:18:07.000442Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1162,7 +1167,7 @@
       "player_name": "Marcos Alonso",
       "rationale": "Marcos Alonso es titular indiscutible en su club con una media de 4.83, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 30.46 M, de EkainGoñi_."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T22:26:19.535302Z",
