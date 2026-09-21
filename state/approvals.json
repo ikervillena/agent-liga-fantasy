@@ -1259,6 +1259,11 @@
         "at": "2026-09-21T00:19:00.218519Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-21T12:16:39.306616Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1282,7 +1287,7 @@
       "player_name": "Bardeli",
       "rationale": "Te pagan un +3.3% sobre su valor por alguien que no juega en tu once (media 5.00)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T22:26:19.535302Z",
