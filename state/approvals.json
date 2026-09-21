@@ -1177,6 +1177,11 @@
         "at": "2026-09-18T22:26:19.535302Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-21T00:19:00.218519Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1203,7 +1208,7 @@
       "player_name": "Á. Valles",
       "rationale": "Á. Valles averages 11.17 with no clause premium and comes off his lock on 23/09 00:19. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-19T00:05:40.216222Z",
@@ -1213,6 +1218,11 @@
         "at": "2026-09-19T00:05:40.216222Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-21T00:19:00.218519Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1238,6 +1248,39 @@
       "player_id": "2541",
       "player_name": "Á. Valles",
       "rationale": "Á. Valles averages 11.17 with no clause premium and comes off his lock on 23/09 00:19. Replacing him would cost several times this."
+    },
+    "state": "expired"
+  },
+  {
+    "asked_at": "2026-09-21T00:19:00.218519Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-21T00:19:00.218519Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 8942401,
+      "anchor": null,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 8942401,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-21T00:19:00.218519Z",
+      "expected_gain": 0.0,
+      "fallback": "Dejar que caduque y mantenerlo en venta.",
+      "kind": "accept_offer",
+      "market_id": "40551991",
+      "offer_id": "119874652",
+      "payload": {},
+      "player_id": "3164",
+      "player_name": "Bardeli",
+      "rationale": "Te pagan un +3.3% sobre su valor por alguien que no juega en tu once (media 5.00)."
     },
     "state": "pending"
   },
