@@ -1,5 +1,5 @@
 {
-  "cash": 5475215,
+  "cash": 8975215,
   "config": {
     "bench": false,
     "buyout_clauses": true,
@@ -9,68 +9,8 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-21T00:19:35.393747Z",
+  "fetched_at": "2026-09-21T12:17:15.234583Z",
   "fixtures": [
-    {
-      "away_club_id": "11",
-      "home_club_id": "20",
-      "kickoff": "2026-09-20T18:30:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "16",
-      "home_club_id": "18",
-      "kickoff": "2026-09-20T21:00:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "4",
-      "home_club_id": "17",
-      "kickoff": "2026-09-19T21:00:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "14",
-      "home_club_id": "13",
-      "kickoff": "2026-09-19T14:00:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "12",
-      "home_club_id": "9",
-      "kickoff": "2026-09-20T14:00:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "7",
-      "home_club_id": "8",
-      "kickoff": "2026-09-18T21:00:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "5",
-      "home_club_id": "26",
-      "kickoff": "2026-09-20T18:30:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "49",
-      "home_club_id": "6",
-      "kickoff": "2026-09-19T18:30:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "15",
-      "home_club_id": "2",
-      "kickoff": "2026-09-20T16:15:00+02:00",
-      "matchday": 7
-    },
-    {
-      "away_club_id": "21",
-      "home_club_id": "3",
-      "kickoff": "2026-09-19T16:15:00+02:00",
-      "matchday": 7
-    },
     {
       "away_club_id": "26",
       "home_club_id": "16",
@@ -250,6 +190,66 @@
       "home_club_id": "21",
       "kickoff": "2026-10-25T02:00:00+01:00",
       "matchday": 10
+    },
+    {
+      "away_club_id": "8",
+      "home_club_id": "20",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "6",
+      "home_club_id": "14",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "15",
+      "home_club_id": "49",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "2",
+      "home_club_id": "11",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "17",
+      "home_club_id": "9",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "21",
+      "home_club_id": "4",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "18",
+      "home_club_id": "7",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "13",
+      "home_club_id": "26",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "12",
+      "home_club_id": "5",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
+    },
+    {
+      "away_club_id": "16",
+      "home_club_id": "3",
+      "kickoff": "2026-11-01T01:00:00+01:00",
+      "matchday": 11
     }
   ],
   "league_id": "018110971",
@@ -560,17 +560,17 @@
     }
   ],
   "matchday": {
-    "closes_at": "2026-09-21T03:00:00+02:00",
-    "is_live": true,
-    "number": 7,
-    "opens_at": "2026-09-18T21:00:00+02:00"
-  },
-  "my_team_id": "38611081",
-  "next_matchday": {
-    "closes_at": "2026-10-12T21:00:00+02:00",
+    "closes_at": "2026-10-13T03:00:00+02:00",
     "is_live": false,
     "number": 8,
     "opens_at": "2026-10-09T21:00:00+02:00"
+  },
+  "my_team_id": "38611081",
+  "next_matchday": {
+    "closes_at": "2026-10-19T21:00:00+02:00",
+    "is_live": false,
+    "number": 9,
+    "opens_at": "2026-10-16T21:00:00+02:00"
   },
   "offers": [
     {
@@ -653,7 +653,7 @@
           "team_id": "38578209"
         },
         {
-          "buyout_clause": 14961566,
+          "buyout_clause": 18961566,
           "clause_locked_until": "2026-09-14T22:00:57+02:00",
           "is_shielded": false,
           "manager": "UAlzaga",
