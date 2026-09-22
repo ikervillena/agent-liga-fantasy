@@ -1379,6 +1379,11 @@
         "at": "2026-09-20T10:51:49.717527Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-22T17:45:24.216166Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1402,7 +1407,7 @@
       "player_name": "Dela",
       "rationale": "Dela es titular indiscutible en su club con una media de 4.50, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 19.16 M, de EkainGoñi_."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T22:26:19.535302Z",
@@ -1412,6 +1417,11 @@
         "at": "2026-09-18T22:26:19.535302Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-22T17:45:24.216166Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1438,7 +1448,7 @@
       "player_name": "Xavi Espart",
       "rationale": "Xavi Espart averages 8.17 with no clause premium and comes off his lock on 24/09 18:44. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-19T00:05:40.216222Z",
@@ -1448,6 +1458,11 @@
         "at": "2026-09-19T00:05:40.216222Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-22T17:45:24.216166Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1474,7 +1489,7 @@
       "player_name": "Xavi Espart",
       "rationale": "Xavi Espart averages 8.17 with no clause premium and comes off his lock on 24/09 18:44. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T22:26:19.535302Z",
