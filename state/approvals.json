@@ -1297,6 +1297,11 @@
         "at": "2026-09-18T22:26:19.535302Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-22T00:54:35.835754Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1323,7 +1328,7 @@
       "player_name": "Mandi",
       "rationale": "Mandi averages 4.20 with no clause premium and comes off his lock on 23/09 22:03. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-19T00:05:40.216222Z",
@@ -1333,6 +1338,11 @@
         "at": "2026-09-19T00:05:40.216222Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-22T00:54:35.835754Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1359,7 +1369,7 @@
       "player_name": "Mandi",
       "rationale": "Mandi averages 4.20 with no clause premium and comes off his lock on 23/09 22:03. Replacing him would cost several times this."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-20T10:51:49.717527Z",
