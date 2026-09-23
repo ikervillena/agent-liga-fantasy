@@ -1492,6 +1492,39 @@
     "state": "expired"
   },
   {
+    "asked_at": "2026-09-23T17:57:57.972428Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-23T17:57:57.972428Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 30986730,
+      "anchor": null,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 30986730,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-23T17:57:57.972428Z",
+      "expected_gain": 0.0,
+      "fallback": "Dejar que caduque y mantenerlo en venta.",
+      "kind": "accept_offer",
+      "market_id": "42658949",
+      "offer_id": "128002934",
+      "payload": {},
+      "player_id": "2429",
+      "player_name": "Fran García",
+      "rationale": "Te pagan un +7.2% sobre su valor por alguien que no juega en tu once (media 4.00)."
+    },
+    "state": "pending"
+  },
+  {
     "asked_at": "2026-09-18T22:26:19.535302Z",
     "decided_at": null,
     "history": [
@@ -1560,6 +1593,42 @@
       "player_id": "2418",
       "player_name": "Marc Roca",
       "rationale": "Marc Roca averages 5.00 with no clause premium and comes off his lock on 27/09 23:09. Replacing him would cost several times this."
+    },
+    "state": "pending"
+  },
+  {
+    "asked_at": "2026-09-23T17:57:57.972428Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-23T17:57:57.972428Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 28378497,
+      "anchor": "2026-09-30T17:48:15+02:00",
+      "conditions": {
+        "average_points": 7.71,
+        "player_status": "ok",
+        "price": 28378497,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-30T17:48:15+02:00",
+      "expected_gain": 7.71,
+      "fallback": "Dejarlo expuesto y reinvertir si alguien se lo lleva.",
+      "kind": "raise_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {
+        "increase": 56756994,
+        "target_clause": 85135491
+      },
+      "player_id": "2387",
+      "player_name": "Camello",
+      "rationale": "Camello tiene media 7.71 y la cláusula a precio de mercado. Se le abre el 02/10 a las 17:48 y reemplazarlo costaría varias veces esto."
     },
     "state": "pending"
   }
