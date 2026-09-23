@@ -1499,6 +1499,11 @@
         "at": "2026-09-23T17:57:57.972428Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-23T19:14:12.267194Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1522,7 +1527,7 @@
       "player_name": "Fran García",
       "rationale": "Te pagan un +7.2% sobre su valor por alguien que no juega en tu once (media 4.00)."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-18T22:26:19.535302Z",
