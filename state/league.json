@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-25T00:36:28.428682Z",
+  "fetched_at": "2026-09-25T11:24:33.237046Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -498,25 +498,6 @@
         "role": "unknown",
         "status": "doubtful",
         "total_points": 0
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 104370353,
-      "expires_at": "2026-09-26T22:06:34+02:00",
-      "market_id": "45030839",
-      "player": {
-        "average_points": 9.29,
-        "club": "",
-        "club_id": "26",
-        "id": "3108",
-        "market_value": 100554393,
-        "name": "Aubameyang",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "injured",
-        "total_points": 65
       },
       "seller": null
     }
@@ -2115,27 +2096,6 @@
             "total_points": 4
           },
           "player_team_id": "35044855",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 100554393,
-          "clause_locked_until": "2026-09-10T17:48:14+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 9.29,
-            "club": "RC Deportivo",
-            "club_id": "26",
-            "id": "3108",
-            "market_value": 100554393,
-            "name": "Aubameyang",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "key",
-            "status": "injured",
-            "total_points": 65
-          },
-          "player_team_id": "50210251",
           "team_id": "38601985"
         }
       ]
