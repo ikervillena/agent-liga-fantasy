@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-27T11:38:31.563909Z",
+  "fetched_at": "2026-09-27T17:57:22.986386Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -255,237 +255,28 @@
   "league_id": "018110971",
   "market": [
     {
-      "asking_price": 1811028,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197904",
+      "asking_price": 589733,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224235",
       "player": {
-        "average_points": 2.33,
+        "average_points": 1.5,
         "club": "",
-        "club_id": "3",
-        "id": "3094",
-        "market_value": 1758986,
-        "name": "Edin Terzic",
+        "club_id": "11",
+        "id": "2877",
+        "market_value": 589733,
+        "name": "Luís Castro",
         "points_by_matchday": {},
         "position": "CO",
         "role": "unknown",
         "status": "ok",
-        "total_points": 14
+        "total_points": 9
       },
       "seller": null
     },
     {
-      "asking_price": 8312827,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197906",
-      "player": {
-        "average_points": 2.0,
-        "club": "",
-        "club_id": "9",
-        "id": "1611",
-        "market_value": 8000713,
-        "name": "Bordalás",
-        "points_by_matchday": {},
-        "position": "CO",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 14
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 3687540,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197909",
-      "player": {
-        "average_points": 3.0,
-        "club": "",
-        "club_id": "12",
-        "id": "3034",
-        "market_value": 3620741,
-        "name": "Joaquín",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 21
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 34671392,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197911",
-      "player": {
-        "average_points": 5.14,
-        "club": "",
-        "club_id": "3",
-        "id": "91",
-        "market_value": 34118214,
-        "name": "Iñaki Williams",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 36
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 1677527,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197913",
-      "player": {
-        "average_points": 1.43,
-        "club": "",
-        "club_id": "18",
-        "id": "3121",
-        "market_value": 1633202,
-        "name": "Dieng",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 10
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 920150,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197915",
-      "player": {
-        "average_points": 1.71,
-        "club": "",
-        "club_id": "21",
-        "id": "2342",
-        "market_value": 903743,
-        "name": "Protesoni",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 12
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 10342728,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197917",
-      "player": {
-        "average_points": 3.86,
-        "club": "",
-        "club_id": "3",
-        "id": "927",
-        "market_value": 10135496,
-        "name": "Berenguer",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 27
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 20201581,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197919",
-      "player": {
-        "average_points": 2.57,
-        "club": "",
-        "club_id": "14",
-        "id": "3081",
-        "market_value": 19819833,
-        "name": "Ratiu",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 18
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 20873650,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197921",
-      "player": {
-        "average_points": 7.14,
-        "club": "",
-        "club_id": "21",
-        "id": "2938",
-        "market_value": 21927566,
-        "name": "Koski",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 50
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 6081321,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197922",
-      "player": {
-        "average_points": -0.5,
-        "club": "",
-        "club_id": "26",
-        "id": "3142",
-        "market_value": 5903497,
-        "name": "Angeliño",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "suspended",
-        "total_points": -3
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 1885972,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197923",
-      "player": {
-        "average_points": 3.2,
-        "club": "",
-        "club_id": "9",
-        "id": "3200",
-        "market_value": 1849202,
-        "name": "Francho",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 16
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 895732,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197924",
-      "player": {
-        "average_points": -0.6,
-        "club": "",
-        "club_id": "49",
-        "id": "3139",
-        "market_value": 880302,
-        "name": "Pedro Felipe",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": -3
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 606406,
-      "expires_at": "2026-09-27T17:48:00+02:00",
-      "market_id": "291197925",
+      "asking_price": 602549,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224239",
       "player": {
         "average_points": 0.0,
         "club": "",
@@ -495,6 +286,215 @@
         "name": "Dani Barcia",
         "points_by_matchday": {},
         "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 0
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 8860486,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224241",
+      "player": {
+        "average_points": 0.67,
+        "club": "",
+        "club_id": "4",
+        "id": "1218",
+        "market_value": 8860486,
+        "name": "Álex Balde",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 4
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 1508458,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224244",
+      "player": {
+        "average_points": 0.57,
+        "club": "",
+        "club_id": "17",
+        "id": "1251",
+        "market_value": 1508458,
+        "name": "Carmona",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 4
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 702560,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224246",
+      "player": {
+        "average_points": 1.29,
+        "club": "",
+        "club_id": "16",
+        "id": "2435",
+        "market_value": 702560,
+        "name": "Marrero",
+        "points_by_matchday": {},
+        "position": "GK",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 9
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 2184380,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224249",
+      "player": {
+        "average_points": 0.5,
+        "club": "",
+        "club_id": "11",
+        "id": "3256",
+        "market_value": 2184380,
+        "name": "Ratkov",
+        "points_by_matchday": {},
+        "position": "FW",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 2
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 3989065,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224251",
+      "player": {
+        "average_points": 2.17,
+        "club": "",
+        "club_id": "8",
+        "id": "3162",
+        "market_value": 3989065,
+        "name": "Hinojo",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 13
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 58350884,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224254",
+      "player": {
+        "average_points": 4.29,
+        "club": "",
+        "club_id": "15",
+        "id": "3143",
+        "market_value": 58350884,
+        "name": "Diomande",
+        "points_by_matchday": {},
+        "position": "FW",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 30
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 643210,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224258",
+      "player": {
+        "average_points": 0.0,
+        "club": "",
+        "club_id": "49",
+        "id": "3212",
+        "market_value": 643210,
+        "name": "Hugo Pérez",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 0
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 498066,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224260",
+      "player": {
+        "average_points": 1.14,
+        "club": "",
+        "club_id": "2",
+        "id": "2881",
+        "market_value": 498066,
+        "name": "D. Martínez",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 8
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 747313,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224262",
+      "player": {
+        "average_points": 1.75,
+        "club": "",
+        "club_id": "14",
+        "id": "3244",
+        "market_value": 747313,
+        "name": "G. Bouaré",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 7
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 2846497,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224266",
+      "player": {
+        "average_points": 1.57,
+        "club": "",
+        "club_id": "12",
+        "id": "3037",
+        "market_value": 2846497,
+        "name": "C. Puga",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 11
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 570004,
+      "expires_at": "2026-09-28T17:48:00+02:00",
+      "market_id": "298224267",
+      "player": {
+        "average_points": 0.0,
+        "club": "",
+        "club_id": "4",
+        "id": "3224",
+        "market_value": 570004,
+        "name": "Brian Fariñas",
+        "points_by_matchday": {},
+        "position": "MF",
         "role": "unknown",
         "status": "ok",
         "total_points": 0
@@ -536,9 +536,9 @@
   },
   "offers": [
     {
-      "amount": 28596486,
+      "amount": 27531916,
       "market_id": "42658949",
-      "offer_id": "134322734",
+      "offer_id": "136223038",
       "player_name": "Fran García"
     }
   ],

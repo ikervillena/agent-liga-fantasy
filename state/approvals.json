@@ -1645,6 +1645,39 @@
     "state": "expired"
   },
   {
+    "asked_at": "2026-09-27T17:56:47.589928Z",
+    "decided_at": null,
+    "history": [
+      {
+        "at": "2026-09-27T17:56:47.589928Z",
+        "note": "sent for approval",
+        "state": "pending"
+      }
+    ],
+    "intent": {
+      "amount": 27531916,
+      "anchor": null,
+      "conditions": {
+        "average_points": 0.0,
+        "player_status": "ok",
+        "price": 27531916,
+        "price_tolerance": 0.05,
+        "squad_role": "unknown"
+      },
+      "execute_at": "2026-09-27T17:56:47.589928Z",
+      "expected_gain": 0.0,
+      "fallback": "Dejar que caduque y mantenerlo en venta.",
+      "kind": "accept_offer",
+      "market_id": "42658949",
+      "offer_id": "136223038",
+      "payload": {},
+      "player_id": "2429",
+      "player_name": "Fran García",
+      "rationale": "Te pagan un +0.4% sobre su valor por alguien que no juega en tu once (media 4.00)."
+    },
+    "state": "pending"
+  },
+  {
     "asked_at": "2026-09-23T17:57:57.972428Z",
     "decided_at": null,
     "history": [
