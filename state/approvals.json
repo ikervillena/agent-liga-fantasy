@@ -1690,6 +1690,11 @@
         "at": "2026-09-28T20:13:42.822251Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-28T21:22:39.238673Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1713,7 +1718,34 @@
       "player_name": "Fran García",
       "rationale": "Te pagan un +8.4% sobre su valor por alguien que no juega en tu once (media 4.00)."
     },
-    "state": "pending"
+    "state": "expired"
+  },
+  {
+    "asked_at": null,
+    "decided_at": null,
+    "history": [],
+    "intent": {
+      "amount": 16235590,
+      "anchor": "2026-09-14T21:57:31+02:00",
+      "conditions": {
+        "average_points": 5.33,
+        "player_status": "ok",
+        "price": 16235590,
+        "price_tolerance": 0.05,
+        "squad_role": "key"
+      },
+      "execute_at": "2026-09-28T21:22:39.238673Z",
+      "expected_gain": 5.33,
+      "fallback": "Pasar si el presupuesto va a otra cosa: la ventana vuelve en 14 días.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "1930",
+      "player_name": "El Hilali",
+      "rationale": "El Hilali es titular indiscutible en su club con una media de 5.33, baja para ese rol: la media viene lastrada y no dice lo que va a rendir ahora. Cuesta 16.24 M, de benatoo02."
+    },
+    "state": "proposed"
   },
   {
     "asked_at": "2026-09-23T17:57:57.972428Z",
@@ -1750,6 +1782,33 @@
       "rationale": "Camello tiene media 7.71 y la cláusula a precio de mercado. Se le abre el 02/10 a las 17:48 y reemplazarlo costaría varias veces esto."
     },
     "state": "pending"
+  },
+  {
+    "asked_at": null,
+    "decided_at": null,
+    "history": [],
+    "intent": {
+      "amount": 10958778,
+      "anchor": "2026-10-01T17:48:14+02:00",
+      "conditions": {
+        "average_points": 6.43,
+        "player_status": "ok",
+        "price": 10958778,
+        "price_tolerance": 0.05,
+        "squad_role": "important"
+      },
+      "execute_at": "2026-10-01T17:48:14+02:00",
+      "expected_gain": 6.43,
+      "fallback": "Pasar si el presupuesto va a otra cosa: la ventana vuelve en 14 días.",
+      "kind": "pay_clause",
+      "market_id": null,
+      "offer_id": null,
+      "payload": {},
+      "player_id": "2746",
+      "player_name": "Miguel Sierra",
+      "rationale": "Miguel Sierra (Sevilla FC) tiene media 6.43 frente a 0.00 de un hueco vacío. Sale a 1.70 M por punto de media, y lo tiene corcon 4."
+    },
+    "state": "proposed"
   },
   {
     "asked_at": "2026-09-26T00:40:16.731970Z",

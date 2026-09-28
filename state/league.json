@@ -1,5 +1,5 @@
 {
-  "cash": 25215,
+  "cash": 29363334,
   "config": {
     "bench": false,
     "buyout_clauses": true,
@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-28T20:14:18.116003Z",
+  "fetched_at": "2026-09-28T21:23:13.558008Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -500,25 +500,6 @@
         "total_points": 50
       },
       "seller": null
-    },
-    {
-      "asking_price": 27823288,
-      "expires_at": "2026-09-29T17:41:33+02:00",
-      "market_id": "42658949",
-      "player": {
-        "average_points": 4.0,
-        "club": "",
-        "club_id": "5",
-        "id": "2429",
-        "market_value": 27065794,
-        "name": "Fran García",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 28
-      },
-      "seller": null
     }
   ],
   "matchday": {
@@ -534,14 +515,7 @@
     "number": 9,
     "opens_at": "2026-10-16T21:00:00+02:00"
   },
-  "offers": [
-    {
-      "amount": 29338119,
-      "market_id": "42658949",
-      "offer_id": "138112577",
-      "player_name": "Fran García"
-    }
-  ],
+  "offers": [],
   "teams": [
     {
       "can_punctuate": true,
@@ -1178,27 +1152,6 @@
             "total_points": 76
           },
           "player_team_id": "68774976",
-          "team_id": "38611081"
-        },
-        {
-          "buyout_clause": 40063205,
-          "clause_locked_until": "2026-09-04T17:48:11+02:00",
-          "is_shielded": false,
-          "manager": "iker_villena",
-          "player": {
-            "average_points": 4.0,
-            "club": "Real Betis",
-            "club_id": "5",
-            "id": "2429",
-            "market_value": 27065794,
-            "name": "Fran García",
-            "points_by_matchday": {},
-            "position": "DF",
-            "role": "important",
-            "status": "ok",
-            "total_points": 28
-          },
-          "player_team_id": "40853517",
           "team_id": "38611081"
         },
         {
