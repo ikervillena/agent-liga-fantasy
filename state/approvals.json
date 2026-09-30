@@ -1761,6 +1761,11 @@
         "at": "2026-09-23T17:57:57.972428Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-09-30T18:33:33.842614Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1787,7 +1792,7 @@
       "player_name": "Camello",
       "rationale": "Camello tiene media 7.71 y la cláusula a precio de mercado. Se le abre el 02/10 a las 17:48 y reemplazarlo costaría varias veces esto."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-29T02:03:10.060708Z",

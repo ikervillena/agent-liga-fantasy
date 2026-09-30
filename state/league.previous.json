@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-09-30T01:21:06.631387Z",
+  "fetched_at": "2026-09-30T12:07:12.624715Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -456,7 +456,7 @@
         "market_value": 5108658,
         "name": "Gudelj",
         "points_by_matchday": {},
-        "position": "MF",
+        "position": "DF",
         "role": "unknown",
         "status": "ok",
         "total_points": 15
@@ -998,6 +998,27 @@
           "team_id": "38578570"
         },
         {
+          "buyout_clause": 32195276,
+          "clause_locked_until": "2026-08-30T18:35:54+02:00",
+          "is_shielded": false,
+          "manager": "corcon 4",
+          "player": {
+            "average_points": 2.5,
+            "club": "Rayo Vallecano",
+            "club_id": "14",
+            "id": "2382",
+            "market_value": 7347361,
+            "name": "Isi",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "important",
+            "status": "doubtful",
+            "total_points": 5
+          },
+          "player_team_id": "33575846",
+          "team_id": "38578570"
+        },
+        {
           "buyout_clause": 13000000,
           "clause_locked_until": "2026-09-15T08:16:09+02:00",
           "is_shielded": false,
@@ -1079,27 +1100,6 @@
             "total_points": 117
           },
           "player_team_id": "38208949",
-          "team_id": "38578570"
-        },
-        {
-          "buyout_clause": 32195276,
-          "clause_locked_until": "2026-08-30T18:35:54+02:00",
-          "is_shielded": false,
-          "manager": "corcon 4",
-          "player": {
-            "average_points": 2.5,
-            "club": "Rayo Vallecano",
-            "club_id": "14",
-            "id": "2382",
-            "market_value": 7347361,
-            "name": "Isi",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "important",
-            "status": "doubtful",
-            "total_points": 5
-          },
-          "player_team_id": "33575846",
           "team_id": "38578570"
         },
         {
@@ -1218,6 +1218,27 @@
           "team_id": "38611081"
         },
         {
+          "buyout_clause": 36085142,
+          "clause_locked_until": "2026-09-13T23:26:16+02:00",
+          "is_shielded": false,
+          "manager": "iker_villena",
+          "player": {
+            "average_points": 7.57,
+            "club": "Deportivo Alavés",
+            "club_id": "21",
+            "id": "2932",
+            "market_value": 32003932,
+            "name": "Ángel Pérez",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "key",
+            "status": "ok",
+            "total_points": 53
+          },
+          "player_team_id": "55054262",
+          "team_id": "38611081"
+        },
+        {
           "buyout_clause": 30068492,
           "clause_locked_until": "2026-08-30T23:24:50+02:00",
           "is_shielded": false,
@@ -1260,48 +1281,6 @@
           "team_id": "38611081"
         },
         {
-          "buyout_clause": 80656419,
-          "clause_locked_until": "2026-10-04T23:26:46+02:00",
-          "is_shielded": false,
-          "manager": "iker_villena",
-          "player": {
-            "average_points": 6.71,
-            "club": "FC Barcelona",
-            "club_id": "4",
-            "id": "3209",
-            "market_value": 80656419,
-            "name": "Adeyemi",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "impact_sub",
-            "status": "ok",
-            "total_points": 47
-          },
-          "player_team_id": "84337946",
-          "team_id": "38611081"
-        },
-        {
-          "buyout_clause": 36085142,
-          "clause_locked_until": "2026-09-13T23:26:16+02:00",
-          "is_shielded": false,
-          "manager": "iker_villena",
-          "player": {
-            "average_points": 7.57,
-            "club": "Deportivo Alavés",
-            "club_id": "21",
-            "id": "2932",
-            "market_value": 32003932,
-            "name": "Ángel Pérez",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "key",
-            "status": "ok",
-            "total_points": 53
-          },
-          "player_team_id": "55054262",
-          "team_id": "38611081"
-        },
-        {
           "buyout_clause": 51022671,
           "clause_locked_until": "2026-09-13T23:09:51+02:00",
           "is_shielded": false,
@@ -1341,6 +1320,27 @@
             "total_points": 54
           },
           "player_team_id": "81098286",
+          "team_id": "38611081"
+        },
+        {
+          "buyout_clause": 80656419,
+          "clause_locked_until": "2026-10-04T23:26:46+02:00",
+          "is_shielded": false,
+          "manager": "iker_villena",
+          "player": {
+            "average_points": 6.71,
+            "club": "FC Barcelona",
+            "club_id": "4",
+            "id": "3209",
+            "market_value": 80656419,
+            "name": "Adeyemi",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "impact_sub",
+            "status": "ok",
+            "total_points": 47
+          },
+          "player_team_id": "84337946",
           "team_id": "38611081"
         }
       ]
@@ -1994,6 +1994,27 @@
           "team_id": "38601985"
         },
         {
+          "buyout_clause": 5000002,
+          "clause_locked_until": "2026-09-08T17:48:22+02:00",
+          "is_shielded": false,
+          "manager": "SuperrGio",
+          "player": {
+            "average_points": 3.71,
+            "club": "Deportivo Alavés",
+            "club_id": "21",
+            "id": "2577",
+            "market_value": 4889987,
+            "name": "A. Rebbach",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "important",
+            "status": "ok",
+            "total_points": 26
+          },
+          "player_team_id": "46931675",
+          "team_id": "38601985"
+        },
+        {
           "buyout_clause": 19733135,
           "clause_locked_until": "2026-09-24T18:51:10+02:00",
           "is_shielded": false,
@@ -2054,27 +2075,6 @@
             "total_points": 34
           },
           "player_team_id": "73063504",
-          "team_id": "38601985"
-        },
-        {
-          "buyout_clause": 5000002,
-          "clause_locked_until": "2026-09-08T17:48:22+02:00",
-          "is_shielded": false,
-          "manager": "SuperrGio",
-          "player": {
-            "average_points": 3.71,
-            "club": "Deportivo Alavés",
-            "club_id": "21",
-            "id": "2577",
-            "market_value": 4889987,
-            "name": "A. Rebbach",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "important",
-            "status": "ok",
-            "total_points": 26
-          },
-          "player_team_id": "46931675",
           "team_id": "38601985"
         },
         {
@@ -3430,6 +3430,27 @@
           "team_id": "38572259"
         },
         {
+          "buyout_clause": 14935100,
+          "clause_locked_until": "2026-08-30T17:51:20+02:00",
+          "is_shielded": false,
+          "manager": "jburuta",
+          "player": {
+            "average_points": 4.5,
+            "club": "Getafe CF",
+            "club_id": "9",
+            "id": "3135",
+            "market_value": 8042863,
+            "name": "Andrés Garcia",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 27
+          },
+          "player_team_id": "33459875",
+          "team_id": "38572259"
+        },
+        {
           "buyout_clause": 14563738,
           "clause_locked_until": "2026-08-30T17:51:20+02:00",
           "is_shielded": false,
@@ -3532,27 +3553,6 @@
             "total_points": 5
           },
           "player_team_id": "33459873",
-          "team_id": "38572259"
-        },
-        {
-          "buyout_clause": 14935100,
-          "clause_locked_until": "2026-08-30T17:51:20+02:00",
-          "is_shielded": false,
-          "manager": "jburuta",
-          "player": {
-            "average_points": 4.5,
-            "club": "Getafe CF",
-            "club_id": "9",
-            "id": "3135",
-            "market_value": 8042863,
-            "name": "Andrés Garcia",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "rotation",
-            "status": "ok",
-            "total_points": 27
-          },
-          "player_team_id": "33459875",
           "team_id": "38572259"
         },
         {
