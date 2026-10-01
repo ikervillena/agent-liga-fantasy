@@ -1802,6 +1802,11 @@
         "at": "2026-09-29T02:03:10.060708Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-10-01T19:01:24.179899Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1825,7 +1830,7 @@
       "player_name": "Miguel Sierra",
       "rationale": "Miguel Sierra (Sevilla FC) tiene media 6.43 frente a 0.00 de un hueco vacío. Sale a 1.70 M por punto de media, y lo tiene corcon 4."
     },
-    "state": "pending"
+    "state": "expired"
   },
   {
     "asked_at": "2026-09-26T00:40:16.731970Z",
