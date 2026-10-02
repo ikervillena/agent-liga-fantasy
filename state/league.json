@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-10-02T18:41:34.278162Z",
+  "fetched_at": "2026-10-02T20:08:20.567053Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -1859,7 +1859,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "rotation",
-            "status": "ok",
+            "status": "doubtful",
             "total_points": 14
           },
           "player_team_id": "46907952",

@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-10-02T12:05:05.632656Z",
+  "fetched_at": "2026-10-02T18:41:34.278162Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -255,92 +255,54 @@
   "league_id": "018110971",
   "market": [
     {
-      "asking_price": 1073695,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467610",
+      "asking_price": 635719,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561419",
       "player": {
-        "average_points": 3.86,
+        "average_points": 1.29,
         "club": "",
-        "club_id": "5",
-        "id": "2580",
-        "market_value": 1054629,
-        "name": "Manuel Pellegrini",
-        "points_by_matchday": {},
-        "position": "CO",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 27
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 637330,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467616",
-      "player": {
-        "average_points": 2.0,
-        "club": "",
-        "club_id": "14",
-        "id": "3097",
+        "club_id": "7",
+        "id": "3096",
         "market_value": 635719,
-        "name": "Beñat",
+        "name": "Martín Anselmi",
         "points_by_matchday": {},
         "position": "CO",
         "role": "unknown",
         "status": "ok",
-        "total_points": 14
+        "total_points": 9
       },
       "seller": null
     },
     {
-      "asking_price": 17163156,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467619",
+      "asking_price": 563552,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561425",
       "player": {
-        "average_points": 3.5,
+        "average_points": 1.71,
         "club": "",
-        "club_id": "5",
-        "id": "3231",
-        "market_value": 16850997,
-        "name": "Parrott",
+        "club_id": "8",
+        "id": "2638",
+        "market_value": 563552,
+        "name": "Manolo González",
         "points_by_matchday": {},
-        "position": "FW",
+        "position": "CO",
         "role": "unknown",
         "status": "ok",
-        "total_points": 21
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 10899291,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467622",
-      "player": {
-        "average_points": 2.0,
-        "club": "",
-        "club_id": "20",
-        "id": "1031",
-        "market_value": 10600820,
-        "name": "Comesaña",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "injured",
         "total_points": 12
       },
       "seller": null
     },
     {
-      "asking_price": 493955,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467623",
+      "asking_price": 1900519,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561430",
       "player": {
         "average_points": 0.0,
         "club": "",
-        "club_id": "15",
-        "id": "2888",
-        "market_value": 498079,
-        "name": "Cestero",
+        "club_id": "8",
+        "id": "2516",
+        "market_value": 1900519,
+        "name": "Puado",
         "points_by_matchday": {},
         "position": "MF",
         "role": "unknown",
@@ -350,113 +312,151 @@
       "seller": null
     },
     {
-      "asking_price": 570872,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467626",
+      "asking_price": 902817,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561433",
       "player": {
-        "average_points": 1.57,
+        "average_points": 0.86,
         "club": "",
-        "club_id": "20",
-        "id": "2868",
-        "market_value": 571919,
-        "name": "Carlos Macià",
+        "club_id": "21",
+        "id": "3153",
+        "market_value": 902817,
+        "name": "Miguel Rodríguez",
         "points_by_matchday": {},
-        "position": "MF",
+        "position": "FW",
         "role": "unknown",
         "status": "ok",
-        "total_points": 11
+        "total_points": 6
       },
       "seller": null
     },
     {
-      "asking_price": 5505854,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467629",
+      "asking_price": 9048970,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561436",
       "player": {
-        "average_points": 2.57,
+        "average_points": 4.0,
         "club": "",
-        "club_id": "3",
-        "id": "77",
-        "market_value": 5392312,
-        "name": "Yeray",
+        "club_id": "7",
+        "id": "2939",
+        "market_value": 9048970,
+        "name": "G. Villar",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 28
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 575211,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561439",
+      "player": {
+        "average_points": 0.43,
+        "club": "",
+        "club_id": "14",
+        "id": "3157",
+        "market_value": 575211,
+        "name": "Pelayo",
         "points_by_matchday": {},
         "position": "DF",
         "role": "unknown",
         "status": "ok",
+        "total_points": 3
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 842315,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561441",
+      "player": {
+        "average_points": 0.0,
+        "club": "",
+        "club_id": "12",
+        "id": "2398",
+        "market_value": 842315,
+        "name": "F. Calero",
+        "points_by_matchday": {},
+        "position": "DF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 0
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 10657535,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561445",
+      "player": {
+        "average_points": 0.6,
+        "club": "",
+        "club_id": "4",
+        "id": "1221",
+        "market_value": 10657535,
+        "name": "Gavi",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 3
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 62477956,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561447",
+      "player": {
+        "average_points": 7.43,
+        "club": "",
+        "club_id": "20",
+        "id": "3086",
+        "market_value": 62477956,
+        "name": "Moleiro",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "ok",
+        "total_points": 52
+      },
+      "seller": null
+    },
+    {
+      "asking_price": 4068979,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561452",
+      "player": {
+        "average_points": 4.5,
+        "club": "",
+        "club_id": "18",
+        "id": "581",
+        "market_value": 4068979,
+        "name": "Rioja",
+        "points_by_matchday": {},
+        "position": "MF",
+        "role": "unknown",
+        "status": "doubtful",
         "total_points": 18
       },
       "seller": null
     },
     {
-      "asking_price": 27183662,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467632",
-      "player": {
-        "average_points": 4.29,
-        "club": "",
-        "club_id": "20",
-        "id": "2728",
-        "market_value": 27587682,
-        "name": "Renato Veiga",
-        "points_by_matchday": {},
-        "position": "DF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 30
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 31161817,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467633",
-      "player": {
-        "average_points": 3.29,
-        "club": "",
-        "club_id": "15",
-        "id": "3116",
-        "market_value": 30706079,
-        "name": "Bernardo Silva",
-        "points_by_matchday": {},
-        "position": "MF",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 23
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 978857,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467634",
-      "player": {
-        "average_points": 0.67,
-        "club": "",
-        "club_id": "49",
-        "id": "3247",
-        "market_value": 963585,
-        "name": "Iker Luque",
-        "points_by_matchday": {},
-        "position": "FW",
-        "role": "unknown",
-        "status": "ok",
-        "total_points": 2
-      },
-      "seller": null
-    },
-    {
-      "asking_price": 532098,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467635",
+      "asking_price": 492413,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561458",
       "player": {
         "average_points": 0.0,
         "club": "",
-        "club_id": "21",
-        "id": "3159",
-        "market_value": 534696,
-        "name": "Novoa",
+        "club_id": "2",
+        "id": "2961",
+        "market_value": 492413,
+        "name": "Miguel Cubo",
         "points_by_matchday": {},
-        "position": "DF",
+        "position": "FW",
         "role": "unknown",
         "status": "ok",
         "total_points": 0
@@ -464,40 +464,40 @@
       "seller": null
     },
     {
-      "asking_price": 14602326,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467636",
+      "asking_price": 3252350,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561463",
       "player": {
-        "average_points": 1.71,
+        "average_points": 1.29,
         "club": "",
-        "club_id": "16",
-        "id": "1197",
-        "market_value": 14274294,
-        "name": "Kubo",
+        "club_id": "20",
+        "id": "2698",
+        "market_value": 3252350,
+        "name": "Pau Navarro",
         "points_by_matchday": {},
-        "position": "MF",
+        "position": "DF",
         "role": "unknown",
         "status": "ok",
-        "total_points": 12
+        "total_points": 9
       },
       "seller": null
     },
     {
-      "asking_price": 48982793,
-      "expires_at": "2026-10-02T17:48:00+02:00",
-      "market_id": "326467637",
+      "asking_price": 19935420,
+      "expires_at": "2026-10-03T17:48:00+02:00",
+      "market_id": "333561467",
       "player": {
-        "average_points": 4.57,
+        "average_points": 5.14,
         "club": "",
-        "club_id": "15",
-        "id": "2430",
-        "market_value": 47866665,
-        "name": "Valverde",
+        "club_id": "18",
+        "id": "2457",
+        "market_value": 19935420,
+        "name": "Dimitrievski",
         "points_by_matchday": {},
-        "position": "MF",
+        "position": "GK",
         "role": "unknown",
-        "status": "injured",
-        "total_points": 32
+        "status": "ok",
+        "total_points": 36
       },
       "seller": null
     },
@@ -842,7 +842,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "important",
-            "status": "ok",
+            "status": "doubtful",
             "total_points": 19
           },
           "player_team_id": "83747031",
@@ -1031,7 +1031,7 @@
             "points_by_matchday": {},
             "position": "MF",
             "role": "important",
-            "status": "doubtful",
+            "status": "ok",
             "total_points": 5
           },
           "player_team_id": "33575846",
@@ -1073,7 +1073,7 @@
             "points_by_matchday": {},
             "position": "MF",
             "role": "important",
-            "status": "doubtful",
+            "status": "ok",
             "total_points": 12
           },
           "player_team_id": "33575851",
@@ -2317,6 +2317,27 @@
           "team_id": "38575843"
         },
         {
+          "buyout_clause": 27587682,
+          "clause_locked_until": "2026-10-16T17:48:20+02:00",
+          "is_shielded": false,
+          "manager": "vaalenxiaa",
+          "player": {
+            "average_points": 4.29,
+            "club": "Villarreal CF",
+            "club_id": "20",
+            "id": "2728",
+            "market_value": 27587682,
+            "name": "Renato Veiga",
+            "points_by_matchday": {},
+            "position": "DF",
+            "role": "key",
+            "status": "ok",
+            "total_points": 30
+          },
+          "player_team_id": "93723028",
+          "team_id": "38575843"
+        },
+        {
           "buyout_clause": 8123001,
           "clause_locked_until": "2026-09-02T17:48:05+02:00",
           "is_shielded": false,
@@ -2359,45 +2380,24 @@
           "team_id": "38575843"
         },
         {
-          "buyout_clause": 24884510,
-          "clause_locked_until": "2026-09-21T17:48:30+02:00",
+          "buyout_clause": 19851006,
+          "clause_locked_until": "2026-08-30T18:13:39+02:00",
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 3.0,
-            "club": "Real Madrid",
-            "club_id": "15",
-            "id": "1480",
-            "market_value": 19759741,
-            "name": "Tchouaméni",
+            "average_points": 5.0,
+            "club": "Rayo Vallecano",
+            "club_id": "14",
+            "id": "2384",
+            "market_value": 19468264,
+            "name": "Unai Lopez",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "important",
+            "role": "key",
             "status": "ok",
-            "total_points": 9
+            "total_points": 35
           },
-          "player_team_id": "66631173",
-          "team_id": "38575843"
-        },
-        {
-          "buyout_clause": 3788417,
-          "clause_locked_until": "2026-10-13T17:48:31+02:00",
-          "is_shielded": false,
-          "manager": "vaalenxiaa",
-          "player": {
-            "average_points": 4.57,
-            "club": "Celta",
-            "club_id": "6",
-            "id": "2850",
-            "market_value": 3788417,
-            "name": "H. González",
-            "points_by_matchday": {},
-            "position": "MF",
-            "role": "unknown",
-            "status": "ok",
-            "total_points": 32
-          },
-          "player_team_id": "92007883",
+          "player_team_id": "33524466",
           "team_id": "38575843"
         },
         {
@@ -2422,45 +2422,66 @@
           "team_id": "38575843"
         },
         {
-          "buyout_clause": 19851006,
-          "clause_locked_until": "2026-08-30T18:13:39+02:00",
+          "buyout_clause": 3788417,
+          "clause_locked_until": "2026-10-13T17:48:31+02:00",
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 5.0,
-            "club": "Rayo Vallecano",
-            "club_id": "14",
-            "id": "2384",
-            "market_value": 19468264,
-            "name": "Unai Lopez",
+            "average_points": 4.57,
+            "club": "Celta",
+            "club_id": "6",
+            "id": "2850",
+            "market_value": 3788417,
+            "name": "H. González",
             "points_by_matchday": {},
             "position": "MF",
-            "role": "key",
+            "role": "unknown",
             "status": "ok",
-            "total_points": 35
+            "total_points": 32
           },
-          "player_team_id": "33524466",
+          "player_team_id": "92007883",
           "team_id": "38575843"
         },
         {
-          "buyout_clause": 5737987,
-          "clause_locked_until": "2026-09-13T17:48:06+02:00",
+          "buyout_clause": 24884510,
+          "clause_locked_until": "2026-09-21T17:48:30+02:00",
           "is_shielded": false,
           "manager": "vaalenxiaa",
           "player": {
-            "average_points": 5.0,
-            "club": "Levante UD",
-            "club_id": "11",
-            "id": "2302",
-            "market_value": 5737987,
-            "name": "R. Brugué",
+            "average_points": 3.0,
+            "club": "Real Madrid",
+            "club_id": "15",
+            "id": "1480",
+            "market_value": 19759741,
+            "name": "Tchouaméni",
+            "points_by_matchday": {},
+            "position": "MF",
+            "role": "important",
+            "status": "ok",
+            "total_points": 9
+          },
+          "player_team_id": "66631173",
+          "team_id": "38575843"
+        },
+        {
+          "buyout_clause": 62999410,
+          "clause_locked_until": "2026-09-29T17:48:23+02:00",
+          "is_shielded": false,
+          "manager": "vaalenxiaa",
+          "player": {
+            "average_points": 4.71,
+            "club": "Athletic Club",
+            "club_id": "3",
+            "id": "3083",
+            "market_value": 62999410,
+            "name": "Nico Williams",
             "points_by_matchday": {},
             "position": "FW",
-            "role": "rotation",
-            "status": "ok",
-            "total_points": 30
+            "role": "important",
+            "status": "injured",
+            "total_points": 33
           },
-          "player_team_id": "54326183",
+          "player_team_id": "77059321",
           "team_id": "38575843"
         },
         {
@@ -2485,6 +2506,27 @@
           "team_id": "38575843"
         },
         {
+          "buyout_clause": 5737987,
+          "clause_locked_until": "2026-09-13T17:48:06+02:00",
+          "is_shielded": false,
+          "manager": "vaalenxiaa",
+          "player": {
+            "average_points": 5.0,
+            "club": "Levante UD",
+            "club_id": "11",
+            "id": "2302",
+            "market_value": 5737987,
+            "name": "R. Brugué",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 30
+          },
+          "player_team_id": "54326183",
+          "team_id": "38575843"
+        },
+        {
           "buyout_clause": 28920040,
           "clause_locked_until": "2026-08-30T18:13:39+02:00",
           "is_shielded": false,
@@ -2503,27 +2545,6 @@
             "total_points": 35
           },
           "player_team_id": "33524460",
-          "team_id": "38575843"
-        },
-        {
-          "buyout_clause": 62999410,
-          "clause_locked_until": "2026-09-29T17:48:23+02:00",
-          "is_shielded": false,
-          "manager": "vaalenxiaa",
-          "player": {
-            "average_points": 4.71,
-            "club": "Athletic Club",
-            "club_id": "3",
-            "id": "3083",
-            "market_value": 62999410,
-            "name": "Nico Williams",
-            "points_by_matchday": {},
-            "position": "FW",
-            "role": "important",
-            "status": "injured",
-            "total_points": 33
-          },
-          "player_team_id": "77059321",
           "team_id": "38575843"
         }
       ]
@@ -2828,6 +2849,27 @@
             "total_points": 31
           },
           "player_team_id": "57977540",
+          "team_id": "38622146"
+        },
+        {
+          "buyout_clause": 17163156,
+          "clause_locked_until": "2026-10-16T17:48:20+02:00",
+          "is_shielded": false,
+          "manager": "Barandi07",
+          "player": {
+            "average_points": 3.5,
+            "club": "Real Betis",
+            "club_id": "5",
+            "id": "3231",
+            "market_value": 16850997,
+            "name": "Parrott",
+            "points_by_matchday": {},
+            "position": "FW",
+            "role": "rotation",
+            "status": "ok",
+            "total_points": 21
+          },
+          "player_team_id": "93723026",
           "team_id": "38622146"
         }
       ]
@@ -3222,7 +3264,7 @@
             "points_by_matchday": {},
             "position": "DF",
             "role": "unknown",
-            "status": "injured",
+            "status": "ok",
             "total_points": 2
           },
           "player_team_id": "52990360",
