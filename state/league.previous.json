@@ -9,7 +9,7 @@
     "free_formations": false,
     "loans": false
   },
-  "fetched_at": "2026-10-02T01:43:52.245501Z",
+  "fetched_at": "2026-10-02T12:05:05.632656Z",
   "fixtures": [
     {
       "away_club_id": "26",
@@ -1115,7 +1115,7 @@
             "points_by_matchday": {},
             "position": "FW",
             "role": "unknown",
-            "status": "doubtful",
+            "status": "ok",
             "total_points": 117
           },
           "player_team_id": "38208949",
@@ -1775,7 +1775,7 @@
             "points_by_matchday": {},
             "position": "GK",
             "role": "key",
-            "status": "ok",
+            "status": "doubtful",
             "total_points": 56
           },
           "player_team_id": "50210252",
