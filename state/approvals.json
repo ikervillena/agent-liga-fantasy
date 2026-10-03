@@ -1840,6 +1840,11 @@
         "at": "2026-09-26T00:40:16.731970Z",
         "note": "sent for approval",
         "state": "pending"
+      },
+      {
+        "at": "2026-10-03T01:14:16.824890Z",
+        "note": "execution window passed",
+        "state": "expired"
       }
     ],
     "intent": {
@@ -1866,6 +1871,6 @@
       "player_name": "Adeyemi",
       "rationale": "Adeyemi tiene media 6.71 y la cláusula a precio de mercado. Se le abre el 04/10 a las 23:26 y reemplazarlo costaría varias veces esto."
     },
-    "state": "pending"
+    "state": "expired"
   }
 ]
