@@ -1,0 +1,18 @@
+2026-10-28 14:30:30 UTC
+ERR week: AuthError: B2C returned non-JSON (404)
+ERR players: AuthError: B2C returned non-JSON (404)
+ERR leagues: AuthError: B2C returned non-JSON (404)
+ERR standing: AuthError: B2C returned non-JSON (404)
+ERR market: AuthError: B2C returned non-JSON (404)
+ERR cash: AuthError: B2C returned non-JSON (404)
+ERR lineup: AuthError: B2C returned non-JSON (404)
+ERR activity_0: AuthError: B2C returned non-JSON (404)
+ERR activity_1: AuthError: B2C returned non-JSON (404)
+ERR activity_2: AuthError: B2C returned non-JSON (404)
+ERR activity_3: AuthError: B2C returned non-JSON (404)
+ERR calendar_9: AuthError: B2C returned non-JSON (404)
+ERR calendar_10: AuthError: B2C returned non-JSON (404)
+ERR calendar_11: AuthError: B2C returned non-JSON (404)
+ERR calendar_12: AuthError: B2C returned non-JSON (404)
+ERR calendar_13: AuthError: B2C returned non-JSON (404)
+owned=0 market=0 details=0
