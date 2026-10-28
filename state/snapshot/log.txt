@@ -1,18 +1,23 @@
-2026-10-28 14:30:30 UTC
-ERR week: AuthError: B2C returned non-JSON (404)
-ERR players: AuthError: B2C returned non-JSON (404)
-ERR leagues: AuthError: B2C returned non-JSON (404)
-ERR standing: AuthError: B2C returned non-JSON (404)
-ERR market: AuthError: B2C returned non-JSON (404)
-ERR cash: AuthError: B2C returned non-JSON (404)
-ERR lineup: AuthError: B2C returned non-JSON (404)
-ERR activity_0: AuthError: B2C returned non-JSON (404)
-ERR activity_1: AuthError: B2C returned non-JSON (404)
-ERR activity_2: AuthError: B2C returned non-JSON (404)
-ERR activity_3: AuthError: B2C returned non-JSON (404)
-ERR calendar_9: AuthError: B2C returned non-JSON (404)
-ERR calendar_10: AuthError: B2C returned non-JSON (404)
-ERR calendar_11: AuthError: B2C returned non-JSON (404)
-ERR calendar_12: AuthError: B2C returned non-JSON (404)
-ERR calendar_13: AuthError: B2C returned non-JSON (404)
-owned=0 market=0 details=0
+2026-10-28 14:38:21 UTC
+B2C_1A_ResourceOwnerv2: B2C returned non-JSON (404)
+login failed -> anonymous: B2C 400: AADB2C: An exception has occurred.
+Correlation ID: 14a86ee0-01a1-402e-b59e-bdb00e3a3ab9
+Timestamp: 2026-10-28 14:32:08Z
+
+OK week
+OK players
+ERR leagues: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues: {"message":"Authentication is required."}
+ERR standing: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/standing: {"message":"Authentication is required."}
+ERR market: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/league/018110971/market: {"message":"Authentication is required."}
+ERR cash: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/teams/38611081/money: {"message":"Authentication is required."}
+ERR lineup: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/teams/38611081/lineup: {"message":"Authentication is required."}
+ERR activity_0: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/0: {"message":"Authentication is required."}
+ERR activity_1: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/1: {"message":"Authentication is required."}
+ERR activity_2: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/2: {"message":"Authentication is required."}
+ERR activity_3: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/3: {"message":"Authentication is required."}
+OK calendar_10
+OK calendar_11
+OK calendar_12
+OK calendar_13
+OK calendar_14
+owned=0 market=0 details=450
