@@ -55,7 +55,7 @@ try:
     wk = None
     try: wk = int((week or {}).get("weekNumber") or 0)
     except Exception: pass
-    for w in range((wk or 10) - 1, (wk or 10) + 4):
+    for w in range(1, (wk or 10) + 4):
         safe(f"calendar_{w}", c.calendar, w)
     team_ids = []
     for row in (st or []):
