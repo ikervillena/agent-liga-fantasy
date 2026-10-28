@@ -1,0 +1,122 @@
+[
+ {
+  "id": "71",
+  "matchDate": "2026-10-11T16:15:00+02:00",
+  "date": "2026-10-11T16:15:00+02:00",
+  "time": "2026-10-11T16:15:00+02:00",
+  "localId": 16,
+  "visitorId": 26,
+  "matchState": 7,
+  "localScore": 3,
+  "visitorScore": 2,
+  "featured": false
+ },
+ {
+  "id": "72",
+  "matchDate": "2026-10-10T21:00:00+02:00",
+  "date": "2026-10-10T21:00:00+02:00",
+  "time": "2026-10-10T21:00:00+02:00",
+  "localId": 15,
+  "visitorId": 20,
+  "matchState": 7,
+  "localScore": 1,
+  "visitorScore": 0,
+  "featured": false
+ },
+ {
+  "id": "73",
+  "matchDate": "2026-10-10T14:00:00+02:00",
+  "date": "2026-10-10T14:00:00+02:00",
+  "time": "2026-10-10T14:00:00+02:00",
+  "localId": 14,
+  "visitorId": 3,
+  "matchState": 10,
+  "localScore": 0,
+  "visitorScore": 0,
+  "featured": false
+ },
+ {
+  "id": "74",
+  "matchDate": "2026-10-11T21:00:00+02:00",
+  "date": "2026-10-11T21:00:00+02:00",
+  "time": "2026-10-11T21:00:00+02:00",
+  "localId": 49,
+  "visitorId": 18,
+  "matchState": 7,
+  "localScore": 2,
+  "visitorScore": 2,
+  "featured": false
+ },
+ {
+  "id": "75",
+  "matchDate": "2026-10-09T21:00:00+02:00",
+  "date": "2026-10-09T21:00:00+02:00",
+  "time": "2026-10-09T21:00:00+02:00",
+  "localId": 12,
+  "visitorId": 8,
+  "matchState": 7,
+  "localScore": 1,
+  "visitorScore": 1,
+  "featured": false
+ },
+ {
+  "id": "76",
+  "matchDate": "2026-10-12T21:00:00+02:00",
+  "date": "2026-10-12T21:00:00+02:00",
+  "time": "2026-10-12T21:00:00+02:00",
+  "localId": 11,
+  "visitorId": 17,
+  "matchState": 7,
+  "localScore": 3,
+  "visitorScore": 3,
+  "featured": false
+ },
+ {
+  "id": "77",
+  "matchDate": "2026-10-10T18:30:00+02:00",
+  "date": "2026-10-10T18:30:00+02:00",
+  "time": "2026-10-10T18:30:00+02:00",
+  "localId": 4,
+  "visitorId": 9,
+  "matchState": 7,
+  "localScore": 3,
+  "visitorScore": 0,
+  "featured": false
+ },
+ {
+  "id": "78",
+  "matchDate": "2026-10-11T14:00:00+02:00",
+  "date": "2026-10-11T14:00:00+02:00",
+  "time": "2026-10-11T14:00:00+02:00",
+  "localId": 7,
+  "visitorId": 6,
+  "matchState": 7,
+  "localScore": 0,
+  "visitorScore": 0,
+  "featured": false
+ },
+ {
+  "id": "79",
+  "matchDate": "2026-10-11T18:30:00+02:00",
+  "date": "2026-10-11T18:30:00+02:00",
+  "time": "2026-10-11T18:30:00+02:00",
+  "localId": 5,
+  "visitorId": 13,
+  "matchState": 7,
+  "localScore": 5,
+  "visitorScore": 2,
+  "featured": false
+ },
+ {
+  "id": "80",
+  "matchDate": "2026-10-10T16:15:00+02:00",
+  "date": "2026-10-10T16:15:00+02:00",
+  "time": "2026-10-10T16:15:00+02:00",
+  "localId": 21,
+  "visitorId": 2,
+  "matchState": 7,
+  "localScore": 1,
+  "visitorScore": 2,
+  "featured": false
+ }
+]

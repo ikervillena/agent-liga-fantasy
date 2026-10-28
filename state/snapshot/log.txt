@@ -1,8 +1,8 @@
-2026-10-28 14:38:21 UTC
+2026-10-28 14:45:59 UTC
 B2C_1A_ResourceOwnerv2: B2C returned non-JSON (404)
 login failed -> anonymous: B2C 400: AADB2C: An exception has occurred.
-Correlation ID: 14a86ee0-01a1-402e-b59e-bdb00e3a3ab9
-Timestamp: 2026-10-28 14:32:08Z
+Correlation ID: 2e23cfde-22b5-44ad-9439-d19cfbc4619b
+Timestamp: 2026-10-28 14:39:40Z
 
 OK week
 OK players
@@ -15,6 +15,15 @@ ERR activity_0: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v
 ERR activity_1: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/1: {"message":"Authentication is required."}
 ERR activity_2: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/2: {"message":"Authentication is required."}
 ERR activity_3: ApiError: HTTP 401 on https://fantasy-api.llt-services.com/api/v1/competition/1/leagues/018110971/activity/3: {"message":"Authentication is required."}
+OK calendar_1
+OK calendar_2
+OK calendar_3
+OK calendar_4
+OK calendar_5
+OK calendar_6
+OK calendar_7
+OK calendar_8
+OK calendar_9
 OK calendar_10
 OK calendar_11
 OK calendar_12
