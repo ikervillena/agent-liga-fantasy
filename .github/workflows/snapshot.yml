@@ -1,0 +1,30 @@
+name: snapshot
+# Read-only raw dump for offline analysis with Claude. Never calls a write endpoint.
+on:
+  workflow_dispatch:
+concurrency:
+  group: agent
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      FANTASY_EMAIL: ${{ secrets.FANTASY_EMAIL }}
+      FANTASY_PASSWORD: ${{ secrets.FANTASY_PASSWORD }}
+      FANTASY_MIN_INTERVAL: "0.6"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - run: python tools/snapshot_raw.py
+      - if: always()
+        run: |
+          git config user.name "fantasy-agent"; git config user.email "actions@github.com"
+          git add -f state/snapshot
+          git commit -m "snapshot: $(date -u '+%Y-%m-%d %H:%M UTC')" || exit 0
+          git pull --rebase --autostash; git push
