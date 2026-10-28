@@ -10,11 +10,11 @@ permissions:
 jobs:
   dump:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       FANTASY_EMAIL: ${{ secrets.FANTASY_EMAIL }}
       FANTASY_PASSWORD: ${{ secrets.FANTASY_PASSWORD }}
-      FANTASY_MIN_INTERVAL: "0.6"
+      FANTASY_MIN_INTERVAL: "0.4"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
